@@ -1,0 +1,84 @@
+.text-field {
+	-fx-text-fill: white ;
+	-fx-background-color: black;
+	-fx-border-color: radial-gradient(center 50% 50%, radius 90%, gold, black);
+	-fx-border-width: 2;
+	-fx-opacity: 0.75;
+}
+.text-field: focused {
+	-fx-border-color: #32CD32;
+}
+.prereq-name {
+	-fx-text-fill: white ;
+	-fx-background-color: black;
+	-fx-border-color: radial-gradient(center 50% 50%, radius 90%, gold, black);
+	-fx-border-width: 1.5;
+	-fx-opacity: 0.75 ;
+}
+.pane {
+	-fx-border-style: solid;
+	-fx-border-radius: 5;
+	-fx-border-color: radial-gradient(center 50% 50%, radius 90%, gold, black);
+	-fx-border-width: 1.5;
+}
+
+.tab-pane .tab-header-background {
+	-fx-opacity: 0
+}
+
+.text-area {
+	-fx-text-fill: gold;
+	-fx-faint-focus-color: transparent;
+	-fx-focus-color: transparent;
+	-fx-border-color: radial-gradient(center 50% 50%, radius 90%, gold, black);
+	-fx-border-width: 1.5;
+	-fx-border-radius: 4;
+	-fx-border-style: solid;
+}
+.text-area: focused {
+	-fx-border-color: #32CD32;
+	-fx-border-width: 2;
+	-fx-border-radius: 4;
+}
+
+.text-area .content {
+	-fx-background-color: black;
+	-fx-opacity: 0.75
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab {
+	-fx-border-width: 1.5 ;
+    -fx-border-radius: 2 2 0 0;
+    -fx-border-color: radial-gradient(center 50% 50%, radius 90%, gold, black);
+}
+
+.tab:selected .tab-label {
+	-fx-font-weight: bold;
+}
+
+.tab-pane > .tab-header-area > .headers-region > .tab:selected {
+	-fx-faint-focus-color: transparent;
+	-fx-focus-color: transparent;
+	-fx-border-width: 2 1.5 0 1.5;
+    -fx-padding: 3 10;
+    -fx-border-color: #32CD32;
+}
+
+.titled-pane {
+	-fx-text-fill: white;
+	-fx-background-color: transparent;
+}
+
+.titled-pane .title {
+	-fx-background-radius: 10 10 0 0;
+	-fx-background-color: #3d3d3d;
+	-fx-border-width: 1;
+	-fx-border-color: gold;
+    -fx-border-radius: 10 10 0 0;
+	-fx-border-insets: 1;
+}
+
+.titled-pane .content {
+	-fx-border-width: 2;
+	-fx-border-color: radial-gradient(center 50% 0%, radius 120%, gold, black);
+}

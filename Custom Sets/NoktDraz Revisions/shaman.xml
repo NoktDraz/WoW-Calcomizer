@@ -1,0 +1,443 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<class name="SHAMAN">
+    <tree name="Elemental">
+        <talent index="1" name="Elemental Focus" icon="ManaBurn.png">
+            <rank index="1"><![CDATA[Gives you a 2% chance to enter a Clearcasting state after dealing direct damage with your Stormstrike ability or any Fire, Frost, or Nature spell.  The Clearcasting state reduces the mana cost of your next damage spell by 100%.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 4% chance to enter a Clearcasting state after dealing direct damage with your Stormstrike ability or any Fire, Frost, or Nature spell.  The Clearcasting state reduces the mana cost of your next damage spell by 100%.]]></rank>
+            <rank index="3"><![CDATA[Gives you a 6% chance to enter a Clearcasting state after dealing direct damage with your Stormstrike ability or any Fire, Frost, or Nature spell.  The Clearcasting state reduces the mana cost of your next damage spell by 100%.]]></rank>
+            <rank index="4"><![CDATA[Gives you a 8% chance to enter a Clearcasting state after dealing direct damage with your Stormstrike ability or any Fire, Frost, or Nature spell.  The Clearcasting state reduces the mana cost of your next damage spell by 100%.]]></rank>
+            <rank index="5"><![CDATA[Gives you a 10% chance to enter a Clearcasting state after dealing direct damage with your Stormstrike ability or any Fire, Frost, or Nature spell.  The Clearcasting state reduces the mana cost of your next damage spell by 100%.]]></rank>
+        </talent>
+        <talent index="2" name="Elemental Warding" icon="SpiritArmor.png">
+            <rank index="1"><![CDATA[Reduces all spell damage taken by 2%.
+
+Reduces the chance of your helpful spells being dispelled by 8%.]]></rank>
+            <rank index="2"><![CDATA[Reduces all spell damage taken by 4%.
+
+Reduces the chance of your helpful spells being dispelled by 16%.]]></rank>
+            <rank index="3"><![CDATA[Reduces all spell damage taken by 6%.
+
+Reduces the chance of your helpful spells being dispelled by 24%.]]></rank>
+            <rank index="4"><![CDATA[Reduces all spell damage taken by 8%.
+
+Reduces the chance of your helpful spells being dispelled by 32%.]]></rank>
+            <rank index="5"><![CDATA[Reduces all spell damage taken by 10%.
+
+Reduces the chance of your helpful spells being dispelled by 40%.]]></rank>
+        </talent>
+        <talent index="4" name="Reverberation" icon="FrostWard.png">
+            <rank index="1"><![CDATA[Increases the critical strike chance of your Shock spells by 2%.
+
+Your Cleansing Wave and Purge spells restore Mana equal to 20% of their base cost when failing to dispel an effect.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike chance of your Shock spells by 4%.
+
+Your Cleansing Wave and Purge spells restore Mana equal to 40% of their base cost when failing to dispel an effect.]]></rank>
+            <rank index="3"><![CDATA[Increases the critical strike chance of your Shock spells by 6%.
+
+Your Cleansing Wave and Purge spells restore Mana equal to 60% of their base cost when failing to dispel an effect.]]></rank>
+        </talent>
+        <talent index="5" name="Elemental Devastation" icon="ELEMENTALDEVASTATION.png">
+            <rank index="1"><![CDATA[Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 5% for 6 sec.]]></rank>
+            <rank index="2"><![CDATA[Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 10% for 6 sec.]]></rank>
+        </talent>
+        <talent index="6" name="Call of Flame" icon="SelfDestruct.png">
+            <rank index="1"><![CDATA[Increases the damage caused by your Fire Totems, Flametongue Weapon, Coldflame and Flame Shock spells by 5%.
+
+Increases your Attack Power by 10% of your Fire spell power.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage caused by your Fire Totems, Flametongue Weapon, Coldflame and Flame Shock spells by 10%.
+
+Increases your Attack Power by 20% of your Fire spell power.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage caused by your Fire Totems, Flametongue Weapon, Coldflame and Flame Shock spells by 15%.
+
+Increases your Attack Power by 30% of your Fire spell power.]]></rank>
+        </talent>
+        <talent index="7" name="Earth's Grasp" icon="StoneClawTotem.png">
+            <rank index="1"><![CDATA[Gives your Earthbind Totem pulses a 5% chance to root enemies for 2 secs.
+
+Your Stoneclaw Totem increases all party members' critical strike chance with Nature spells by 1%, if they are within 30 yards of the totem.]]></rank>
+            <rank index="2"><![CDATA[Gives your Earthbind Totem pulses a 10% chance to root enemies for 2 secs.
+
+Your Stoneclaw Totem increases all party members' critical strike chance with Nature spells by 2%, if they are within 30 yards of the totem.]]></rank>
+            <rank index="3"><![CDATA[Gives your Earthbind Totem pulses a 15% chance to root enemies for 2 secs.
+
+Your Stoneclaw Totem increases all party members' critical strike chance with Nature spells by 3%, if they are within 30 yards of the totem.]]></rank>
+        </talent>
+        <talent index="8" name="Galvanization" icon="Galvanization.png">
+            <rank index="1"><![CDATA[After getting a critical effect with any of your spells or abilities, the cooldown timer of all your non-Shock spells is reduced by 1.5 secs.]]></rank>
+            <rank index="2"><![CDATA[After getting a critical effect with any of your spells or abilities, the cooldown timer of all your non-Shock spells is reduced by 3 secs.]]></rank>
+        </talent>
+        <talent index="9" name="Coldflame Shock (Rank 1)" icon="ColdflameShock3.png">
+            <rank index="1"><![CDATA[Instantly blasts the target with 110-138 Frostfire damage.
+
+This spell has a 50% increased critical strike chance against targets afflicted by Frost Shock and 25% increased damage against targets afflicted by Flame Shock.
+
+Shares a cooldown with Shock spells.
+130 Mana.]]></rank>
+        </talent>
+        <talent index="10" name="Call of Thunder" icon="CallStorm.png">
+            <rank index="1"><![CDATA[Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 1%.
+
+Increases the range of your lightning spells by 2 yards.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 2%.
+
+Increases the range of your lightning spells by 4 yards.]]></rank>
+            <rank index="3"><![CDATA[Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by 3%.
+
+Increases the range of your lightning spells by 6 yards.]]></rank>
+        </talent>
+        <talent index="11" name="Eye of the Storm" icon="EyeOfTheStorm.png">
+            <rank index="1"><![CDATA[Gives you a 50% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike.  The Focused Casting effect prevents you from losing casting time when taking damage.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 100% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike.  The Focused Casting effect prevents you from losing casting time when taking damage.]]></rank>
+        </talent>
+        <talent index="12" name="Concussion" icon="Fireball.png">
+            <rank index="1"><![CDATA[Increases the damage done by your Elemental spells and effects by 2%.
+
+Increases the critical strike damage bonus of your Shock spells by 20%]]></rank>
+            <rank index="2"><![CDATA[Increases the damage done by your Elemental spells and effects by 4%.
+
+Increases the critical strike damage bonus of your Shock spells by 40%]]></rank>
+            <rank index="3"><![CDATA[Increases the damage done by your Elemental spells and effects by 6%.
+
+Increases the critical strike damage bonus of your Shock spells by 60%]]></rank>
+            <rank index="4"><![CDATA[Increases the damage done by your Elemental spells and effects by 8%.
+
+Increases the critical strike damage bonus of your Shock spells by 80%]]></rank>
+            <rank index="5"><![CDATA[Increases the damage done by your Elemental spells and effects by 10%.
+
+Increases the critical strike damage bonus of your Shock spells by 100%]]></rank>
+        </talent>
+        <talent index="13" name="Elemental Precision" icon="ElementalPrecision.png">
+            <rank index="1"><![CDATA[Increases your chance to hit with Fire, Frost and Nature spells by 1%.
+
+Reduces the threat caused by your Fire, Frost and Nature spells by 5%.]]></rank>
+            <rank index="2"><![CDATA[Increases your chance to hit with Fire, Frost and Nature spells by 2%.
+
+Reduces the threat caused by your Fire, Frost and Nature spells by 10%.]]></rank>
+            <rank index="3"><![CDATA[Increases your chance to hit with Fire, Frost and Nature spells by 3%.
+
+Reduces the threat caused by your Fire, Frost and Nature spells by 15%.]]></rank>
+        </talent>
+        <talent index="15" name="Windwall" icon="EarthBind.png" requires="11">
+            <rank index="1"><![CDATA[Gives you a 50% chance to gain the Windwall effect that lasts for 3 sec after being the victim of a melee or ranged critical strike.  The Windwall effect reduces your chance to be hit with melee and ranged attacks by 20%.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 100% chance to gain the Windwall effect that lasts for 3 sec after being the victim of a melee or ranged critical strike.  The Windwall effect reduces your chance to be hit with melee and ranged attacks by 20%.]]></rank>
+        </talent>
+        <talent index="16" name="Elemental Storm" icon="ElementalStorm.png" requires="17">
+            <rank index="1"><![CDATA[Unleash an Elemental Storm at your current target when your Elemental Mastery effect is consumed.  
+
+While channeling, Elemental Storm barrages the target with Fire, Frost and Nature missiles each second for 6 seconds.  Each missile has a base damage equal 75% of your level.]]></rank>
+            <rank index="2"><![CDATA[Unleash an Elemental Storm at your current target when your Elemental Mastery effect is consumed.  
+
+While channeling, Elemental Storm barrages the target with Fire, Frost and Nature missiles each second for 6 seconds.  Each missile has a base damage equal 150% of your level.]]></rank>
+        </talent>
+        <talent index="17" name="Elemental Mastery" icon="ElementalBrand.png">
+            <rank index="1"><![CDATA[When activated, this spell causes your next Fire, Frost, or Nature damage spell to have an increased critical strike chance of 50% and 100% reduced mana cost.
+
+1 minute cooldown.]]></rank>
+        </talent>
+        <talent index="18" name="Lightning Overload" icon="LightningOverload.png" requires="10">
+            <rank index="1"><![CDATA[Gives your Lightning Bolt and Chain Lightning spells a 10% chance to immediately cast a second, similar spell on the same target at no additional cost that causes 33% damage.]]></rank>
+            <rank index="2"><![CDATA[Gives your Lightning Bolt and Chain Lightning spells a 20% chance to immediately cast a second, similar spell on the same target at no additional cost that causes 33% damage.]]></rank>
+        </talent>
+        <talent index="22" name="Lightning Mastery" icon="LightningBolt01.png" requires="18">
+            <rank index="1"><![CDATA[Reduces the casting time of your Lightning Bolt and Chain Lightning spells by 0.2 secs.]]></rank>
+            <rank index="2"><![CDATA[Reduces the casting time of your Lightning Bolt and Chain Lightning spells by 0.4 secs.]]></rank>
+            <rank index="3"><![CDATA[Reduces the casting time of your Lightning Bolt and Chain Lightning spells by 0.6 secs.]]></rank>
+            <rank index="4"><![CDATA[Reduces the casting time of your Lightning Bolt and Chain Lightning spells by 0.8 secs.]]></rank>
+            <rank index="5"><![CDATA[Reduces the casting time of your Lightning Bolt and Chain Lightning spells by 1 sec.]]></rank>
+        </talent>
+        <talent index="25" name="Elemental Brand" icon="WispHeal.png" requires="17">
+            <rank index="1"><![CDATA[When activated, this spell grants you a copy of the Elemental Mastery effect and causes your next Fire, Frost, or Nature damage spell to reduce its target's chance to resist Fire, Frost, and Nature spells by 3% for 1 minute.
+
+1 minute cooldown.]]></rank>
+        </talent>
+    </tree>
+    <tree name="Enhancement">
+        <talent index="0" name="Improved Lightning Shield" icon="LightningShield.png">
+            <rank index="1"><![CDATA[While Lightning Shield is active, your Stormstrike ability and damaging single target Fire, Frost and Nature spells have a 10% chance to restore 4% base Mana plus 100% of your Mana per 5 stat.]]></rank>
+            <rank index="2"><![CDATA[While Lightning Shield is active, your Stormstrike ability and damaging single target Fire, Frost and Nature spells have a 20% chance to restore 4% base Mana plus 100% of your Mana per 5 stat.]]></rank>
+        </talent>
+        <talent index="1" name="Ancestral Knowledge" icon="GrimWard.png">
+            <rank index="1"><![CDATA[Increases your Intellect by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases your Intellect by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases your Intellect by 6%.]]></rank>
+            <rank index="4"><![CDATA[Increases your Intellect by 8%.]]></rank>
+            <rank index="5"><![CDATA[Increases your Intellect by 10%.]]></rank>
+        </talent>
+        <talent index="2" name="Anticipation" icon="MirrorImage.png">
+            <rank index="1"><![CDATA[Increases your Agility and chance to dodge by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases your Agility and chance to dodge by 2%.]]></rank>
+            <rank index="3"><![CDATA[Increases your Agility and chance to dodge by 3%.]]></rank>
+            <rank index="4"><![CDATA[Increases your Agility and chance to dodge by 4%.]]></rank>
+            <rank index="5"><![CDATA[Increases your Agility and chance to dodge by 5%.]]></rank>
+        </talent>
+        <talent index="4" name="Ancestral Ferocity" icon="AncestralGuardian.png">
+            <rank index="1"><![CDATA[Upon entering combat, you gain 5% increased critical strike chance to your offensive spells and melee attacks for 30 seconds.  5 charges.  Each critical strike expends a charge.  This effect is reapplied when you kill a target that yields experience or honor.]]></rank>
+            <rank index="2"><![CDATA[Upon entering combat, you gain 10% increased critical strike chance to your offensive spells and melee attacks for 30 seconds.  5 charges.  Each critical strike expends a charge.  This effect is reapplied when you kill a target that yields experience or honor.]]></rank>
+        </talent>
+        <talent index="5" name="Totemic Wards" icon="NullWard.png">
+            <rank index="1"><![CDATA[Gives your Totems a 10% chance to stun their attackers for 2 secs. when destroyed.]]></rank>
+            <rank index="2"><![CDATA[Gives your Totems a 20% chance to stun their attackers for 2 secs. when destroyed.]]></rank>
+        </talent>
+        <talent index="6" name="Guardian Totems" icon="GuardianTotems.png">
+            <rank index="1"><![CDATA[Increases the armor bonus of your Stoneskin Totem by 5%.
+
+Reduces the cooldown of your Grounding Totem by 1 sec.]]></rank>
+            <rank index="2"><![CDATA[Increases the armor bonus of your Stoneskin Totem by 10%.
+
+Reduces the cooldown of your Grounding Totem by 2 sec.]]></rank>
+        </talent>
+        <talent index="7" name="Improved Weapon Enchantments" icon="EnchantWeapon.png">
+            <rank index="1"><![CDATA[Increases the attack power bonus of Rockbiter Weapon by 8%, the spell damage bonuses of Flametongue Weapon by 15%, the Mana regeneration bonus of Frostbrand Weapon by 10% and the duration of your Windfury Totem weapon enchant by 3 seconds.]]></rank>
+            <rank index="2"><![CDATA[Increases the attack power bonus of Rockbiter Weapon by 16%, the spell damage bonuses of Flametongue Weapon by 30%, the Mana regeneration bonus of Frostbrand Weapon by 20% and the duration of your Windfury Totem weapon enchant by 6 seconds.]]></rank>
+            <rank index="3"><![CDATA[Increases the attack power bonus of Rockbiter Weapon by 25%, the spell damage bonuses of Flametongue Weapon by 50%, the Mana regeneration bonus of Frostbrand Weapon by 30% and the duration of your Windfury Totem weapon enchant by 10 seconds.]]></rank>
+        </talent>
+        <talent index="8" name="Wind Walk" icon="WindWalk.png">
+            <rank index="1"><![CDATA[Renders a friendly target immune to Movement Impairing effects, increases Movement Speed by 25%, and reduces the chance to be hit with melee and ranged attacks by 30%.  Lasts 6 seconds but expires if the affected target attacks an enemy.
+
+10% base Mana.  1 minute cooldown.]]></rank>
+        </talent>
+        <talent index="10" name="Thundering Strikes" icon="ThunderBolt.png">
+            <rank index="1"><![CDATA[Improves your chance to get a critical strike with your weapon attacks and lightning spells by 1%.]]></rank>
+            <rank index="2"><![CDATA[Improves your chance to get a critical strike with your weapon attacks and lightning spells by 2%.]]></rank>
+            <rank index="3"><![CDATA[Improves your chance to get a critical strike with your weapon attacks and lightning spells by 3%.]]></rank>
+            <rank index="4"><![CDATA[Improves your chance to get a critical strike with your weapon attacks and lightning spells by 4%.]]></rank>
+            <rank index="5"><![CDATA[Improves your chance to get a critical strike with your weapon attacks and lightning spells by 5%.]]></rank>
+        </talent>
+        <talent index="11" name="Improved Spirit Wolf" icon="SpiritWolf.png">
+            <rank index="1"><![CDATA[Reduces the cast time of your Ghost Wolf spell by 1.5 secs.
+
+Increases your chance to resist Movement Impairing effects by 20% while in Ghost Wolf form.]]></rank>
+            <rank index="2"><![CDATA[Reduces the cast time of your Ghost Wolf spell by 3 secs.
+
+Increases your chance to resist Movement Impairing effects by 40% while in Ghost Wolf form.]]></rank>
+        </talent>
+        <talent index="12" name="Improved Wind Walk" icon="ImpWindWalk.png" requires="8">
+            <rank index="1"><![CDATA[Reduces the cooldown of your Windwalk spell by 15 sec.]]></rank>
+            <rank index="2"><![CDATA[Reduces the cooldown of your Windwalk spell by 30 sec.]]></rank>
+        </talent>
+        <talent index="13" name="Totemic Might" icon="UndyingStrength.png" requires="5">
+            <rank index="1"><![CDATA[Increases your total stats by 1% and an additional 0.5% for every active Totem.]]></rank>
+            <rank index="2"><![CDATA[Increases your total stats by 2% and an additional 1% for every active Totem.]]></rank>
+            <rank index="3"><![CDATA[Increases your total stats by 3% and an additional 1.5% for every active Totem.]]></rank>
+            <rank index="4"><![CDATA[Increases your total stats by 4% and an additional 2% for every active Totem.]]></rank>
+            <rank index="5"><![CDATA[Increases your total stats by 5% and an additional 2.5% for every active Totem.]]></rank>
+        </talent>
+        <talent index="15" name="Weapon Mastery" icon="SwiftStrike.png">
+            <rank index="1"><![CDATA[Increases your chance to hit with melee weapons by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases your chance to hit with melee weapons by 2%.]]></rank>
+            <rank index="3"><![CDATA[Increases your chance to hit with melee weapons by 3%.]]></rank>
+        </talent>
+        <talent index="16" name="Polarizing Strikes" icon="MaelstromWeapon.png">
+            <rank index="1"><![CDATA[Gives your melee attacks a 33% chance to build-up Static Charge.  Lasts 20 secs. and stacks up to 8 times.
+
+Static Charge causes your next Stormstrike, Shock or lightning spell to consume all Static Charges and restore Mana equal to 5% of the damage done for each stack.]]></rank>
+            <rank index="2"><![CDATA[Gives your melee attacks a 66% chance to build-up Static Charge.  Lasts 20 secs. and stacks up to 8 times.
+
+Static Charge causes your next Stormstrike, Shock or lightning spell to consume all Static Charges and restore Mana equal to 5% of the damage done for each stack.]]></rank>
+            <rank index="3"><![CDATA[Gives your melee attacks a 100% chance to build-up Static Charge.  Lasts 20 secs. and stacks up to 8 times.
+
+Static Charge causes your next Stormstrike, Shock or lightning spell to consume all Static Charges and restore Mana equal to 5% of the damage done for each stack.]]></rank>
+        </talent>
+        <talent index="17" name="Stormstrike (Rank 1)" icon="SealOfMight.png">
+            <rank index="1"><![CDATA[Gives you an extra attack and enchants your party members main-hand weapons with the effect of Windfury Totem (Rank 1), if they are within 30 yards of you.
+
+200 Mana.  15 second cooldown.]]></rank>
+        </talent>
+        <talent index="19" name="Spirit Weapons" icon="Feint.png" requires="15">
+            <rank index="1"><![CDATA[Increases a friendly target's chance to hit with melee attacks by 3% and causes 10% of all melee threat you generate to be transferred to the target.  Can't be cast on self.  Lasts 5 minutes.
+
+20% of base Mana.]]></rank>
+        </talent>
+        <talent index="21" name="Shamanistic Might" icon="BlessingOfStamina.png">
+            <rank index="1"><![CDATA[Increases your spell critical strike chance by 20% of your melee critical strike chance.
+
+Increases your Strength by 5% of your Intellect and Agility.]]></rank>
+            <rank index="2"><![CDATA[Increases your spell critical strike chance by 33% of your melee critical strike chance.
+
+Increases your Strength by 10% of your Intellect and Agility.]]></rank>
+        </talent>
+        <talent index="22" name="Flurry" icon="GhoulFrenzy.png" requires="10">
+            <rank index="1"><![CDATA[Increases your attack speed by 10% for your next 3 swings after dealing a critical strike.]]></rank>
+            <rank index="2"><![CDATA[Increases your attack speed by 20% for your next 3 swings after dealing a critical strike.]]></rank>
+            <rank index="3"><![CDATA[Increases your attack speed by 30% for your next 3 swings after dealing a critical strike.]]></rank>
+        </talent>
+        <talent index="25" name="Earthen Bulwark" icon="GreaterStoneskin.png">
+            <rank index="1"><![CDATA[Covers you with protective plates, granting you 10 charges of Earthen Bulwark which reduce all non-periodic damage taken by 3% for every charge.  Each hit has a chance to remove 1 charge, depending on the damage taken.  Lasts 3 minutes.
+
+25% base Mana.  3 minute cooldown.]]></rank>
+        </talent>
+    </tree>
+    <tree name="Restoration">
+        <talent index="1" name="Tidal Focus" icon="ManaRecharge.png">
+            <rank index="1"><![CDATA[Increases Mana regenerated every 5 seconds by 10% of your level.
+
+Reduces the Mana cost of your healing and lightning spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases Mana regenerated every 5 seconds by 15% of your level.
+
+Reduces the Mana cost of your healing and lightning spells by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases Mana regenerated every 5 seconds by 20% of your level.
+
+Reduces the Mana cost of your healing and lightning spells by 6%.]]></rank>
+            <rank index="4"><![CDATA[Increases Mana regenerated every 5 seconds by 25% of your level.
+
+Reduces the Mana cost of your healing and lightning spells by 8%.]]></rank>
+            <rank index="5"><![CDATA[Increases Mana regenerated every 5 seconds by 30% of your level.
+
+Reduces the Mana cost of your healing and lightning spells by 10%.]]></rank>
+        </talent>
+        <talent index="2" name="Shamanistic Visions" icon="BlessingOfTheEternals.png">
+            <rank index="1"><![CDATA[Reduces the cooldown of all your spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the cooldown of all your spells by 4%.]]></rank>
+            <rank index="3"><![CDATA[Reduces the cooldown of all your spells by 6%.]]></rank>
+            <rank index="4"><![CDATA[Reduces the cooldown of all your spells by8%.]]></rank>
+            <rank index="5"><![CDATA[Reduces the cooldown of all your spells by 10%.]]></rank>
+        </talent>
+        <talent index="5" name="Healing Focus" icon="ResistMagic.png">
+            <rank index="1"><![CDATA[Gives you a 20% chance to avoid interruption caused by damage while casting any healing spell.
+
+Reduces the casting time of your Healing Wave spell by 0.1 sec.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 40% chance to avoid interruption caused by damage while casting any healing spell.
+
+Reduces the casting time of your Healing Wave spell by 0.2 sec.]]></rank>
+            <rank index="3"><![CDATA[Gives you a 60% chance to avoid interruption caused by damage while casting any healing spell.
+
+Reduces the casting time of your Healing Wave spell by 0.3 sec.]]></rank>
+            <rank index="4"><![CDATA[Gives you a 80% chance to avoid interruption caused by damage while casting any healing spell.
+
+Reduces the casting time of your Healing Wave spell by 0.4 sec.]]></rank>
+            <rank index="5"><![CDATA[Gives you a 100% chance to avoid interruption caused by damage while casting any healing spell.
+
+Reduces the casting time of your Healing Wave spell by 0.5 sec.]]></rank>
+        </talent>
+        <talent index="6" name="Totemic Focus" icon="MoonGlow.png">
+            <rank index="1"><![CDATA[Reduces the Mana cost of your totems by 4%.
+
+Reduces the chance of your Cleansing Wave spell consuming an active Water Totem by 5%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the Mana cost of your totems by 8%.
+
+Reduces the chance of your Cleansing Wave spell consuming an active Water Totem by 10%.]]></rank>
+            <rank index="3"><![CDATA[Reduces the Mana cost of your totems by 12%.
+
+Reduces the chance of your Cleansing Wave spell consuming an active Water Totem by 15%.]]></rank>
+            <rank index="4"><![CDATA[Reduces the Mana cost of your totems by 16%.
+
+Reduces the chance of your Cleansing Wave spell consuming an active Water Totem by 20%.]]></rank>
+            <rank index="5"><![CDATA[Reduces the Mana cost of your totems by 20%.
+
+Reduces the chance of your Cleansing Wave spell consuming an active Water Totem by 25%.]]></rank>
+        </talent>
+        <talent index="8" name="Ancestral Protection" icon="AstralShift.png">
+            <rank index="1"><![CDATA[Cross into the spirit realm for 2 seconds whenever your Health drops below 35%, reducing all damage taken by 33%.  This effect cannot occur more than once every 60 secs. and expires if you attack an enemy.]]></rank>
+            <rank index="2"><![CDATA[Cross into the spirit realm for 3.5 seconds whenever your Health drops below 35%, reducing all damage taken by 33%.  This effect cannot occur more than once every 60 secs. and expires if you attack an enemy.]]></rank>
+            <rank index="3"><![CDATA[Cross into the spirit realm for 5 seconds whenever your Health drops below 35%, reducing all damage taken by 33%.  This effect cannot occur more than once every 60 secs. and expires if you attack an enemy.]]></rank>
+            <rank index="4"><![CDATA[Cross into the spirit realm for 6.5 seconds whenever your Health drops below 35%, reducing all damage taken by 33%.  This effect cannot occur more than once every 60 secs. and expires if you attack an enemy.]]></rank>
+            <rank index="5"><![CDATA[Cross into the spirit realm for 8 seconds whenever your Health drops below 35%, reducing all damage taken by 33%.  This effect cannot occur more than once every 60 secs. and expires if you attack an enemy.]]></rank>
+        </talent>
+        <talent index="9" name="Healing Overflow" icon="GiftoftheWaterSpirit.png" requires="5">
+            <rank index="1"><![CDATA[Overhealing done by your Healing Wave and Lesser Healing Wave spells gets converted to a heal over time effect, lasting 12 seconds and healing for 30% of the overhealing done.]]></rank>
+            <rank index="2"><![CDATA[Overhealing done by your Healing Wave and Lesser Healing Wave spells gets converted to a heal over time effect, lasting 12 seconds and healing for 60% of the overhealing done.]]></rank>
+        </talent>
+        <talent index="10" name="Ancestral Swiftness" icon="AncestralBlessing.png">
+            <rank index="1"><![CDATA[Reduces the casting time of your next Nature spell by 0.25 secs. after being the victim of a critical strike.  This effect can stack up to 2 times.]]></rank>
+            <rank index="2"><![CDATA[Reduces the casting time of your next Nature spell by 0.25 secs after being the victim of a critical strike.  This effect can stack up to 4 times.]]></rank>
+        </talent>
+        <talent index="11" name="Cleansing Wave (Rank 1)" icon="SpiritualCleansing.png">
+            <rank index="1"><![CDATA[Call upon the waters of purification, removing 1 Curse, 1 Magic, 1 Poison and 1 Disease effect from the target.
+
+Cleansing Wave requires a Water Totem to be active and has a 50% chance on cast to exhaust the totem's power.
+
+13% base Mana.]]></rank>
+        </talent>
+        <talent index="12" name="Strength of the Tides" icon="AncestralAwakening.png" requires="13">
+            <rank index="1"><![CDATA[Increases your spell power by up to 25% of your total Mana per 5 second stat.]]></rank>
+            <rank index="2"><![CDATA[Increases your spell power by up to 50% of your total Mana per 5 second stat.]]></rank>
+            <rank index="3"><![CDATA[Increases your spell power by up to 75% of your total Mana per 5 second stat.]]></rank>
+        </talent>
+        <talent index="13" name="Tidal Mastery" icon="Tranquility.png">
+            <rank index="1"><![CDATA[Increases Mana regenerated every 5 seconds by 20% of your level.
+
+Increases the critical effect chance of your healing and lightning spells by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases Mana regenerated every 5 seconds by 40% of your level.
+
+Increases the critical effect chance of your healing and lightning spells by 2%.]]></rank>
+            <rank index="3"><![CDATA[Increases Mana regenerated every 5 seconds by 60% of your level.
+
+Increases the critical effect chance of your healing and lightning spells by 3%.]]></rank>
+        </talent>
+        <talent index="15" name="Nature's Guidance" icon="NaturesGuidance.png">
+            <rank index="1"><![CDATA[Increases your chance to hit with melee attacks and Nature spells by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases your chance to hit with melee attacks and Nature spells by 2%.]]></rank>
+            <rank index="3"><![CDATA[Increases your chance to hit with melee attacks and Nature spells by 3%.]]></rank>
+        </talent>
+        <talent index="16" name="Improved Invigorating Stream Totem" icon="ManaRegenTotem.png">
+            <rank index="1"><![CDATA[Increases the effects of your Invigorating Spring Totem by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the effects of your Invigorating Spring Totem by 20%.]]></rank>
+        </talent>
+        <talent index="18" name="Nature's Swiftness" icon="RavenForm.png" requires="10">
+            <rank index="1"><![CDATA[When activated, your next Nature spell with a casting time less than 10 sec. becomes an instant cast spell.
+
+3 minute cooldown.]]></rank>
+        </talent>
+        <talent index="19" name="Improved Nature's Swiftness" icon="ImpNatureSwiftness2.png" requires="18">
+            <rank index="1"><![CDATA[Reduces the cooldown of Nature's Swiftness by 30 secs.
+
+Reduces the casting time of your next spell by 25% when your Nature's Swiftness effect is used up.]]></rank>
+            <rank index="2"><![CDATA[Reduces the cooldown of Nature's Swiftness by 60 secs.
+
+Reduces the casting time of your next 2 spells by 25% when your Nature's Swiftness effect is used up.]]></rank>
+        </talent>
+        <talent index="22" name="Call of Water" icon="WizardMark.png">
+            <rank index="1"><![CDATA[Gives your Water Totems a chance, guaranteed for the Mana Tide Totem, to generate 1 Elemental Droplet for you every 5 seconds.
+
+Elemental Droplets stack up to 12 times and last 30 seconds, with each stack increasing your healing power and Frost spell power by up to 4% of your level.]]></rank>
+            <rank index="2"><![CDATA[Gives your Water Totems a chance, guaranteed for the Mana Tide Totem, to generate 1 Elemental Droplet for you every 5 seconds.
+
+Elemental Droplets stack up to 12 times and last 30 seconds, with each stack increasing your healing power and Frost spell power by up to 8% of your level.]]></rank>
+            <rank index="3"><![CDATA[Gives your Water Totems a chance, guaranteed for the Mana Tide Totem, to generate 1 Elemental Droplet for you every 5 seconds.
+
+Elemental Droplets stack up to 12 times and last 30 seconds, with each stack increasing your healing power and Frost spell power by up to 12% of your level.]]></rank>
+            <rank index="4"><![CDATA[Gives your Water Totems a chance, guaranteed for the Mana Tide Totem, to generate 1 Elemental Droplet for you every 5 seconds.
+
+Elemental Droplets stack up to 12 times and last 30 seconds, with each stack increasing your healing power and Frost spell power by up to 16% of your level.]]></rank>
+            <rank index="5"><![CDATA[Gives your Water Totems a chance, guaranteed for the Mana Tide Totem, to generate 1 Elemental Droplet for you every 5 seconds.
+
+Elemental Droplets stack up to 12 times and last 30 seconds, with each stack increasing your healing power and Frost spell power by up to 20% of your level.]]></rank>
+        </talent>
+        <talent index="25" name="Mana Tide Totem (Rank 1)" icon="SummonWaterElemental.png" requires="13">
+            <rank index="1"><![CDATA[Summons a Mana Tide Totem with 5 health at the feet of the caster for 20 sec. that increases group members Mana regenerated every 5 seconds by 125, if they are within 30 yards of the totem.
+
+5 minute cooldown.]]></rank>
+        </talent>
+    </tree>
+    <notes>
+        <note index="0" name="General" icon="Book_11.png"><![CDATA[Parry, Two Handed Axes and Two Handed Maces skills made baseline.
+
+Strength of Earth Totem, Windwall Totem, Flametongue Totem - REMOVED
+
+Radius of totems that affect friendly targets increased to 30 yards.
+
+Disease Cleansing Totem, Poison Cleansing Totem - Combined into one totem.  (Cleansing Totem)
+
+Mana Spring Totem, Healing Spring Totem - Combined into one totem.  (Invigorating Spring Totem)
+
+Chain Heal - Now has a cooldown of 6 secs.
+
+Stoneskin Totem - Now increases armor instead of reducing physical damage taken.]]></note>
+        <note index="1" name="Clarifications" icon="Spy.png"><![CDATA[Shaman base stats at level 60:
+
+Health 1280
+Mana 1520
+
+STR 88
+AGI 53
+STAM 97
+INT 86
+SPI 102]]></note>
+        <note index="9" name="Rockbiter Weapon (Final Rank)" icon="RockBiter.png"><![CDATA[Imbue the Shaman's weapon, increasing attack power by 376 and melee critical strike chance by 6%.  Lasts 5 minutes.]]></note>
+        <note index="11" name="Flametongue Weapon (Final Rank)" icon="FlameTounge.png"><![CDATA[Imbue the Shaman's weapon with fire, increasing the damage done by your Fire, Frost, Nature spells and effects by 45.  Each hit causes 37 to 112 additional Fire damage, based on the speed of the weapon.  Lasts for 5 minutes.]]></note>
+        <note index="12" name="(NEW) Totemic Recall" icon="TotemicRecall.png"><![CDATA[Returns your totems to the earth, giving you 25% of the mana required to cast each totem destroyed by Totemic Recall.
+
+30 second cooldown.]]></note>
+        <note index="13" name="Frostbrand Weapon (Final Rank)" icon="FrostBrand.png"><![CDATA[Imbue the Shaman's weapon with frost, restoring 25 Mana to you every 5 seconds.  Each hit has a chance of causing 187 additional Frost damage and slowing the target's movement speed by 25% for 8 sec.  Lasts for 5 minutes]]></note>
+    </notes>
+</class>

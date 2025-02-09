@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="585.0" prefWidth="974" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" >
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu text="Program">
+          <items>
+             <MenuItem fx:id="exit" text="Exit" onAction="#exit">
+             </MenuItem>
+          </items>
+        </Menu>
+        <Menu>
+           <graphic>
+              <Label fx:id="switcher" text="Switch to ℭuṩtoⱮiⱿeᵲ" onMouseClicked="#switchCustomizer">
+              </Label>
+           </graphic>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane fx:id="main" prefHeight="539" prefWidth="943" stylesheets="@/resources/View/CSS/main.css" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="warrior" styleClass="class-btn" contentDisplay="CENTER" layoutX="16.0" layoutY="495.0" prefHeight="50.0" prefWidth="50.0" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/Interface/Class_Icons/warrior.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.55" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="rogue" styleClass="class-btn" layoutX="81.0" layoutY="495.0" prefHeight="50.0" prefWidth="50.0" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/Interface/Class_Icons/rogue.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.55" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="hunter" styleClass="class-btn" layoutX="147.0" layoutY="495.0" prefHeight="50.0" prefWidth="50.0" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/Interface/Class_Icons/hunter.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.55" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="paladin" styleClass="class-btn" layoutX="212.0" layoutY="495.0" prefHeight="50.0" prefWidth="50.0" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/Interface/Class_Icons/paladin.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.55" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="shaman" styleClass="class-btn" layoutX="277.0" layoutY="495.0" prefHeight="50.0" prefWidth="50.0" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/Interface/Class_Icons/shaman.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.55" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="mage" styleClass="class-btn" layoutX="342.0" layoutY="495.0" prefHeight="50.0" prefWidth="50.0" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/Interface/Class_Icons/mage.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.55" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="warlock" styleClass="class-btn" layoutX="408.0" layoutY="495.0" prefHeight="50.0" prefWidth="50.0" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/Interface/Class_Icons/warlock.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.55" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="priest" styleClass="class-btn" layoutX="473.0" layoutY="495.0" prefHeight="50.0" prefWidth="50.0" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/Interface/Class_Icons/priest.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.55" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="druid" styleClass="class-btn" layoutX="538.0" layoutY="495.0" prefHeight="50.0" prefWidth="50.0" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/Interface/Class_Icons/druid.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.55" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label fx:id="pointsInTree1" styleClass="tree-points" alignment="CENTER_RIGHT" layoutX="246.0" layoutY="22.0" text="0"/>
+            <TitledPane fx:id="tree1" styleClass="calculator" alignment="CENTER" animated="false" collapsible="false" layoutX="14.0" layoutY="14.0" prefHeight="451.0" prefWidth="258.0" text="Tree 1">
+               <content>
+                  <HBox fx:id="treeHBox1" prefHeight="451.0" prefWidth="262.0">
+                     <children>
+                        <GridPane fx:id="treeGrid1" prefHeight="473.0" prefWidth="272.0">
+                          <columnConstraints>
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </HBox>
+               </content>
+            </TitledPane>
+            <Label fx:id="pointsInTree2" styleClass="tree-points" alignment="CENTER_RIGHT" layoutX="506.0" layoutY="22.0" text="0"/>
+            <TitledPane fx:id="tree2" styleClass="calculator" alignment="CENTER" animated="false" collapsible="false" layoutX="274.0" layoutY="14.0" prefHeight="451.0" prefWidth="258.0" text="Tree 2">
+               <content>
+                  <HBox fx:id="treeHBox2" prefHeight="451.0" prefWidth="262.0">
+                     <children>
+                        <GridPane fx:id="treeGrid2" prefHeight="473.0" prefWidth="272.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </HBox>
+               </content>
+            </TitledPane>
+            <Label fx:id="pointsInTree3" styleClass="tree-points" alignment="CENTER_RIGHT" layoutX="766.0" layoutY="22.0" text="0"/>
+            <TitledPane fx:id="tree3" styleClass="calculator" alignment="CENTER" animated="false" collapsible="false" layoutX="534.0" layoutY="14.0" prefHeight="451.0" prefWidth="258.0" text="Tree 3">
+               <content>
+                  <HBox fx:id="treeHBox3" prefHeight="451.0" prefWidth="262.0">
+                     <children>
+                        <GridPane fx:id="treeGrid3" prefHeight="473.0" prefWidth="272.0">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                     </children>
+                  </HBox>
+               </content>
+            </TitledPane>
+            <TitledPane fx:id="notes" styleClass="calculator" alignment="CENTER" animated="false" collapsible="false" layoutX="794.0" layoutY="14.0" prefHeight="451.0" prefWidth="166.0" text="Notes">
+               <content>
+                  <HBox fx:id="noteHBox" prefHeight="451.0" prefWidth="88.0">
+                     <children>
+                        <GridPane fx:id="noteGrid" prefHeight="473.0" prefWidth="272.0" alignment="CENTER">
+                           <columnConstraints>
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                              <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <HBox.margin>
+                              <Insets left="24.0" />
+                           </HBox.margin>
+                        </GridPane>
+                     </children>
+                  </HBox>
+               </content>
+            </TitledPane>
+            <Separator layoutY="476.0" prefHeight="6.0" prefWidth="974.0" />
+            <Pane styleClass="points-pane" layoutX="640.0" layoutY="495.0" prefHeight="50.0" prefWidth="105.0" >
+               <children>
+                  <Label layoutX="18.0" layoutY="-8.0" styleClass="pane-title-label" text="Talent Points" />
+                  <Label fx:id="talentPoints" alignment="CENTER" layoutX="35.0" layoutY="13.0" prefWidth="35" text="00" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane layoutX="794.0" layoutY="495.0" prefHeight="50.0" prefWidth="166.0" styleClass="custom-set-pane">
+               <children>
+                  <Label layoutX="35.0" layoutY="-8.0" styleClass="pane-title-label" text="Customization Set" />
+                  <ChoiceBox fx:id="customizationSetMenu" layoutX="8.0" layoutY="10.0" prefWidth="150.0" />
+               </children>
+            </Pane>
+         </children>
+    </AnchorPane>
+  </children>
+</VBox>

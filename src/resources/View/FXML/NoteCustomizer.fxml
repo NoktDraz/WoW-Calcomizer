@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<VBox prefHeight="373" prefWidth="600.0" stylesheets="@/resources/View/CSS/modal.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane fx:id="anchor" prefHeight="364" prefWidth="600.0">
+         <children>
+            <ImageView fx:id="icon" fitHeight="45.0" fitWidth="45.0" layoutX="16.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#chooseIcon">
+               <image>
+                  <Image url="@/resources/Interface/missing_icon.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="name" layoutX="77.0" layoutY="23.0" prefHeight="25.0" prefWidth="230.0" promptText="&lt;Title Note&gt;" />
+            <Button fx:id="finish" layoutX="324.0" layoutY="16.0" contentDisplay="CENTER" mnemonicParsing="false" onAction="#finish" prefHeight="45.0" prefWidth="116.0" text="F I N I S H">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <ImageView fx:id="finishGlyph" fitHeight="32.0" fitWidth="32.0" opacity="0.5" pickOnBounds="true" preserveRatio="true" visible="false" />
+               </graphic>
+            </Button>
+            <Button fx:id="cancel" layoutX="458.0" layoutY="16.0" contentDisplay="CENTER" mnemonicParsing="false" onAction="#closeWindow" prefHeight="45.0" prefWidth="75.0" text="CANCEL">
+               <graphic>
+                  <ImageView fx:id="cancelGlyph" fitHeight="36.0" fitWidth="40.0" opacity="0.5" pickOnBounds="true" visible="false" />
+               </graphic>
+            </Button>
+            <Button fx:id="delete" alignment="CENTER" contentDisplay="CENTER" layoutX="534.0" layoutY="16.0" mnemonicParsing="false" onAction="#delete" prefHeight="45.0" prefWidth="45.0">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/Interface/delete.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Separator layoutX="-6.0" layoutY="79.0" prefHeight="0.0" prefWidth="600.0" />
+            <Label layoutX="15.0" layoutY="86.0" text="Description" />
+            <TextArea fx:id="description" layoutX="12.0" layoutY="108.0" prefHeight="253.0" prefWidth="576.0" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

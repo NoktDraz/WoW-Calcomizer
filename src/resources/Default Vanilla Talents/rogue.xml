@@ -1,0 +1,297 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<class name="ROGUE">
+    <tree name="Assassination">
+        <talent index="0" name="Improved Eviscerate" icon="Eviscerate.png">
+            <rank index="1"><![CDATA[Increases the damage done by your Eviscerate ability by 5%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage done by your Eviscerate ability by 10%.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage done by your Eviscerate ability by 15%.]]></rank>
+        </talent>
+        <talent index="1" name="Remorseless Attacks" icon="FiegnDead.png">
+            <rank index="1"><![CDATA[After killing an opponent that yields experience or honor, gives you a 20% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, or Ghostly Strike.  Lasts 20 sec.]]></rank>
+            <rank index="2"><![CDATA[After killing an opponent that yields experience or honor, gives you a 40% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, or Ghostly Strike.  Lasts 20 sec.]]></rank>
+        </talent>
+        <talent index="2" name="Malice" icon="BloodRage.png">
+            <rank index="1"><![CDATA[Increases your critical strike chance by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases your critical strike chance by 2%.]]></rank>
+            <rank index="3"><![CDATA[Increases your critical strike chance by 3%.]]></rank>
+            <rank index="4"><![CDATA[Increases your critical strike chance by 4%.]]></rank>
+            <rank index="5"><![CDATA[Increases your critical strike chance by 5%.]]></rank>
+        </talent>
+        <talent index="4" name="Ruthlessness" icon="Disembowel_1.png">
+            <rank index="1"><![CDATA[Gives your finishing moves a 20% chance to add a combo point to your target.]]></rank>
+            <rank index="2"><![CDATA[Gives your finishing moves a 40% chance to add a combo point to your target.]]></rank>
+            <rank index="3"><![CDATA[Gives your finishing moves a 60% chance to add a combo point to your target.]]></rank>
+        </talent>
+        <talent index="5" name="Murder" icon="DeathScream.png">
+            <rank index="1"><![CDATA[Increases all damage caused against Humanoid, Giant, Beast and Dragonkin targets by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases all damage caused against Humanoid, Giant, Beast and Dragonkin targets by 2%.]]></rank>
+        </talent>
+        <talent index="7" name="Improved Slice and Dice" icon="SliceDice.png">
+            <rank index="1"><![CDATA[Increases the duration of your Slice and Dice ability by 15%.]]></rank>
+            <rank index="2"><![CDATA[Increases the duration of your Slice and Dice ability by 30%.]]></rank>
+            <rank index="3"><![CDATA[Increases the duration of your Slice and Dice ability by 45%.]]></rank>
+        </talent>
+        <talent index="8" name="Relentless Strikes" icon="DecisiveStrike.png">
+            <rank index="1"><![CDATA[Your finishing moves have a 20% chance per combo point to restore 25 energy.]]></rank>
+        </talent>
+        <talent index="9" name="Improved Expose Armor" icon="Riposte.png">
+            <rank index="1"><![CDATA[Increases the armor reduced by your Expose Armor ability by 25%.]]></rank>
+            <rank index="2"><![CDATA[Increases the armor reduced by your Expose Armor ability by 50%.]]></rank>
+        </talent>
+        <talent index="10" name="Lethality" icon="CriticalStrike.png" requires="2">
+            <rank index="1"><![CDATA[Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, and Hemorrhage abilities by 6%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, and Hemorrhage abilities by 12%.]]></rank>
+            <rank index="3"><![CDATA[Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, and Hemorrhage abilities by 18%.]]></rank>
+            <rank index="4"><![CDATA[Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, and Hemorrhage abilities by 24%.]]></rank>
+            <rank index="5"><![CDATA[Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, and Hemorrhage abilities by 30%.]]></rank>
+        </talent>
+        <talent index="13" name="Vile Poisons" icon="FeignDeath.png">
+            <rank index="1"><![CDATA[Increases the damage dealt by your poisons by 4% and gives your poisons an additional 8% chance to resist dispel effects.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage dealt by your poisons by 8% and gives your poisons an additional 16% chance to resist dispel effects.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage dealt by your poisons by 12% and gives your poisons an additional 24% chance to resist dispel effects.]]></rank>
+            <rank index="4"><![CDATA[Increases the damage dealt by your poisons by 16% and gives your poisons an additional 32% chance to resist dispel effects.]]></rank>
+            <rank index="5"><![CDATA[Increases the damage dealt by your poisons by 20% and gives your poisons an additional 40% chance to resist dispel effects.]]></rank>
+        </talent>
+        <talent index="14" name="Improved Poisons" icon="POISONS.png">
+            <rank index="1"><![CDATA[Increases the chance to apply poisons to your target by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the chance to apply poisons to your target by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases the chance to apply poisons to your target by 6%.]]></rank>
+            <rank index="4"><![CDATA[Increases the chance to apply poisons to your target by 8%.]]></rank>
+            <rank index="5"><![CDATA[Increases the chance to apply poisons to your target by 10%.]]></rank>
+        </talent>
+        <talent index="17" name="Cold Blood" icon="Lament.png">
+            <rank index="1"><![CDATA[When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, or Eviscerate by 100%.
+
+3 minute cooldown.]]></rank>
+        </talent>
+        <talent index="18" name="Improved Kidney Shot" icon="KidneyShot.png">
+            <rank index="1"><![CDATA[While affected by your Kidney Shot ability, the target receives an additional 3% damage from all sources.]]></rank>
+            <rank index="2"><![CDATA[While affected by your Kidney Shot ability, the target receives an additional 6% damage from all sources.]]></rank>
+            <rank index="3"><![CDATA[While affected by your Kidney Shot ability, the target receives an additional 9% damage from all sources.]]></rank>
+        </talent>
+        <talent index="21" name="Seal Fate" icon="ChillTouch.png" requires="17">
+            <rank index="1"><![CDATA[Your critical strikes from abilities that add combo points  have a 20% chance to add an additional combo point.]]></rank>
+            <rank index="2"><![CDATA[Your critical strikes from abilities that add combo points  have a 40% chance to add an additional combo point.]]></rank>
+            <rank index="3"><![CDATA[Your critical strikes from abilities that add combo points  have a 60% chance to add an additional combo point.]]></rank>
+            <rank index="4"><![CDATA[Your critical strikes from abilities that add combo points  have a 80% chance to add an additional combo point.]]></rank>
+            <rank index="5"><![CDATA[Your critical strikes from abilities that add combo points  have a 100% chance to add an additional combo point.]]></rank>
+        </talent>
+        <talent index="25" name="Vigor" icon="EarthBindTotem.png">
+            <rank index="1"><![CDATA[Increases your maximum Energy by 10.]]></rank>
+        </talent>
+    </tree>
+    <tree name="Combat">
+        <talent index="0" name="Improved Gouge" icon="Gouge.png">
+            <rank index="1"><![CDATA[Increases the effect duration of your Gouge ability by 0.5 sec.]]></rank>
+            <rank index="2"><![CDATA[Increases the effect duration of your Gouge ability by 1 sec.]]></rank>
+            <rank index="3"><![CDATA[Increases the effect duration of your Gouge ability by 1.5 sec.]]></rank>
+        </talent>
+        <talent index="1" name="Improved Sinister Strike" icon="RitualOfSacrifice.png">
+            <rank index="1"><![CDATA[Reduces the Energy cost of your Sinister Strike ability by 3.]]></rank>
+            <rank index="2"><![CDATA[Reduces the Energy cost of your Sinister Strike ability by 5.]]></rank>
+        </talent>
+        <talent index="2" name="Lightning Reflexes" icon="Invisibilty.png">
+            <rank index="1"><![CDATA[Increases your Dodge chance by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases your Dodge chance by 2%.]]></rank>
+            <rank index="3"><![CDATA[Increases your Dodge chance by 3%.]]></rank>
+            <rank index="4"><![CDATA[Increases your Dodge chance by 4%.]]></rank>
+            <rank index="5"><![CDATA[Increases your Dodge chance by 5%.]]></rank>
+        </talent>
+        <talent index="4" name="Improved Backstab" icon="BackStab.png">
+            <rank index="1"><![CDATA[Increases the critical strike chance of your Backstab ability by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike chance of your Backstab ability by 20%.]]></rank>
+            <rank index="3"><![CDATA[Increases the critical strike chance of your Backstab ability by 30%.]]></rank>
+        </talent>
+        <talent index="5" name="Deflection" icon="Parry.png">
+            <rank index="1"><![CDATA[Increases your Parry chance by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases your Parry chance by 2%.]]></rank>
+            <rank index="3"><![CDATA[Increases your Parry chance by 3%.]]></rank>
+            <rank index="4"><![CDATA[Increases your Parry chance by 4%.]]></rank>
+            <rank index="5"><![CDATA[Increases your Parry chance by 5%.]]></rank>
+        </talent>
+        <talent index="6" name="Precision" icon="Marksmanship.png">
+            <rank index="1"><![CDATA[Increases your chance to hit with melee weapons by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases your chance to hit with melee weapons by 2%.]]></rank>
+            <rank index="3"><![CDATA[Increases your chance to hit with melee weapons by 3%.]]></rank>
+            <rank index="4"><![CDATA[Increases your chance to hit with melee weapons by 4%.]]></rank>
+            <rank index="5"><![CDATA[Increases your chance to hit with melee weapons by 5%.]]></rank>
+        </talent>
+        <talent index="8" name="Endurance" icon="ShadowWard.png">
+            <rank index="1"><![CDATA[Reduces the cooldown of your Sprint and Evasion abilities by 45 sec.]]></rank>
+            <rank index="2"><![CDATA[Reduces the cooldown of your Sprint and Evasion abilities by 1.5 min.]]></rank>
+        </talent>
+        <talent index="9" name="Riposte" icon="Challange.png" requires="5">
+            <rank index="1"><![CDATA[A strike that becomes active after parrying an opponent's attack.  This attack deals 150% weapon damage and disarms the target for 6 sec.
+
+10 Energy.  6 second cooldown.]]></rank>
+        </talent>
+        <talent index="11" name="Improved Sprint" icon="Sprint.png">
+            <rank index="1"><![CDATA[Gives a 50% chance to remove all movement impairing effects when you activate your Sprint ability.]]></rank>
+            <rank index="2"><![CDATA[Gives a 100% chance to remove all movement impairing effects when you activate your Sprint ability.]]></rank>
+        </talent>
+        <talent index="12" name="Improved Kick" icon="Kick.png">
+            <rank index="1"><![CDATA[Gives your Kick ability a 50% chance to silence the target for 2 sec.]]></rank>
+            <rank index="2"><![CDATA[Gives your Kick ability a 100% chance to silence the target for 2 sec.]]></rank>
+        </talent>
+        <talent index="13" name="Dagger Specialization" icon="Dagger.png">
+            <rank index="1"><![CDATA[Increases your chance to get a critical strike with Daggers by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases your chance to get a critical strike with Daggers by 2%.]]></rank>
+            <rank index="3"><![CDATA[Increases your chance to get a critical strike with Daggers by 3%.]]></rank>
+            <rank index="4"><![CDATA[Increases your chance to get a critical strike with Daggers by 4%.]]></rank>
+            <rank index="5"><![CDATA[Increases your chance to get a critical strike with Daggers by 5%.]]></rank>
+        </talent>
+        <talent index="14" name="Dual Wield Specialization" icon="DualWield.png" requires="6">
+            <rank index="1"><![CDATA[Increases the damage done by your off-hand weapon by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage done by your off-hand weapon by 20%.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage done by your off-hand weapon by 30%.]]></rank>
+            <rank index="4"><![CDATA[Increases the damage done by your off-hand weapon by 40%.]]></rank>
+            <rank index="5"><![CDATA[Increases the damage done by your off-hand weapon by 50%.]]></rank>
+        </talent>
+        <talent index="16" name="Mace Specialization" icon="Mace.png">
+            <rank index="1"><![CDATA[Increases your skill with Maces by 1, and gives you a 1% chance to stun your target for 3 sec with a mace.]]></rank>
+            <rank index="2"><![CDATA[Increases your skill with Maces by 2, and gives you a 2% chance to stun your target for 3 sec with a mace.]]></rank>
+            <rank index="3"><![CDATA[Increases your skill with Maces by 3, and gives you a 3% chance to stun your target for 3 sec with a mace.]]></rank>
+            <rank index="4"><![CDATA[Increases your skill with Maces by 4, and gives you a 4% chance to stun your target for 3 sec with a mace.]]></rank>
+            <rank index="5"><![CDATA[Increases your skill with Maces by 5, and gives you a 6% chance to stun your target for 3 sec with a mace.]]></rank>
+        </talent>
+        <talent index="17" name="Blade Flurry" icon="PunishingBlow.png">
+            <rank index="1"><![CDATA[Increases your attack speed by 20%.  In addition, attacks strike an additional nearby opponent.  Lasts 15 sec.
+
+25 Energy.  2 minute cooldown.]]></rank>
+        </talent>
+        <talent index="18" name="Sword Specialization" icon="Sword.png">
+            <rank index="1"><![CDATA[Gives you a 1% chance to get an extra attack on the same target after dealing damage with your Sword.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 2% chance to get an extra attack on the same target after dealing damage with your Sword.]]></rank>
+            <rank index="3"><![CDATA[Gives you a 3% chance to get an extra attack on the same target after dealing damage with your Sword.]]></rank>
+            <rank index="4"><![CDATA[Gives you a 4% chance to get an extra attack on the same target after dealing damage with your Sword.]]></rank>
+            <rank index="5"><![CDATA[Gives you a 5% chance to get an extra attack on the same target after dealing damage with your Sword.]]></rank>
+        </talent>
+        <talent index="19" name="Fist Weapon Specialization" icon="Fist.jpg">
+            <rank index="1"><![CDATA[Increases your chance to get a critical strike with Fist Weapons by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases your chance to get a critical strike with Fist Weapons by 2%.]]></rank>
+            <rank index="3"><![CDATA[Increases your chance to get a critical strike with Fist Weapons by 3%.]]></rank>
+            <rank index="4"><![CDATA[Increases your chance to get a critical strike with Fist Weapons by 4%.]]></rank>
+            <rank index="5"><![CDATA[Increases your chance to get a critical strike with Fist Weapons by 5%.]]></rank>
+        </talent>
+        <talent index="21" name="Weapon Expertise" icon="BlessingOfStrength.png" requires="17">
+            <rank index="1"><![CDATA[Increases your skill with Sword, Fist and Dagger weapons by 3.]]></rank>
+            <rank index="2"><![CDATA[Increases your skill with Sword, Fist and Dagger weapons by 5.]]></rank>
+        </talent>
+        <talent index="22" name="Aggression" icon="Avatar.png">
+            <rank index="1"><![CDATA[Increases the damage of your Sinister Strike and Eviscerate abilities by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage of your Sinister Strike and Eviscerate abilities by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage of your Sinister Strike and Eviscerate abilities by 6%.]]></rank>
+        </talent>
+        <talent index="25" name="Adrenaline Rush" icon="ShadowWordDominate.png">
+            <rank index="1"><![CDATA[Increases your Energy regeneration rate by 100% for 15 sec.
+
+5 minute cooldown.]]></rank>
+        </talent>
+    </tree>
+    <tree name="Subtlety">
+        <talent index="1" name="Master of Deception" icon="Charm.png">
+            <rank index="1"><![CDATA[Reduces the chance enemies have to detect you while in Stealth mode.]]></rank>
+            <rank index="2"><![CDATA[Reduces the chance enemies have to detect you while in Stealth mode.  More effective than Master of Deception (Rank 1).]]></rank>
+            <rank index="3"><![CDATA[Reduces the chance enemies have to detect you while in Stealth mode.  More effective than Master of Deception (Rank 2).]]></rank>
+            <rank index="4"><![CDATA[Reduces the chance enemies have to detect you while in Stealth mode.  More effective than Master of Deception (Rank 3).]]></rank>
+            <rank index="5"><![CDATA[Reduces the chance enemies have to detect you while in Stealth mode.  More effective than Master of Deception (Rank 4).]]></rank>
+        </talent>
+        <talent index="2" name="Opportunity" icon="WarCry.png">
+            <rank index="1"><![CDATA[Increases the damage dealt when striking from behind with your Backstab, Garrote, or Ambush abilities by 4%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage dealt when striking from behind with your Backstab, Garrote, or Ambush abilities by 8%.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage dealt when striking from behind with your Backstab, Garrote, or Ambush abilities by 12%.]]></rank>
+            <rank index="4"><![CDATA[Increases the damage dealt when striking from behind with your Backstab, Garrote, or Ambush abilities by 16%.]]></rank>
+            <rank index="5"><![CDATA[Increases the damage dealt when striking from behind with your Backstab, Garrote, or Ambush abilities by 20%.]]></rank>
+        </talent>
+        <talent index="4" name="Sleight of Hand" icon="Feint.png">
+            <rank index="1"><![CDATA[Reduces the chance you are critically hit by melee and ranged attacks by 1% and increases the threat reduction of your Feint ability by 10%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the chance you are critically hit by melee and ranged attacks by 2% and increases the threat reduction of your Feint ability by 20%.]]></rank>
+        </talent>
+        <talent index="5" name="Elusiveness" icon="LesserInvisibility.png">
+            <rank index="1"><![CDATA[Reduces the cooldown of your Vanish and Blind abilities by 45 sec.]]></rank>
+            <rank index="2"><![CDATA[Reduces the cooldown of your Vanish and Blind abilities by 1.5 min.]]></rank>
+        </talent>
+        <talent index="6" name="Camouflage" icon="Stealth.png">
+            <rank index="1"><![CDATA[Increases your speed while stealthed by 3% and reduces the cooldown of your Stealth ability by 1 sec.]]></rank>
+            <rank index="2"><![CDATA[Increases your speed while stealthed by 6% and reduces the cooldown of your Stealth ability by 2 sec.]]></rank>
+            <rank index="3"><![CDATA[Increases your speed while stealthed by 9% and reduces the cooldown of your Stealth ability by 3 sec.]]></rank>
+            <rank index="4"><![CDATA[Increases your speed while stealthed by 12% and reduces the cooldown of your Stealth ability by 4 sec.]]></rank>
+            <rank index="5"><![CDATA[Increases your speed while stealthed by 15% and reduces the cooldown of your Stealth ability by 5 sec.]]></rank>
+        </talent>
+        <talent index="8" name="Initiative" icon="Fumble.png">
+            <rank index="1"><![CDATA[Gives you a 25% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 50% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.]]></rank>
+            <rank index="3"><![CDATA[Gives you a 75% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.]]></rank>
+        </talent>
+        <talent index="9" name="Ghostly Strike" icon="Curse.png">
+            <rank index="1"><![CDATA[A strike that deals 125% weapon damage and increases your chance to dodge by 15% for 7 sec.  Awards 1 combo point.
+
+40 Energy.  20 second cooldown.]]></rank>
+        </talent>
+        <talent index="10" name="Improved Ambush" icon="Ambush.png">
+            <rank index="1"><![CDATA[Increases the critical strike chance of your Ambush ability by 15%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike chance of your Ambush ability by 30%.]]></rank>
+            <rank index="3"><![CDATA[Increases the critical strike chance of your Ambush ability by 45%.]]></rank>
+        </talent>
+        <talent index="12" name="Setup" icon="MirrorImage.png">
+            <rank index="1"><![CDATA[Gives you a 15% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 30% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells.]]></rank>
+            <rank index="3"><![CDATA[Gives you a 45% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells.]]></rank>
+        </talent>
+        <talent index="13" name="Improved Sap" icon="Sap.png">
+            <rank index="1"><![CDATA[Gives you a 30% chance to return to stealth mode after using your Sap ability.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 60% chance to return to stealth mode after using your Sap ability.]]></rank>
+            <rank index="3"><![CDATA[Gives you a 90% chance to return to stealth mode after using your Sap ability.]]></rank>
+        </talent>
+        <talent index="14" name="Serrated Blades" icon="SerratedBlades.jpg">
+            <rank index="1"><![CDATA[Causes your attacks to ignore 100 of your target's Armor and increases the damage dealt by your Rupture ability by 10%.  The amount of Armor reduced increases with your level.]]></rank>
+            <rank index="2"><![CDATA[Causes your attacks to ignore 200 of your target's Armor and increases the damage dealt by your Rupture ability by 20%.  The amount of Armor reduced increases with your level.]]></rank>
+            <rank index="3"><![CDATA[Causes your attacks to ignore 300 of your target's Armor and increases the damage dealt by your Rupture ability by 30%.  The amount of Armor reduced increases with your level.]]></rank>
+        </talent>
+        <talent index="16" name="Heightened Senses" icon="Ambush_1.png">
+            <rank index="1"><![CDATA[Increases your Stealth detection and reduces the chance you are hit by spells and ranged attacks by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases your Stealth detection and reduces the chance you are hit by spells and ranged attacks by 4%.  More effective than Heightened Senses (Rank 1).]]></rank>
+        </talent>
+        <talent index="17" name="Preparation" icon="AntiShadow.png">
+            <rank index="1"><![CDATA[When activated, this ability immediately finishes the cooldown on your other Rogue abilities.
+
+10 minute cooldown.]]></rank>
+        </talent>
+        <talent index="18" name="Dirty Deeds" icon="SummonSuccubus.png">
+            <rank index="1"><![CDATA[Reduces the Energy cost of your Cheap Shot and Garrote abilities by 10.]]></rank>
+            <rank index="2"><![CDATA[Reduces the Energy cost of your Cheap Shot and Garrote abilities by 20.]]></rank>
+        </talent>
+        <talent index="19" name="Hemorrhage (Rank 1)" icon="LifeDrain.png" requires="14">
+            <rank index="1"><![CDATA[An instant strike that damages the opponent and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to 3.  Lasts 30 charges or 15 sec.  Awards 1 combo point.
+
+35 Energy.]]></rank>
+        </talent>
+        <talent index="22" name="Deadliness" icon="Deadliness.png">
+            <rank index="1"><![CDATA[Increases your Attack Power by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases your Attack Power by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases your Attack Power by 6%.]]></rank>
+            <rank index="4"><![CDATA[Increases your Attack Power by 8%.]]></rank>
+            <rank index="5"><![CDATA[Increases your Attack Power by 10%.]]></rank>
+        </talent>
+        <talent index="25" name="Premeditation" icon="Possession.png" requires="17">
+            <rank index="1"><![CDATA[When used, adds 2 combo points to your target.  You must add to or use those combo points within 10 sec or the combo points are lost.
+
+2 minute cooldown.]]></rank>
+        </talent>
+    </tree>
+    <notes>
+        <note index="0" name="General" icon="Book_11.png"><![CDATA[Default Rogue
+
+---
+
+Rogue base stats at level 60:
+
+Health 	1523
+
+STR 		80
+AGI		130
+STAM	76
+INT 		34
+SPI 		51]]></note>
+    </notes>
+</class>

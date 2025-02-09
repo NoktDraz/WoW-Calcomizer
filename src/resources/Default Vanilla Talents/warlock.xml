@@ -1,0 +1,341 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<class name="WARLOCK">
+    <tree name="Affliction">
+        <talent index="1" name="Suppression" icon="UnsummonBuilding.png">
+            <rank index="1"><![CDATA[Reduces the chance for enemies to resist your Affliction spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the chance for enemies to resist your Affliction spells by 4%.]]></rank>
+            <rank index="3"><![CDATA[Reduces the chance for enemies to resist your Affliction spells by 6%.]]></rank>
+            <rank index="4"><![CDATA[Reduces the chance for enemies to resist your Affliction spells by 8%.]]></rank>
+            <rank index="5"><![CDATA[Reduces the chance for enemies to resist your Affliction spells by 10%.]]></rank>
+        </talent>
+        <talent index="2" name="Improved Corruption" icon="AbominationExplosion.png">
+            <rank index="1"><![CDATA[Reduces the casting time of your Corruption spell by 0.4 sec.]]></rank>
+            <rank index="2"><![CDATA[Reduces the casting time of your Corruption spell by 0.8 sec.]]></rank>
+            <rank index="3"><![CDATA[Reduces the casting time of your Corruption spell by 1.2 sec.]]></rank>
+            <rank index="4"><![CDATA[Reduces the casting time of your Corruption spell by 1.6 sec.]]></rank>
+            <rank index="5"><![CDATA[Reduces the casting time of your Corruption spell by 2 sec.]]></rank>
+        </talent>
+        <talent index="4" name="Improved Curse of Weakness" icon="CurseOfMannoroth.png">
+            <rank index="1"><![CDATA[Increases the effect of your Curse of Weakness by 6%.]]></rank>
+            <rank index="2"><![CDATA[Increases the effect of your Curse of Weakness by 13%.]]></rank>
+            <rank index="3"><![CDATA[Increases the effect of your Curse of Weakness by 20%.]]></rank>
+        </talent>
+        <talent index="5" name="Improved Drain Soul" icon="Haunting.png">
+            <rank index="1"><![CDATA[Gives you a 50% chance to get a 100% increase to your Mana regeneration for 10 sec if the target is killed by you while you drain its soul.  In addition your Mana may continue to regenerate while casting at 50% of normal.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 100% chance to get a 100% increase to your Mana regeneration for 10 sec if the target is killed by you while you drain its soul.  In addition your Mana may continue to regenerate while casting at 50% of normal.]]></rank>
+        </talent>
+        <talent index="6" name="Improved Life Tap" icon="BurningSpirit.png">
+            <rank index="1"><![CDATA[Increases the amount of Mana awarded by your Life Tap spell by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the amount of Mana awarded by your Life Tap spell by 20%.]]></rank>
+        </talent>
+        <talent index="7" name="Improved Drain Life" icon="LifeDrain02.png">
+            <rank index="1"><![CDATA[Increases the Health drained by your Drain Life spell by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the Health drained by your Drain Life spell by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases the Health drained by your Drain Life spell by 6%.]]></rank>
+            <rank index="4"><![CDATA[Increases the Health drained by your Drain Life spell by 8%.]]></rank>
+            <rank index="5"><![CDATA[Increases the Health drained by your Drain Life spell by 10%.]]></rank>
+        </talent>
+        <talent index="8" name="Improved Curse of Agony" icon="CurseOfSargeras.png">
+            <rank index="1"><![CDATA[Increases the damage done by your Curse of Agony by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage done by your Curse of Agony by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage done by your Curse of Agony by 6%.]]></rank>
+        </talent>
+        <talent index="9" name="Fel Concentration" icon="FingerOfDeath.png">
+            <rank index="1"><![CDATA[Gives you a 14% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 28% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell.]]></rank>
+            <rank index="3"><![CDATA[Gives you a 42% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell.]]></rank>
+            <rank index="4"><![CDATA[Gives you a 56% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell.]]></rank>
+            <rank index="5"><![CDATA[Gives you a 70% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell.]]></rank>
+        </talent>
+        <talent index="10" name="Amplify Curse" icon="CarrionSwarm.png">
+            <rank index="1"><![CDATA[Increases the effect of your next Curse of Weakness or Curse of Agony by 50%, or your next Curse of Exhaustion by 20%.  Lasts 30 sec.
+
+3 minute cooldown.]]></rank>
+        </talent>
+        <talent index="12" name="Grim Reach" icon="CallofBone.png">
+            <rank index="1"><![CDATA[Increases the range of your Affliction spells by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the range of your Affliction spells by 20%.]]></rank>
+        </talent>
+        <talent index="13" name="Nightfall" icon="Twilight (2).png">
+            <rank index="1"><![CDATA[Gives your Corruption and Drain Life spells a 2% chance to cause you to enter a Shadow Trance state after damaging the opponent.  The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%.]]></rank>
+            <rank index="2"><![CDATA[Gives your Corruption and Drain Life spells a 4% chance to cause you to enter a Shadow Trance state after damaging the opponent.  The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%.]]></rank>
+        </talent>
+        <talent index="15" name="Improved Drain Mana" icon="SiphonMana.png">
+            <rank index="1"><![CDATA[Causes 15% of the Mana drained by your Drain Mana spell to damage the opponent.]]></rank>
+            <rank index="2"><![CDATA[Causes 30% of the Mana drained by your Drain Mana spell to damage the opponent.]]></rank>
+        </talent>
+        <talent index="17" name="Siphon Life (Rank 1)" icon="Requiem.png">
+            <rank index="1"><![CDATA[Transfers 15 health from the target to the caster every 3 sec.  Lasts 30 sec.
+
+150 Mana.]]></rank>
+        </talent>
+        <talent index="18" name="Curse of Exhaustion" icon="GrimWard.png" requires="10">
+            <rank index="1"><![CDATA[Reduces the target's movement speed by 10% for 12 sec.  Only one Curse per Warlock can be active on any one target.
+
+8% base Mana.]]></rank>
+        </talent>
+        <talent index="19" name="Improved Curse of Exhaustion" icon="GrimWard.png" requires="18">
+            <rank index="1"><![CDATA[Increases the speed reduction of your Curse of Exhaustion by 5%.]]></rank>
+            <rank index="2"><![CDATA[Increases the speed reduction of your Curse of Exhaustion by 10%.]]></rank>
+            <rank index="3"><![CDATA[Increases the speed reduction of your Curse of Exhaustion by 15%.]]></rank>
+            <rank index="4"><![CDATA[Increases the speed reduction of your Curse of Exhaustion by 20%.]]></rank>
+        </talent>
+        <talent index="21" name="Shadow Mastery" icon="ShadeTrueSight.png" requires="17">
+            <rank index="1"><![CDATA[Increases the damage dealt or life drained by your Shadow spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage dealt or life drained by your Shadow spells by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage dealt or life drained by your Shadow spells by 6%.]]></rank>
+            <rank index="4"><![CDATA[Increases the damage dealt or life drained by your Shadow spells by 8%.]]></rank>
+            <rank index="5"><![CDATA[Increases the damage dealt or life drained by your Shadow spells by 10%.]]></rank>
+        </talent>
+        <talent index="25" name="Dark Pact (Rank 1)" icon="DarkRitual.png">
+            <rank index="1"><![CDATA[Drains 150 of your pet's Mana, returning 100% to you.]]></rank>
+        </talent>
+    </tree>
+    <tree name="Demonology">
+        <talent index="0" name="Improved Healthstone" icon="Healthstone.jpg">
+            <rank index="1"><![CDATA[Increases the amount of Health restored by your Healthstone by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the amount of Health restored by your Healthstone by 20%.]]></rank>
+        </talent>
+        <talent index="1" name="Improved Imp" icon="SummonImp.png">
+            <rank index="1"><![CDATA[Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 20%.]]></rank>
+            <rank index="3"><![CDATA[Increases the effect of your Imp's Firebolt, Fire Shield, and Blood Pact spells by 30%.]]></rank>
+        </talent>
+        <talent index="2" name="Demonic Embrace" icon="Metamorphosis.png">
+            <rank index="1"><![CDATA[Increases your total Stamina by 3% but reduces your total Spirit by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases your total Stamina by 6% but reduces your total Spirit by 2%.]]></rank>
+            <rank index="3"><![CDATA[Increases your total Stamina by 9% but reduces your total Spirit by 3%.]]></rank>
+            <rank index="4"><![CDATA[Increases your total Stamina by 12% but reduces your total Spirit by 4%.]]></rank>
+            <rank index="5"><![CDATA[Increases your total Stamina by 15% but reduces your total Spirit by 5%.]]></rank>
+        </talent>
+        <talent index="4" name="Improved Health Funnel" icon="LifeDrain.png">
+            <rank index="1"><![CDATA[Increases the amount of Health transferred by your Health Funnel spell by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the amount of Health transferred by your Health Funnel spell by 20%.]]></rank>
+        </talent>
+        <talent index="5" name="Improved Voidwalker" icon="SummonVoidWalker.png">
+            <rank index="1"><![CDATA[Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 20%.]]></rank>
+            <rank index="3"><![CDATA[Increases the effectiveness of your Voidwalker's Torment, Consume Shadows, Sacrifice and Suffering spells by 30%.]]></rank>
+        </talent>
+        <talent index="6" name="Fel Intellect" icon="MagicalSentry.png">
+            <rank index="1"><![CDATA[Increases the maximum Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 3%.]]></rank>
+            <rank index="2"><![CDATA[Increases the maximum Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 6%.]]></rank>
+            <rank index="3"><![CDATA[Increases the maximum Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 9%.]]></rank>
+            <rank index="4"><![CDATA[Increases the maximum Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 12%.]]></rank>
+            <rank index="5"><![CDATA[Increases the maximum Mana of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 15%.]]></rank>
+        </talent>
+        <talent index="8" name="Improved Sayaad" icon="Sayaad.jpg">
+            <rank index="1"><![CDATA[Increases the effect of your Succubus' and Incubus' Lash of Pain and Soothing Kiss spells by 10%, and increases the duration of your Succubus' and Incubus' Seduction and Lesser Invisibility spells by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the effect of your Succubus' and Incubus' Lash of Pain and Soothing Kiss spells by 20%, and increases the duration of your Succubus' and Incubus' Seduction and Lesser Invisibility spells by 20%.]]></rank>
+            <rank index="3"><![CDATA[Increases the effect of your Succubus' and Incubus' Lash of Pain and Soothing Kiss spells by 30%, and increases the duration of your Succubus' and Incubus' Seduction and Lesser Invisibility spells by 30%.]]></rank>
+        </talent>
+        <talent index="9" name="Fel Domination" icon="RemoveCurse.png">
+            <rank index="1"><![CDATA[Your next Imp, Voidwalker, Succubus, Incubus, or Felhunter Summon spell has its casting time reduced by 5.5 sec and its Mana cost reduced by 50%.
+
+15 minute cooldown.]]></rank>
+        </talent>
+        <talent index="10" name="Fel Stamina" icon="AntiShadow.png">
+            <rank index="1"><![CDATA[Increases the maximum Health of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 3%.]]></rank>
+            <rank index="2"><![CDATA[Increases the maximum Health of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 6%.]]></rank>
+            <rank index="3"><![CDATA[Increases the maximum Health of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 9%.]]></rank>
+            <rank index="4"><![CDATA[Increases the maximum Health of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 12%.]]></rank>
+            <rank index="5"><![CDATA[Increases the maximum Health of your Imp, Voidwalker, Succubus, Incubus, and Felhunter by 15%.]]></rank>
+        </talent>
+        <talent index="13" name="Master Summoner" icon="ImpPhaseShift.png" requires="9">
+            <rank index="1"><![CDATA[Reduces the casting time of your Imp, Voidwalker, Succubus, Incubus, and Felhunter Summoning spells by 2 sec and the Mana cost by 20%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the casting time of your Imp, Voidwalker, Succubus, Incubus, and Felhunter Summoning spells by 4 sec and the Mana cost by 40%.]]></rank>
+        </talent>
+        <talent index="14" name="Unholy Power" icon="ShadowWordDominate.png">
+            <rank index="1"><![CDATA[Increases the damage done by your Voidwalker, Succubus, Incubus, and Felhunter's melee attacks by 4%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage done by your Voidwalker, Succubus, Incubus, and Felhunter's melee attacks by 8%.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage done by your Voidwalker, Succubus, Incubus, and Felhunter's melee attacks by 12%.]]></rank>
+            <rank index="4"><![CDATA[Increases the damage done by your Voidwalker, Succubus, Incubus, and Felhunter's melee attacks by 16%.]]></rank>
+            <rank index="5"><![CDATA[Increases the damage done by your Voidwalker, Succubus, Incubus, and Felhunter's melee attacks by 20%.]]></rank>
+        </talent>
+        <talent index="16" name="Improved Subjugate Demon" icon="EnslaveDemon.png">
+            <rank index="1"><![CDATA[Reduces the Attack Speed and Casting Speed penalty of your Subjugate Demon spell by 2% and reduces the resist chance by 2%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the Attack Speed and Casting Speed penalty of your Subjugate Demon spell by 4% and reduces the resist chance by 4%.]]></rank>
+            <rank index="3"><![CDATA[Reduces the Attack Speed and Casting Speed penalty of your Subjugate Demon spell by 6% and reduces the resist chance by 6%.]]></rank>
+            <rank index="4"><![CDATA[Reduces the Attack Speed and Casting Speed penalty of your Subjugate Demon spell by 8% and reduces the resist chance by 8%.]]></rank>
+            <rank index="5"><![CDATA[Reduces the Attack Speed and Casting Speed penalty of your Subjugate Demon spell by 10% and reduces the resist chance by 10%.]]></rank>
+        </talent>
+        <talent index="17" name="Demonic Sacrifice" icon="PsychicScream.png">
+            <rank index="1"><![CDATA[When activated, sacrifices your summoned demon to grant you an effect that lasts 30 min.  The effect is canceled if any Demon is summoned.
+
+Imp: Increases your Fire damage by 15%.
+
+Voidwalker: Restores 3% of total Health every 4 sec.
+
+Succubus/Incubus: Increases your Shadow damage by 15%.
+
+Felhunter: Restores 2% of total Mana every 4 sec.]]></rank>
+        </talent>
+        <talent index="19" name="Improved Firestone" icon="FireTar.png">
+            <rank index="1"><![CDATA[Increases the bonus Fire damage from Firestones and the Firestone effect by 15%.]]></rank>
+            <rank index="2"><![CDATA[Increases the bonus Fire damage from Firestones and the Firestone effect by 30%.]]></rank>
+        </talent>
+        <talent index="22" name="Master Demonologist" icon="ShadowPact.png" requires="14">
+            <rank index="1"><![CDATA[Grants both the Warlock and the summoned demon an effect as long as that demon is active.
+
+Imp - Reduces threat caused by 4%.
+
+Voidwalker - Reduces physical damage taken by 2%.
+
+Succubus/Incubus - Increases all damage caused by 2%.
+
+Felhunter - Increases all resistances by .2 per level.]]></rank>
+            <rank index="2"><![CDATA[Grants both the Warlock and the summoned demon an effect as long as that demon is active.
+
+Imp - Reduces threat caused by 8%.
+
+Voidwalker - Reduces physical damage taken by 4%.
+
+Succubus/Incubus - Increases all damage caused by 4%.
+
+Felhunter - Increases all resistances by .4 per level.]]></rank>
+            <rank index="3"><![CDATA[Grants both the Warlock and the summoned demon an effect as long as that demon is active.
+
+Imp - Reduces threat caused by 12%.
+
+Voidwalker - Reduces physical damage taken by 6%.
+
+Succubus/Incubus - Increases all damage caused by 6%.
+
+Felhunter - Increases all resistances by .6 per level.]]></rank>
+            <rank index="4"><![CDATA[Grants both the Warlock and the summoned demon an effect as long as that demon is active.
+
+Imp - Reduces threat caused by 16%.
+
+Voidwalker - Reduces physical damage taken by 8%.
+
+Succubus/Incubus - Increases all damage caused by 8%.
+
+Felhunter - Increases all resistances by .8 per level.]]></rank>
+            <rank index="5"><![CDATA[Grants both the Warlock and the summoned demon an effect as long as that demon is active.
+
+Imp - Reduces threat caused by 20%.
+
+Voidwalker - Reduces physical damage taken by 10%.
+
+Succubus/Incubus - Increases all damage caused by 10%.
+
+Felhunter - Increases all resistances by 1 per level.]]></rank>
+        </talent>
+        <talent index="25" name="Soul Link" icon="GatherShadows.png" requires="17">
+            <rank index="1"><![CDATA[When active, 30% of all damage taken by the caster is taken by your Imp, Voidwalker, Succubus, Incubus, or Felhunter demon instead.  In addition, both the demon and master will inflict 3% more damage.  Lasts as long as the demon is active.
+
+20% base Mana.]]></rank>
+        </talent>
+        <talent index="26" name="Improved Spellstone" icon="Spellstone.jpg">
+            <rank index="1"><![CDATA[Increases the amount of damage absorbed by your Spellstone by 15%.]]></rank>
+            <rank index="2"><![CDATA[Increases the amount of damage absorbed by your Spellstone by 30%.]]></rank>
+        </talent>
+    </tree>
+    <tree name="Destruction">
+        <talent index="1" name="Improved Shadow Bolt" icon="ShadowBolt.png">
+            <rank index="1"><![CDATA[Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 4% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec.]]></rank>
+            <rank index="2"><![CDATA[Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 8% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec.]]></rank>
+            <rank index="3"><![CDATA[Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 12% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec.]]></rank>
+            <rank index="4"><![CDATA[Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 16% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec.]]></rank>
+            <rank index="5"><![CDATA[Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 20% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec.]]></rank>
+        </talent>
+        <talent index="2" name="Cataclysm" icon="WindsofWoe.png">
+            <rank index="1"><![CDATA[Reduces the Mana cost of your Destruction spells by 1%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the Mana cost of your Destruction spells by 2%.]]></rank>
+            <rank index="3"><![CDATA[Reduces the Mana cost of your Destruction spells by 3%.]]></rank>
+            <rank index="4"><![CDATA[Reduces the Mana cost of your Destruction spells by 4%.]]></rank>
+            <rank index="5"><![CDATA[Reduces the Mana cost of your Destruction spells by 5%.]]></rank>
+        </talent>
+        <talent index="5" name="Bane" icon="DeathPact.png">
+            <rank index="1"><![CDATA[Reduces the casting time of your Shadow Bolt and Immolate spells by 0.1 sec and your Soul Fire spell by 0.4 sec.]]></rank>
+            <rank index="2"><![CDATA[Reduces the casting time of your Shadow Bolt and Immolate spells by 0.2 sec and your Soul Fire spell by 0.8 sec.]]></rank>
+            <rank index="3"><![CDATA[Reduces the casting time of your Shadow Bolt and Immolate spells by 0.3 sec and your Soul Fire spell by 1.2 sec.]]></rank>
+            <rank index="4"><![CDATA[Reduces the casting time of your Shadow Bolt and Immolate spells by 0.4 sec and your Soul Fire spell by 1.6 sec.]]></rank>
+            <rank index="5"><![CDATA[Reduces the casting time of your Shadow Bolt and Immolate spells by 0.5 sec and your Soul Fire spell by 2 sec.]]></rank>
+        </talent>
+        <talent index="6" name="Aftermath" icon="Fire.png">
+            <rank index="1"><![CDATA[Gives your Destruction spells a 2% chance to daze the target for 5 sec.]]></rank>
+            <rank index="2"><![CDATA[Gives your Destruction spells a 4% chance to daze the target for 5 sec.]]></rank>
+            <rank index="3"><![CDATA[Gives your Destruction spells a 6% chance to daze the target for 5 sec.]]></rank>
+            <rank index="4"><![CDATA[Gives your Destruction spells a 8% chance to daze the target for 5 sec.]]></rank>
+            <rank index="5"><![CDATA[Gives your Destruction spells a 10% chance to daze the target for 5 sec.]]></rank>
+        </talent>
+        <talent index="8" name="Improved Firebolt" icon="FireBolt.png">
+            <rank index="1"><![CDATA[Reduces the casting time of your Imp's Firebolt spell by 0.5 sec.]]></rank>
+            <rank index="2"><![CDATA[Reduces the casting time of your Imp's Firebolt spell by 1 sec.]]></rank>
+        </talent>
+        <talent index="9" name="Improved Lash of Pain" icon="Curse.png">
+            <rank index="1"><![CDATA[Reduces the cooldown of your Succubus' and Incubus' Lash of Pain spell by 3 sec.]]></rank>
+            <rank index="2"><![CDATA[Reduces the cooldown of your Succubus' and Incubus' Lash of Pain spell by 6 sec.]]></rank>
+        </talent>
+        <talent index="10" name="Devastation" icon="FlameShock.png">
+            <rank index="1"><![CDATA[Increases the critical strike chance of your Destruction spells by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike chance of your Destruction spells by 2%.]]></rank>
+            <rank index="3"><![CDATA[Increases the critical strike chance of your Destruction spells by 3%.]]></rank>
+            <rank index="4"><![CDATA[Increases the critical strike chance of your Destruction spells by 4%.]]></rank>
+            <rank index="5"><![CDATA[Increases the critical strike chance of your Destruction spells by 5%.]]></rank>
+        </talent>
+        <talent index="11" name="Shadowburn (Rank 1)" icon="ScourgeBuild.png">
+            <rank index="1"><![CDATA[Instantly blasts the target for 91 to 104 Shadow damage.  If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard.
+
+105 Mana.  15 second cooldown.]]></rank>
+        </talent>
+        <talent index="12" name="Intensity" icon="LavaSpawn.png">
+            <rank index="1"><![CDATA[Gives you a 35% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 70% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell.]]></rank>
+        </talent>
+        <talent index="13" name="Destructive Reach" icon="CorpseExplode.png">
+            <rank index="1"><![CDATA[Increases the range of your Destruction spells by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the range of your Destruction spells by 20%.]]></rank>
+        </talent>
+        <talent index="15" name="Improved Searing Pain" icon="SoulBurn.png">
+            <rank index="1"><![CDATA[Increases the critical strike chance of your Searing Pain spell by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike chance of your Searing Pain spell by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases the critical strike chance of your Searing Pain spell by 6%.]]></rank>
+            <rank index="4"><![CDATA[Increases the critical strike chance of your Searing Pain spell by 8%.]]></rank>
+            <rank index="5"><![CDATA[Increases the critical strike chance of your Searing Pain spell by 10%.]]></rank>
+        </talent>
+        <talent index="16" name="Pyroclasm" icon="Volcano.png" requires="12">
+            <rank index="1"><![CDATA[Gives your Rain of Fire, Hellfire, and Soul Fire spells a 13% chance to stun the target for 3 sec.]]></rank>
+            <rank index="2"><![CDATA[Gives your Rain of Fire, Hellfire, and Soul Fire spells a 25% chance to stun the target for 3 sec.]]></rank>
+        </talent>
+        <talent index="17" name="Improved Immolate" icon="Immolation.png">
+            <rank index="1"><![CDATA[Increases the initial damage of your Immolate spell by 5%.]]></rank>
+            <rank index="2"><![CDATA[Increases the initial damage of your Immolate spell by 10%.]]></rank>
+            <rank index="3"><![CDATA[Increases the initial damage of your Immolate spell by 15%.]]></rank>
+            <rank index="4"><![CDATA[Increases the initial damage of your Immolate spell by 20%.]]></rank>
+            <rank index="5"><![CDATA[Increases the initial damage of your Immolate spell by 25%.]]></rank>
+        </talent>
+        <talent index="18" name="Ruin" icon="ShadowWordPain.png" requires="10">
+            <rank index="1"><![CDATA[Increases the critical strike damage bonus of your Destruction spells by 100%.]]></rank>
+        </talent>
+        <talent index="22" name="Emberstorm" icon="SelfDestruct.png">
+            <rank index="1"><![CDATA[Increases the damage done by your Fire spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage done by your Fire spells by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage done by your Fire spells by 6%.]]></rank>
+            <rank index="4"><![CDATA[Increases the damage done by your Fire spells by 8%.]]></rank>
+            <rank index="5"><![CDATA[Increases the damage done by your Fire spells by 10%.]]></rank>
+        </talent>
+        <talent index="25" name="Conflagrate (Rank 1)" icon="Fireball.png" requires="17">
+            <rank index="1"><![CDATA[Ignites a target that is already afflicted by Immolate, dealing 249 to 316 Fire damage and consuming the Immolate spell.
+
+165 Mana.  10 second cooldown.]]></rank>
+        </talent>
+    </tree>
+    <notes>
+        <note index="0" name="General" icon="Book_11.png"><![CDATA[Default Warlock
+
+---
+
+Warlock base stats at level 60:
+
+Health 	1414
+Mana 	1373
+
+STR 		44
+AGI		50
+STAM 	65
+INT 		111
+SPI 		118]]></note>
+    </notes>
+</class>

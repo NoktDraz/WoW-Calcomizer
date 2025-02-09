@@ -1,0 +1,295 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<class name="DRUID">
+    <tree name="Balance">
+        <talent index="0" name="Improved Wrath" icon="AbolishMagic.png">
+            <rank index="1"><![CDATA[Reduces the cast time of your Wrath spell by 0.1 sec.]]></rank>
+            <rank index="2"><![CDATA[Reduces the cast time of your Wrath spell by 0.2 sec.]]></rank>
+            <rank index="3"><![CDATA[Reduces the cast time of your Wrath spell by 0.3 sec.]]></rank>
+            <rank index="4"><![CDATA[Reduces the cast time of your Wrath spell by 0.4 sec.]]></rank>
+            <rank index="5"><![CDATA[Reduces the cast time of your Wrath spell by 0.5 sec.]]></rank>
+        </talent>
+        <talent index="1" name="Nature's Grasp (Rank 1)" icon="NaturesWrath.png">
+            <rank index="1"><![CDATA[While active, any time an enemy strikes the caster they have a 35% chance to become afflicted by Entangling Roots (Rank 1).  Only useable outdoors.  1 charge.  Lasts 45 sec.
+
+50 Mana.  1 minute cooldown.]]></rank>
+        </talent>
+        <talent index="2" name="Improved Nature's Grasp" icon="NaturesWrath.png" requires="1">
+            <rank index="1"><![CDATA[Increases the chance for your Nature's Grasp to entangle an enemy by 15%.]]></rank>
+            <rank index="2"><![CDATA[Increases the chance for your Nature's Grasp to entangle an enemy by 30%.]]></rank>
+            <rank index="3"><![CDATA[Increases the chance for your Nature's Grasp to entangle an enemy by 45%.]]></rank>
+            <rank index="4"><![CDATA[Increases the chance for your Nature's Grasp to entangle an enemy by 65%.]]></rank>
+        </talent>
+        <talent index="4" name="Improved Entangling Roots" icon="StrangleVines.png">
+            <rank index="1"><![CDATA[Gives you a 40% chance to avoid interruption caused by damage while casting Entangling Roots.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 70% chance to avoid interruption caused by damage while casting Entangling Roots.]]></rank>
+            <rank index="3"><![CDATA[Gives you a 100% chance to avoid interruption caused by damage while casting Entangling Roots.]]></rank>
+        </talent>
+        <talent index="5" name="Improved Moonfire" icon="StarFall.png">
+            <rank index="1"><![CDATA[Increases the damage and critical strike chance of your Moonfire spell by 5%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage and critical strike chance of your Moonfire spell by 10%.]]></rank>
+        </talent>
+        <talent index="6" name="Natural Weapon" icon="NaturalWeapons.png">
+            <rank index="1"><![CDATA[Increases the damage you deal with physical attacks in all forms by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage you deal with physical attacks in all forms by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage you deal with physical attacks in all forms by 6%.]]></rank>
+            <rank index="4"><![CDATA[Increases the damage you deal with physical attacks in all forms by 8%.]]></rank>
+            <rank index="5"><![CDATA[Increases the damage you deal with physical attacks in all forms by 10%.]]></rank>
+        </talent>
+        <talent index="7" name="Natural Shapeshifter" icon="WispSplode.png">
+            <rank index="1"><![CDATA[Reduces the mana cost of all shapeshifting by 10%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the mana cost of all shapeshifting by 20%.]]></rank>
+            <rank index="3"><![CDATA[Reduces the mana cost of all shapeshifting by 30%.]]></rank>
+        </talent>
+        <talent index="8" name="Improved Thorns" icon="Thorns.png">
+            <rank index="1"><![CDATA[Increases damage caused by your Thorns spell by 25%.]]></rank>
+            <rank index="2"><![CDATA[Increases damage caused by your Thorns spell by 50%.]]></rank>
+            <rank index="3"><![CDATA[Increases damage caused by your Thorns spell by 75%.]]></rank>
+        </talent>
+        <talent index="10" name="Omen of Clarity" icon="CrystalBall.png" requires="6">
+            <rank index="1"><![CDATA[Imbues the Druid with natural energy.  Each of the Druid's melee attacks has a chance of causing the caster to enter a Clearcasting state.  The Clearcasting state reduces the Mana, Rage or Energy cost of your next damage or healing spell or offensive ability by 100%.  Lasts 10 min.
+
+120 Mana.]]></rank>
+        </talent>
+        <talent index="11" name="Nature's Reach" icon="NatureTouchGrow.png">
+            <rank index="1"><![CDATA[Increases the range of your Wrath, Entangling Roots, Faerie Fire, Moonfire, Starfire, and Hurricane spells by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the range of your Wrath, Entangling Roots, Faerie Fire, Moonfire, Starfire, and Hurricane spells by 20%.]]></rank>
+        </talent>
+        <talent index="13" name="Vengeance" icon="Purge.png" requires="5">
+            <rank index="1"><![CDATA[Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 20%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 40%.]]></rank>
+            <rank index="3"><![CDATA[Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 60%.]]></rank>
+            <rank index="4"><![CDATA[Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 80%.]]></rank>
+            <rank index="5"><![CDATA[Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 100%.]]></rank>
+        </talent>
+        <talent index="14" name="Improved Starfire" icon="StarFire.png">
+            <rank index="1"><![CDATA[Reduces the cast time of Starfire by 0.1 sec and has a 3% chance to stun the target for 3 sec.]]></rank>
+            <rank index="2"><![CDATA[Reduces the cast time of Starfire by 0.2 sec and has a 6% chance to stun the target for 3 sec.]]></rank>
+            <rank index="3"><![CDATA[Reduces the cast time of Starfire by 0.3 sec and has a 9% chance to stun the target for 3 sec.]]></rank>
+            <rank index="4"><![CDATA[Reduces the cast time of Starfire by 0.4 sec and has a 12% chance to stun the target for 3 sec.]]></rank>
+            <rank index="5"><![CDATA[Reduces the cast time of Starfire by 0.5 sec and has a 15% chance to stun the target for 3 sec.]]></rank>
+        </talent>
+        <talent index="17" name="Nature's Grace" icon="NaturesBlessing.png">
+            <rank index="1"><![CDATA[All spell criticals a grace you with a blessing of nature, reducing the casting time of your next spell by 0.5 sec.]]></rank>
+        </talent>
+        <talent index="18" name="Moonglow" icon="Sentinel.png">
+            <rank index="1"><![CDATA[Reduces the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by 3%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by 6%.]]></rank>
+            <rank index="3"><![CDATA[Reduces the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by 9%.]]></rank>
+        </talent>
+        <talent index="21" name="Moonfury" icon="MoonGlow.png" requires="17">
+            <rank index="1"><![CDATA[Increases the damage done by your Starfire, Moonfire and Wrath spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage done by your Starfire, Moonfire and Wrath spells by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage done by your Starfire, Moonfire and Wrath spells by 6%.]]></rank>
+            <rank index="4"><![CDATA[Increases the damage done by your Starfire, Moonfire and Wrath spells by 8%.]]></rank>
+            <rank index="5"><![CDATA[Increases the damage done by your Starfire, Moonfire and Wrath spells by 10%.]]></rank>
+        </talent>
+        <talent index="25" name="Moonkin Form" icon="MoonkinForm.png">
+            <rank index="1"><![CDATA[Transforms the Druid into Moonkin Form.  While in this form the armor contribution from items is increased by 360% and all party members within 30 yards have their spell critical chance increased by 3%.  The Moonkin can only cast Balance spells while shapeshifted.
+
+The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+
+35% base Mana.]]></rank>
+        </talent>
+    </tree>
+    <tree name="Feral Combat">
+        <talent index="1" name="Ferocity" icon="Hyena.png">
+            <rank index="1"><![CDATA[Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 1 Rage or Energy.]]></rank>
+            <rank index="2"><![CDATA[Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 2 Rage or Energy.]]></rank>
+            <rank index="3"><![CDATA[Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 3 Rage or Energy.]]></rank>
+            <rank index="4"><![CDATA[Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 4 Rage or Energy.]]></rank>
+            <rank index="5"><![CDATA[Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 5 Rage or Energy.]]></rank>
+        </talent>
+        <talent index="2" name="Feral Aggression" icon="DEMORALIZINGROAR.png">
+            <rank index="1"><![CDATA[Increases the Attack Power reduction of your Demoralizing Roar by 8% and the damage caused by your Ferocious Bite by 3%.]]></rank>
+            <rank index="2"><![CDATA[Increases the Attack Power reduction of your Demoralizing Roar by 16% and the damage caused by your Ferocious Bite by 6%.]]></rank>
+            <rank index="3"><![CDATA[Increases the Attack Power reduction of your Demoralizing Roar by 24% and the damage caused by your Ferocious Bite by 9%.]]></rank>
+            <rank index="4"><![CDATA[Increases the Attack Power reduction of your Demoralizing Roar by 32% and the damage caused by your Ferocious Bite by 12%.]]></rank>
+            <rank index="5"><![CDATA[Increases the Attack Power reduction of your Demoralizing Roar by 40% and the damage caused by your Ferocious Bite by 15%.]]></rank>
+        </talent>
+        <talent index="4" name="Feral Instinct" icon="Ambush_1.png">
+            <rank index="1"><![CDATA[Increases threat caused in Bear and Dire Bear Form by 3% and reduces the chance enemies have to detect you while Prowling.]]></rank>
+            <rank index="2"><![CDATA[Increases threat caused in Bear and Dire Bear Form by 6% and reduces the chance enemies have to detect you while Prowling.]]></rank>
+            <rank index="3"><![CDATA[Increases threat caused in Bear and Dire Bear Form by 9% and reduces the chance enemies have to detect you while Prowling.]]></rank>
+            <rank index="4"><![CDATA[Increases threat caused in Bear and Dire Bear Form by 12% and reduces the chance enemies have to detect you while Prowling.]]></rank>
+            <rank index="5"><![CDATA[Increases threat caused in Bear and Dire Bear Form by 15% and reduces the chance enemies have to detect you while Prowling.]]></rank>
+        </talent>
+        <talent index="5" name="Brutal Impact" icon="Bash.png">
+            <rank index="1"><![CDATA[Increases the stun duration of your Bash and Pounce abilities by 0.5 sec.]]></rank>
+            <rank index="2"><![CDATA[Increases the stun duration of your Bash and Pounce abilities by 1 sec.]]></rank>
+        </talent>
+        <talent index="6" name="Thick Hide" icon="ThickHide.png">
+            <rank index="1"><![CDATA[Grants the armor bonus of your Bear, Dire Bear or Moonkin Form for 0.5 sec after shifting out of it.
+
+Increases your Armor contribution from items by 2%.]]></rank>
+            <rank index="2"><![CDATA[Grants the armor bonus of your Bear, Dire Bear or Moonkin Form for 1 sec after shifting out of it.
+
+Increases your Armor contribution from items by 4%.]]></rank>
+            <rank index="3"><![CDATA[Grants the armor bonus of your Bear, Dire Bear or Moonkin Form for 1.5 sec after shifting out of it.
+
+Increases your Armor contribution from items by 6%.]]></rank>
+            <rank index="4"><![CDATA[Grants the armor bonus of your Bear, Dire Bear or Moonkin Form for 2 sec after shifting out of it.
+
+Increases your Armor contribution from items by 8%.]]></rank>
+            <rank index="5"><![CDATA[Grants the armor bonus of your Bear, Dire Bear or Moonkin Form for 2.5 sec after shifting out of it.
+
+Increases your Armor contribution from items by 10%.]]></rank>
+        </talent>
+        <talent index="8" name="Feline Swiftness" icon="SpiritWolf.png">
+            <rank index="1"><![CDATA[Increases your movement speed by 15% while outdoors in Cat Form and increases your chance to dodge while in Cat Form by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases your movement speed by 30% while outdoors in Cat Form and increases your chance to dodge while in Cat Form by 4%.]]></rank>
+        </talent>
+        <talent index="9" name="Feral Charge" icon="Bear.png">
+            <rank index="1"><![CDATA[Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.
+
+5 Rage.  15 second cooldown.]]></rank>
+        </talent>
+        <talent index="10" name="Sharpened Claws" icon="MonsterClaw.png">
+            <rank index="1"><![CDATA[Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 6%.]]></rank>
+        </talent>
+        <talent index="12" name="Improved Shred" icon="VampiricAura.png">
+            <rank index="1"><![CDATA[Reduces the Energy cost of your Shred ability by 6.]]></rank>
+            <rank index="2"><![CDATA[Reduces the Energy cost of your Shred ability by 12.]]></rank>
+        </talent>
+        <talent index="13" name="Predatory Strikes" icon="Cat.png">
+            <rank index="1"><![CDATA[Increases your melee attack power in Cat, Bear and Dire Bear Forms by 50% of your level.]]></rank>
+            <rank index="2"><![CDATA[Increases your melee attack power in Cat, Bear and Dire Bear Forms by 100% of your level.]]></rank>
+            <rank index="3"><![CDATA[Increases your melee attack power in Cat, Bear and Dire Bear Forms by 150% of your level.]]></rank>
+        </talent>
+        <talent index="14" name="Blood Frenzy" icon="GhoulFrenzy.png" requires="10">
+            <rank index="1"><![CDATA[Your critical strikes from Cat Form abilities that add combo points have a 50% chance to add an additional combo point.]]></rank>
+            <rank index="2"><![CDATA[Your critical strikes from Cat Form abilities that add combo points have a 100% chance to add an additional combo point.]]></rank>
+        </talent>
+        <talent index="15" name="Ursine Fury" icon="Cannibalize.png" requires="10">
+            <rank index="1"><![CDATA[Gives you a 50% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 100% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form.]]></rank>
+        </talent>
+        <talent index="16" name="Savage Fury" icon="Ravage.png">
+            <rank index="1"><![CDATA[Increases the damage caused by your Claw, Rake, Maul and Swipe abilities by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage caused by your Claw, Rake, Maul and Swipe abilities by 20%.]]></rank>
+        </talent>
+        <talent index="18" name="Faerie Fire (Feral) (Rank 1)" icon="FaerieFire.png">
+            <rank index="1"><![CDATA[Decrease the armor of the target by 175 for 40 sec.  While affected, the target cannot stealth or turn invisible.
+
+6 second cooldown.]]></rank>
+        </talent>
+        <talent index="21" name="Heart of the Wild" icon="BlessingOfAgility.png" requires="13">
+            <rank index="1"><![CDATA[Increases your Intellect by 4%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 4%.]]></rank>
+            <rank index="2"><![CDATA[Increases your Intellect by 8%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 8% and while in Cat Form your Strength is increased by 8%.]]></rank>
+            <rank index="3"><![CDATA[Increases your Intellect by 12%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 12% and while in Cat Form your Strength is increased by 12%.]]></rank>
+            <rank index="4"><![CDATA[Increases your Intellect by 16%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 16% and while in Cat Form your Strength is increased by 16%.]]></rank>
+            <rank index="5"><![CDATA[Increases your Intellect by 20%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 20%.]]></rank>
+        </talent>
+        <talent index="25" name="Leader of the Pack" icon="LeaderOfThePack.png">
+            <rank index="1"><![CDATA[While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 45 yards by 3%.]]></rank>
+        </talent>
+    </tree>
+    <tree name="Restoration">
+        <talent index="1" name="Improved Mark of the Wild" icon="Regeneration.png">
+            <rank index="1"><![CDATA[Increases the effects of your Mark of the Wild and Gift of the Wild spells by 7%.]]></rank>
+            <rank index="2"><![CDATA[Increases the effects of your Mark of the Wild and Gift of the Wild spells by 14%.]]></rank>
+            <rank index="3"><![CDATA[Increases the effects of your Mark of the Wild and Gift of the Wild spells by 21%.]]></rank>
+            <rank index="4"><![CDATA[Increases the effects of your Mark of the Wild and Gift of the Wild spells by 28%.]]></rank>
+            <rank index="5"><![CDATA[Increases the effects of your Mark of the Wild and Gift of the Wild spells by 35%.]]></rank>
+        </talent>
+        <talent index="2" name="Furor" icon="BlessingOfStamina.png">
+            <rank index="1"><![CDATA[Gives you 20% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.]]></rank>
+            <rank index="2"><![CDATA[Gives you 40% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.]]></rank>
+            <rank index="3"><![CDATA[Gives you 60% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.]]></rank>
+            <rank index="4"><![CDATA[Gives you 80% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.]]></rank>
+            <rank index="5"><![CDATA[Gives you 100% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.]]></rank>
+        </talent>
+        <talent index="4" name="Improved Healing Touch" icon="HealingTouch.png">
+            <rank index="1"><![CDATA[Reduces the cast time of your Healing Touch spell by 0.1 sec.]]></rank>
+            <rank index="2"><![CDATA[Reduces the cast time of your Healing Touch spell by 0.2 sec.]]></rank>
+            <rank index="3"><![CDATA[Reduces the cast time of your Healing Touch spell by 0.3 sec.]]></rank>
+            <rank index="4"><![CDATA[Reduces the cast time of your Healing Touch spell by 0.4 sec.]]></rank>
+            <rank index="5"><![CDATA[Reduces the cast time of your Healing Touch spell by 0.5 sec.]]></rank>
+        </talent>
+        <talent index="5" name="Nature's Focus" icon="HealingWaveGreater.png">
+            <rank index="1"><![CDATA[Gives you a 14% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 28% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells.]]></rank>
+            <rank index="3"><![CDATA[Gives you a 42% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells.]]></rank>
+            <rank index="4"><![CDATA[Gives you a 56% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells.]]></rank>
+            <rank index="5"><![CDATA[Gives you a 70% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells.]]></rank>
+        </talent>
+        <talent index="6" name="Improved Enrage" icon="Enrage.png">
+            <rank index="1"><![CDATA[The Enrage ability now instantly generates 5 Rage.]]></rank>
+            <rank index="2"><![CDATA[The Enrage ability now instantly generates 10 Rage.]]></rank>
+        </talent>
+        <talent index="9" name="Reflection" icon="WindWalkOn.png">
+            <rank index="1"><![CDATA[Allows 5% of your Mana regeneration to continue while casting.]]></rank>
+            <rank index="2"><![CDATA[Allows 10% of your Mana regeneration to continue while casting.]]></rank>
+            <rank index="3"><![CDATA[Allows 15% of your Mana regeneration to continue while casting.]]></rank>
+        </talent>
+        <talent index="10" name="Insect Swarm (Rank 1)" icon="InsectSwarm.png">
+            <rank index="1"><![CDATA[The enemy target is swarmed by insects, decreasing their chance to hit by 2% and causing 66 Nature damage over 12 sec.
+
+45 Mana.]]></rank>
+        </talent>
+        <talent index="11" name="Subtlety" icon="EyeOfTheOwl.png">
+            <rank index="1"><![CDATA[Reduces the threat generated by your Healing spells by 4%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the threat generated by your Healing spells by 8%.]]></rank>
+            <rank index="3"><![CDATA[Reduces the threat generated by your Healing spells by 12%.]]></rank>
+            <rank index="4"><![CDATA[Reduces the threat generated by your Healing spells by 16%.]]></rank>
+            <rank index="5"><![CDATA[Reduces the threat generated by your Healing spells by 20%.]]></rank>
+        </talent>
+        <talent index="13" name="Tranquil Spirit" icon="ElunesGrace.png">
+            <rank index="1"><![CDATA[Reduces the mana cost of your Healing Touch and Tranquility spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the mana cost of your Healing Touch and Tranquility spells by 4%.]]></rank>
+            <rank index="3"><![CDATA[Reduces the mana cost of your Healing Touch and Tranquility spells by 6%.]]></rank>
+            <rank index="4"><![CDATA[Reduces the mana cost of your Healing Touch and Tranquility spells by 8%.]]></rank>
+            <rank index="5"><![CDATA[Reduces the mana cost of your Healing Touch and Tranquility spells by 10%.]]></rank>
+        </talent>
+        <talent index="15" name="Improved Rejuvenation" icon="Rejuvenation.png">
+            <rank index="1"><![CDATA[Increases the effect of your Rejuvenation spell by 5%.]]></rank>
+            <rank index="2"><![CDATA[Increases the effect of your Rejuvenation spell by 10%.]]></rank>
+            <rank index="3"><![CDATA[Increases the effect of your Rejuvenation spell by 15%.]]></rank>
+        </talent>
+        <talent index="16" name="Nature's Swiftness" icon="RavenForm.png" requires="4">
+            <rank index="1"><![CDATA[When activated, your next Nature spell becomes an instant cast spell.
+
+3 minute cooldown.]]></rank>
+        </talent>
+        <talent index="18" name="Gift of Nature" icon="ProtectionformNature.png" requires="10">
+            <rank index="1"><![CDATA[Increases the effect of all healing spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the effect of all healing spells by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases the effect of all healing spells by 6%.]]></rank>
+            <rank index="4"><![CDATA[Increases the effect of all healing spells by 8%.]]></rank>
+            <rank index="5"><![CDATA[Increases the effect of all healing spells by 10%.]]></rank>
+        </talent>
+        <talent index="19" name="Improved Tranquility" icon="Tranquility.png">
+            <rank index="1"><![CDATA[Reduces threat caused by Tranquility by 50%.]]></rank>
+            <rank index="2"><![CDATA[Reduces threat caused by Tranquility by 100%.]]></rank>
+        </talent>
+        <talent index="22" name="Improved Regrowth" icon="ResistNature.png">
+            <rank index="1"><![CDATA[Increases the critical effect chance of your Regrowth spell by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical effect chance of your Regrowth spell by 20%.]]></rank>
+            <rank index="3"><![CDATA[Increases the critical effect chance of your Regrowth spell by 30%.]]></rank>
+            <rank index="4"><![CDATA[Increases the critical effect chance of your Regrowth spell by 40%.]]></rank>
+            <rank index="5"><![CDATA[Increases the critical effect chance of your Regrowth spell by 50%.]]></rank>
+        </talent>
+        <talent index="25" name="Swiftmend" icon="Swiftmend.png" requires="13">
+            <rank index="1"><![CDATA[Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.
+
+20% base Mana.  15 second cooldown.]]></rank>
+        </talent>
+    </tree>
+    <notes>
+        <note index="0" name="General" icon="Book_11.png"><![CDATA[Default Druid
+
+---
+
+Druid base stats at level 60:
+
+Health 	1483
+Mana 	1244
+
+STR 		66
+AGI		60
+STAM 	71
+INT 		97
+SPI 		111]]></note>
+    </notes>
+</class>

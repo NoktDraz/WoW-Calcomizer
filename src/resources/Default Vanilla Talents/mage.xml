@@ -1,0 +1,283 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<class name="MAGE">
+    <tree name="Arcane">
+        <talent index="0" name="Arcane Subtlety" icon="DISPELMAGIC.png">
+            <rank index="1"><![CDATA[Reduces your target's resistance to all your spells by 5 and reduces the threat caused by your Arcane spells by 20%.]]></rank>
+            <rank index="2"><![CDATA[Reduces your target's resistance to all your spells by 10 and reduces the threat caused by your Arcane spells by 40%.]]></rank>
+        </talent>
+        <talent index="1" name="Arcane Focus" icon="Devotion.png">
+            <rank index="1"><![CDATA[Reduces the chance that the opponent can resist your Arcane spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the chance that the opponent can resist your Arcane spells by 4%.]]></rank>
+            <rank index="3"><![CDATA[Reduces the chance that the opponent can resist your Arcane spells by 6%.]]></rank>
+            <rank index="4"><![CDATA[Reduces the chance that the opponent can resist your Arcane spells by 8%.]]></rank>
+            <rank index="5"><![CDATA[Reduces the chance that the opponent can resist your Arcane spells by 10%.]]></rank>
+        </talent>
+        <talent index="2" name="Improved Arcane Missiles" icon="StarFall.png">
+            <rank index="1"><![CDATA[Gives you a 20% chance to avoid interruption caused by damage while channeling Arcane Missiles]]></rank>
+            <rank index="2"><![CDATA[Gives you a 40% chance to avoid interruption caused by damage while channeling Arcane Missiles]]></rank>
+            <rank index="3"><![CDATA[Gives you a 60% chance to avoid interruption caused by damage while channeling Arcane Missiles]]></rank>
+            <rank index="4"><![CDATA[Gives you a 80% chance to avoid interruption caused by damage while channeling Arcane Missiles]]></rank>
+            <rank index="5"><![CDATA[Gives you a 100% chance to avoid interruption caused by damage while channeling Arcane Missiles]]></rank>
+        </talent>
+        <talent index="4" name="Wand Specialization" icon="WandSpec.png">
+            <rank index="1"><![CDATA[Increases your damage with Wands by 13%.]]></rank>
+            <rank index="2"><![CDATA[Increases your damage with Wands by 25%.]]></rank>
+        </talent>
+        <talent index="5" name="Magic Absorption" icon="AstralRecalGroup.png">
+            <rank index="1"><![CDATA[Increases all resistances by 2 and causes all spells you fully resist to restore 1% of your total mana.  1 sec. cooldown.]]></rank>
+            <rank index="2"><![CDATA[Increases all resistances by 4 and causes all spells you fully resist to restore 2% of your total mana.  1 sec. cooldown.]]></rank>
+            <rank index="3"><![CDATA[Increases all resistances by 6 and causes all spells you fully resist to restore 3% of your total mana.  1 sec. cooldown.]]></rank>
+            <rank index="4"><![CDATA[Increases all resistances by 8 and causes all spells you fully resist to restore 4% of your total mana.  1 sec. cooldown.]]></rank>
+            <rank index="5"><![CDATA[Increases all resistances by 10 and causes all spells you fully resist to restore 5% of your total mana.  1 sec. cooldown.]]></rank>
+        </talent>
+        <talent index="6" name="Arcane Concentration" icon="ManaBurn.png">
+            <rank index="1"><![CDATA[Gives you a 2% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by 100%.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 4% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by 100%.]]></rank>
+            <rank index="3"><![CDATA[Gives you a 6% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by 100%.]]></rank>
+            <rank index="4"><![CDATA[Gives you a 8% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by 100%.]]></rank>
+            <rank index="5"><![CDATA[Gives you a 10% chance of entering a Clearcasting state after any damage spell hits a target.  The Clearcasting state reduces the mana cost of your next damage spell by 100%.]]></rank>
+        </talent>
+        <talent index="8" name="Magic Attunement" icon="AbolishMagic.png">
+            <rank index="1"><![CDATA[Increases the effect of your Amplify Magic and Dampen Magic spells by 25%.]]></rank>
+            <rank index="2"><![CDATA[Increases the effect of your Amplify Magic and Dampen Magic spells by 50%.]]></rank>
+        </talent>
+        <talent index="9" name="Improved Arcane Explosion" icon="WispSplode.png">
+            <rank index="1"><![CDATA[Increases the critical strike chance of your Arcane Explosion spell by an additional 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike chance of your Arcane Explosion spell by an additional 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases the critical strike chance of your Arcane Explosion spell by an additional 6%.]]></rank>
+        </talent>
+        <talent index="10" name="Arcane Resilience" icon="ArcaneResilience.png">
+            <rank index="1"><![CDATA[Increases your armor by an amount equal to 50% of your Intellect.]]></rank>
+        </talent>
+        <talent index="12" name="Improved Mana Shield" icon="DetectLesserInvisibility.png">
+            <rank index="1"><![CDATA[Decreases the mana lost per point of damage taken when Mana Shield is active by 10%.]]></rank>
+            <rank index="2"><![CDATA[Decreases the mana lost per point of damage taken when Mana Shield is active by 20%.]]></rank>
+        </talent>
+        <talent index="13" name="Improved Counterspell" icon="IceShock.png">
+            <rank index="1"><![CDATA[Gives your Counterspell a 50% chance to silence the target for 4 sec.]]></rank>
+            <rank index="2"><![CDATA[Gives your Counterspell a 100% chance to silence the target for 4 sec.]]></rank>
+        </talent>
+        <talent index="15" name="Arcane Meditation" icon="SiphonMana.png">
+            <rank index="1"><![CDATA[Allows 5% of your Mana regeneration to continue while casting.]]></rank>
+            <rank index="2"><![CDATA[Allows 10% of your Mana regeneration to continue while casting.]]></rank>
+            <rank index="3"><![CDATA[Allows 15% of your Mana regeneration to continue while casting.]]></rank>
+        </talent>
+        <talent index="17" name="Presence of Mind" icon="EnchantArmor.png">
+            <rank index="1"><![CDATA[When activated, your next Mage spell with a casting time less than 10 sec becomes an instant cast spell.
+
+3 minute cooldown.]]></rank>
+        </talent>
+        <talent index="18" name="Arcane Mind" icon="Charm.png" requires="10">
+            <rank index="1"><![CDATA[Increases your maximum Mana by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases your maximum Mana by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases your maximum Mana by 6%.]]></rank>
+            <rank index="4"><![CDATA[Increases your maximum Mana by 8%.]]></rank>
+            <rank index="5"><![CDATA[Increases your maximum Mana by 10%.]]></rank>
+        </talent>
+        <talent index="21" name="Arcane Instability" icon="Teleport.png" requires="17">
+            <rank index="1"><![CDATA[Increases your spell damage and critical strike chance by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases your spell damage and critical strike chance by 2%.]]></rank>
+            <rank index="3"><![CDATA[Increases your spell damage and critical strike chance by 3%.]]></rank>
+        </talent>
+        <talent index="25" name="Arcane Power" icon="Lightning.png" requires="21">
+            <rank index="1"><![CDATA[When activated, your spells deal 30% more damage while costing 30% more mana to cast.  This effect lasts 15 sec.
+
+3 minute cooldown.]]></rank>
+        </talent>
+    </tree>
+    <tree name="Fire">
+        <talent index="1" name="Improved Fireball" icon="FlameBolt.png">
+            <rank index="1"><![CDATA[Reduces the casting time of your Fireball spell by 0.1 secs.]]></rank>
+            <rank index="2"><![CDATA[Reduces the casting time of your Fireball spell by 0.2 secs.]]></rank>
+            <rank index="3"><![CDATA[Reduces the casting time of your Fireball spell by 0.3 secs.]]></rank>
+            <rank index="4"><![CDATA[Reduces the casting time of your Fireball spell by 0.4 secs.]]></rank>
+            <rank index="5"><![CDATA[Reduces the casting time of your Fireball spell by 0.5 secs.]]></rank>
+        </talent>
+        <talent index="2" name="Impact" icon="MeteorStorm.png">
+            <rank index="1"><![CDATA[Gives your Fire damage spells a 2% chance to stun the target for 2 sec.]]></rank>
+            <rank index="2"><![CDATA[Gives your Fire damage spells a 4% chance to stun the target for 2 sec.]]></rank>
+            <rank index="3"><![CDATA[Gives your Fire damage spells a 6% chance to stun the target for 2 sec.]]></rank>
+            <rank index="4"><![CDATA[Gives your Fire damage spells a 8% chance to stun the target for 2 sec.]]></rank>
+            <rank index="5"><![CDATA[Gives your Fire damage spells a 10% chance to stun the target for 2 sec.]]></rank>
+        </talent>
+        <talent index="4" name="Ignite" icon="Incinerate.png">
+            <rank index="1"><![CDATA[Your critical strikes from Fire damage spells cause the target to burn for an additional 8% of your spell's damage over 4 sec.]]></rank>
+            <rank index="2"><![CDATA[Your critical strikes from Fire damage spells cause the target to burn for an additional 16% of your spell's damage over 4 sec.]]></rank>
+            <rank index="3"><![CDATA[Your critical strikes from Fire damage spells cause the target to burn for an additional 24% of your spell's damage over 4 sec.]]></rank>
+            <rank index="4"><![CDATA[Your critical strikes from Fire damage spells cause the target to burn for an additional 32% of your spell's damage over 4 sec.]]></rank>
+            <rank index="5"><![CDATA[Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec.]]></rank>
+        </talent>
+        <talent index="5" name="Flame Throwing" icon="Flare.png">
+            <rank index="1"><![CDATA[Increases the range of your Fire spells by 3 yards.]]></rank>
+            <rank index="2"><![CDATA[Increases the range of your Fire spells by 6 yards.]]></rank>
+        </talent>
+        <talent index="6" name="Improved Fire Blast" icon="Fireball.png">
+            <rank index="1"><![CDATA[Reduces the cooldown of your Fire Blast spell by 0.5 sec.]]></rank>
+            <rank index="2"><![CDATA[Reduces the cooldown of your Fire Blast spell by 1 sec.]]></rank>
+            <rank index="3"><![CDATA[Reduces the cooldown of your Fire Blast spell by 1.5 sec.]]></rank>
+        </talent>
+        <talent index="8" name="Incinerate" icon="FlameShock.png">
+            <rank index="1"><![CDATA[Increases the critical strike chance of your Fire Blast and Scorch spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike chance of your Fire Blast and Scorch spells by 4%.]]></rank>
+        </talent>
+        <talent index="9" name="Improved Flamestrike" icon="SelfDestruct.png">
+            <rank index="1"><![CDATA[Increases the critical strike chance of your Flamestrike spell by 5%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike chance of your Flamestrike spell by 10%.]]></rank>
+            <rank index="3"><![CDATA[Increases the critical strike chance of your Flamestrike spell by 15%.]]></rank>
+        </talent>
+        <talent index="10" name="Pyroblast (Rank 1)" icon="Fireball02.png">
+            <rank index="1"><![CDATA[Hurls an immense fiery boulder that causes 148 to 195 Fire damage and an additional 56 Fire damage over 6 sec.
+
+6 second cast.
+125 Mana.]]></rank>
+        </talent>
+        <talent index="11" name="Burning Soul" icon="Fire.png">
+            <rank index="1"><![CDATA[Gives your Fire spells a 35% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 15%.]]></rank>
+            <rank index="2"><![CDATA[Gives your Fire spells a 70% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 30%.]]></rank>
+        </talent>
+        <talent index="12" name="Improved Scorch" icon="SoulBurn.png">
+            <rank index="1"><![CDATA[Your Scorch spells have a 33% chance to cause your target to be vulnerable to Fire damage.  This vulnerability increases the Fire damage dealt to your target by 3% and lasts 30 sec.  Stacks up to 5 times.]]></rank>
+            <rank index="2"><![CDATA[Your Scorch spells have a 66% chance to cause your target to be vulnerable to Fire damage.  This vulnerability increases the Fire damage dealt to your target by 3% and lasts 30 sec.  Stacks up to 5 times.]]></rank>
+            <rank index="3"><![CDATA[Your Scorch spells have a 100% chance to cause your target to be vulnerable to Fire damage.  This vulnerability increases the Fire damage dealt to your target by 3% and lasts 30 sec.  Stacks up to 5 times.]]></rank>
+        </talent>
+        <talent index="13" name="Improved Fire Ward" icon="FireArmor.png">
+            <rank index="1"><![CDATA[Causes your Fire Ward to have a 10% chance to reflect Fire spells while active.]]></rank>
+            <rank index="2"><![CDATA[Causes your Fire Ward to have a 20% chance to reflect Fire spells while active.]]></rank>
+        </talent>
+        <talent index="15" name="Master of Elements" icon="MasterOfElements.png">
+            <rank index="1"><![CDATA[Your Fire and Frost spell criticals will refund 10% of their base mana cost.]]></rank>
+            <rank index="2"><![CDATA[Your Fire and Frost spell criticals will refund 20% of their base mana cost.]]></rank>
+            <rank index="3"><![CDATA[Your Fire and Frost spell criticals will refund 30% of their base mana cost.]]></rank>
+        </talent>
+        <talent index="17" name="Critical Mass" icon="WispHeal.png">
+            <rank index="1"><![CDATA[Increases the critical strike chance of your Fire spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike chance of your Fire spells by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases the critical strike chance of your Fire spells by 6%.]]></rank>
+        </talent>
+        <talent index="18" name="Blast Wave (Rank 1)" icon="Exorcism.png" requires="10">
+            <rank index="1"><![CDATA[A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 160 to 192 Fire damage, and dazing them for 6 sec.
+
+215 Mana.  45 second cooldown.]]></rank>
+        </talent>
+        <talent index="22" name="Fire Power" icon="Immolation.png">
+            <rank index="1"><![CDATA[Increases the damage done by your Fire spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage done by your Fire spells by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage done by your Fire spells by 6%.]]></rank>
+            <rank index="4"><![CDATA[Increases the damage done by your Fire spells by 8%.]]></rank>
+            <rank index="5"><![CDATA[Increases the damage done by your Fire spells by 10%.]]></rank>
+        </talent>
+        <talent index="25" name="Combustion" icon="SealOfFire.png" requires="17">
+            <rank index="1"><![CDATA[When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%.  This effect lasts until you have caused 3 critical strikes with Fire spells.
+
+3 minute cooldown.]]></rank>
+        </talent>
+    </tree>
+    <tree name="Frost">
+        <talent index="0" name="Frost Warding" icon="FrostWard.png">
+            <rank index="1"><![CDATA[Increases the armor and resistances given by your Frost Armor and Ice Armor spells by 15%.  In addition, gives your Frost Ward a 10% chance to reflect Frost spells and effects while active.]]></rank>
+            <rank index="2"><![CDATA[Increases the armor and resistances given by your Frost Armor and Ice Armor spells by 30%.  In addition, gives your Frost Ward a 20% chance to reflect Frost spells and effects while active.]]></rank>
+        </talent>
+        <talent index="1" name="Improved Frostbolt" icon="FrostBolt02.png">
+            <rank index="1"><![CDATA[Reduces the casting time of your Frostbolt spell by 0.1 sec.]]></rank>
+            <rank index="2"><![CDATA[Reduces the casting time of your Frostbolt spell by 0.2 sec.]]></rank>
+            <rank index="3"><![CDATA[Reduces the casting time of your Frostbolt spell by 0.3 sec.]]></rank>
+            <rank index="4"><![CDATA[Reduces the casting time of your Frostbolt spell by 0.4 sec.]]></rank>
+            <rank index="5"><![CDATA[Reduces the casting time of your Frostbolt spell by 0.5 sec.]]></rank>
+        </talent>
+        <talent index="2" name="Elemental Precision" icon="MagicDamage.png">
+            <rank index="1"><![CDATA[Reduces the chance that the opponent can resist your Frost and Fire spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the chance that the opponent can resist your Frost and Fire spells by 4%.]]></rank>
+            <rank index="3"><![CDATA[Reduces the chance that the opponent can resist your Frost and Fire spells by 6%.]]></rank>
+        </talent>
+        <talent index="4" name="Ice Shards" icon="IceShard.png">
+            <rank index="1"><![CDATA[Increases the critical strike damage bonus of your Frost spells by 20%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike damage bonus of your Frost spells by 40%.]]></rank>
+            <rank index="3"><![CDATA[Increases the critical strike damage bonus of your Frost spells by 60%.]]></rank>
+            <rank index="4"><![CDATA[Increases the critical strike damage bonus of your Frost spells by 80%.]]></rank>
+            <rank index="5"><![CDATA[Increases the critical strike damage bonus of your Frost spells by 100%.]]></rank>
+        </talent>
+        <talent index="5" name="Frostbite" icon="FrostArmor.png">
+            <rank index="1"><![CDATA[Gives your Chill effects a 5% chance to freeze the target for 5 sec]]></rank>
+            <rank index="2"><![CDATA[Gives your Chill effects a 10% chance to freeze the target for 5 sec]]></rank>
+            <rank index="3"><![CDATA[Gives your Chill effects a 15% chance to freeze the target for 5 sec]]></rank>
+        </talent>
+        <talent index="6" name="Improved Frost Nova" icon="FrostNova.png">
+            <rank index="1"><![CDATA[Reduces the cooldown of your Frost Nova spell by 2 sec.]]></rank>
+            <rank index="2"><![CDATA[Reduces the cooldown of your Frost Nova spell by 4 sec.]]></rank>
+        </talent>
+        <talent index="7" name="Permafrost" icon="Wisp.png">
+            <rank index="1"><![CDATA[Increases the duration of your Chill effects by 1 sec and reduces the target's speed by an additional 4%.]]></rank>
+            <rank index="2"><![CDATA[Increases the duration of your Chill effects by 2 secs and reduces the target's speed by an additional 7%.]]></rank>
+            <rank index="3"><![CDATA[Increases the duration of your Chill effects by 3 secs and reduces the target's speed by an additional 10%.]]></rank>
+        </talent>
+        <talent index="8" name="Piercing Ice" icon="Frostbolt.png">
+            <rank index="1"><![CDATA[Increases the damage done by your Frost spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage done by your Frost spells by 4%.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage done by your Frost spells by 6%.]]></rank>
+        </talent>
+        <talent index="9" name="Cold Snap" icon="WizardMark.png">
+            <rank index="1"><![CDATA[When activated, this spell finishes the cooldown on all of your Frost spells.
+
+10 minute cooldown.]]></rank>
+        </talent>
+        <talent index="11" name="Improved Blizzard" icon="IceStorm.png">
+            <rank index="1"><![CDATA[Adds a chill effect to your Blizzard spell.  This effect lowers the target's movement speed by 30%.  Lasts 1.50 sec.]]></rank>
+            <rank index="2"><![CDATA[Adds a chill effect to your Blizzard spell.  This effect lowers the target's movement speed by 50%.  Lasts 1.50 sec.]]></rank>
+            <rank index="3"><![CDATA[Adds a chill effect to your Blizzard spell.  This effect lowers the target's movement speed by 65%.  Lasts 1.50 sec.]]></rank>
+        </talent>
+        <talent index="12" name="Arctic Reach" icon="DarkRitual.png">
+            <rank index="1"><![CDATA[Increases the range of your Frostbolt and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the range of your Frostbolt and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%.]]></rank>
+        </talent>
+        <talent index="13" name="Frost Channeling" icon="Stun.png">
+            <rank index="1"><![CDATA[Reduces the mana cost of your Frost spells by 5% and reduces the threat caused by your Frost spells by 10%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the mana cost of your Frost spells by 10% and reduces the threat caused by your Frost spells by 20%.]]></rank>
+            <rank index="3"><![CDATA[Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%.]]></rank>
+        </talent>
+        <talent index="14" name="Shatter" icon="FrostShock.png" requires="6">
+            <rank index="1"><![CDATA[Increases the critical strike chance of all your spells against frozen targets by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike chance of all your spells against frozen targets by 20%.]]></rank>
+            <rank index="3"><![CDATA[Increases the critical strike chance of all your spells against frozen targets by 30%.]]></rank>
+            <rank index="4"><![CDATA[Increases the critical strike chance of all your spells against frozen targets by 40%.]]></rank>
+            <rank index="5"><![CDATA[Increases the critical strike chance of all your spells against frozen targets by 50%.]]></rank>
+        </talent>
+        <talent index="17" name="Ice Block" icon="Frost.png">
+            <rank index="1"><![CDATA[You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move or cast spells.
+
+8% base Mana.  5 minute cooldown.]]></rank>
+        </talent>
+        <talent index="18" name="Improved Cone of Cold" icon="Glacier.png">
+            <rank index="1"><![CDATA[Increases the damage dealt by your Cone of Cold spell by 15%.]]></rank>
+            <rank index="2"><![CDATA[Increases the damage dealt by your Cone of Cold spell by 25%.]]></rank>
+            <rank index="3"><![CDATA[Increases the damage dealt by your Cone of Cold spell by 35%.]]></rank>
+        </talent>
+        <talent index="22" name="Winter's Chill" icon="ChillingBlast.png">
+            <rank index="1"><![CDATA[Gives your Frost damage spells a 20% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times.]]></rank>
+            <rank index="2"><![CDATA[Gives your Frost damage spells a 40% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times.]]></rank>
+            <rank index="3"><![CDATA[Gives your Frost damage spells a 60% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times.]]></rank>
+            <rank index="4"><![CDATA[Gives your Frost damage spells a 80% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times.]]></rank>
+            <rank index="5"><![CDATA[Gives your Frost damage spells a 100% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times.]]></rank>
+        </talent>
+        <talent index="25" name="Ice Barrier (Rank 1)" icon="Lament.png" requires="17">
+            <rank index="1"><![CDATA[Instantly shields you, absorbing 455 damage.  Lasts 1 min.  While the shield holds, spells will not be interrupted.
+
+305 Mana.  30 second cooldown.]]></rank>
+        </talent>
+    </tree>
+    <notes>
+        <note index="0" name="General" icon="Book_11.png"><![CDATA[Default Mage
+
+---
+
+Mage base stats at level 60:
+
+Health 	1360
+Mana 	1273
+
+STR 		29
+AGI		36
+STAM 	45
+INT 		126
+SPI 		123]]></note>
+    </notes>
+</class>
