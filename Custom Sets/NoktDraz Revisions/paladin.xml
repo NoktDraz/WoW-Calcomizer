@@ -55,19 +55,19 @@ Increases the effect of your Concentration Aura by an additional 30%.]]></rank>
         <talent index="10" name="Sanctified Light" icon="HolyGuidance.png">
             <rank index="1"><![CDATA[Increases the critical effect chance of your Holy Light and Flash of Light spells by 1%.
 
-Increases the radius of Consecration by 5%.]]></rank>
+Reduces the chance your spells will be dispelled by 6%.]]></rank>
             <rank index="2"><![CDATA[Increases the critical effect chance of your Holy Light and Flash of Light spells by 2%.
 
-Increases the radius of Consecration by 10%.]]></rank>
+Reduces the chance your spells will be dispelled by 13%.]]></rank>
             <rank index="3"><![CDATA[Increases the critical effect chance of your Holy Light and Flash of Light spells by 3%.
 
-Increases the radius of Consecration by 15%.]]></rank>
+Reduces the chance your spells will be dispelled by 20%.]]></rank>
             <rank index="4"><![CDATA[Increases the critical effect chance of your Holy Light and Flash of Light spells by 4%.
 
-Increases the radius of Consecration by 20%.]]></rank>
+Reduces the chance your spells will be dispelled by 26%.]]></rank>
             <rank index="5"><![CDATA[Increases the critical effect chance of your Holy Light and Flash of Light spells by 5%.
 
-Increases the radius of Consecration by 25%.]]></rank>
+Reduces the chance your spells will be dispelled by 33%.]]></rank>
         </talent>
         <talent index="11" name="Light's Grace" icon="Aspiration.png">
             <rank index="1"><![CDATA[Gives your melee attacks with Seal of Light a chance, and your Holy Light spell a 25% chance, to cause your next Flash of Light within 10 seconds to be instant cast.]]></rank>
@@ -84,13 +84,13 @@ Increases your spell power by 50% of your total Mana per 5 stat.]]></rank>
         <talent index="13" name="Eternal Splendor" icon="SurgeofLight.png">
             <rank index="1"><![CDATA[After your spell casting gets interrupted, you are able to cast non-instant Holy spells with a 120% slower casting time during the lockout.
 
-Reduces the chance your spells will be dispelled by 10%.]]></rank>
+Increases the radius of Consecration by 10%.]]></rank>
             <rank index="2"><![CDATA[After your spell casting gets interrupted, you are able to cast non-instant Holy spells with a 90% slower casting time during the lockout.
 
-Reduces the chance your spells will be dispelled by 20%.]]></rank>
+Increases the radius of Consecration by 15%.]]></rank>
             <rank index="3"><![CDATA[After your spell casting gets interrupted, you are able to cast non-instant Holy spells with a 60% slower casting time during the lockout.
 
-Reduces the chance your spells will be dispelled by 33%.]]></rank>
+Increases the radius of Consecration by 20%.]]></rank>
         </talent>
         <talent index="15" name="Purifying Power" icon="PureOfHeart.png">
             <rank index="1"><![CDATA[After casting Consecration, Divine Favor, Exorcism or Holy Wrath, gives your next Flash of Light, Holy Light or Holy Shock heal spell a 50% chance to remove 1 Curse, 1 Magic, 1 Disease and 1 Poison effect from its target.
@@ -157,10 +157,10 @@ This spell has a 20% increased critical effect chance.
             <rank index="4"><![CDATA[Increases your total stats by 4%.]]></rank>
             <rank index="5"><![CDATA[Increases your total stats by 5%.]]></rank>
         </talent>
-        <talent index="2" name="Righteous Protector" icon="Guardian.png">
-            <rank index="1"><![CDATA[Increases your Holy damage and healing done by 2% while you have a shield equipped.]]></rank>
-            <rank index="2"><![CDATA[Increases your Holy damage and healing done by 4% while you have a shield equipped.]]></rank>
-            <rank index="3"><![CDATA[Increases your Holy damage and healing done by 6% while you have a shield equipped.]]></rank>
+        <talent index="2" name="Righteous Defender" icon="Guardian.png">
+            <rank index="1"><![CDATA[Increases your Holy damage by 2%, and the armor bonus of your Devotion Aura by 5%, while you have a shield equipped.]]></rank>
+            <rank index="2"><![CDATA[Increases your Holy damage by 4%, and the armor bonus of your Devotion Aura by 10%, while you have a shield equipped.]]></rank>
+            <rank index="3"><![CDATA[Increases your Holy damage by 6%, and the armor bonus of your Devotion Aura by 15%, while you have a shield equipped.]]></rank>
         </talent>
         <talent index="4" name="Guarded by the Light" icon="TouchedbyLight.png">
             <rank index="1"><![CDATA[Reduces the cooldown of your Divine Protection and Divine Shield spells by 20 secs.
@@ -206,7 +206,7 @@ Increases the amount of damage absorbed by your shield by 30%.]]></rank>
 8% base Mana.]]></rank>
         </talent>
         <talent index="10" name="Holy Shield (Rank 1)" icon="BlessingOfProtection.png" requires="6">
-            <rank index="1"><![CDATA[Increases chance to block by 65% for 10 sec, deals 30 Holy damage for each attack blocked, and allows you to block damage from spells while active.  Each block expends a charge.  2 charges.
+            <rank index="1"><![CDATA[Increases chance to block by 50% for 10 sec, deals 30 Holy damage for each attack blocked, and allows you to block damage from spells while active.  Each block expends a charge.  2 charges.
 
 75 Mana.  10 second cooldown.]]></rank>
         </talent>
@@ -291,9 +291,9 @@ Increases your maximum Mana by 20% of your total Armor.]]></rank>
         </talent>
     </tree>
     <tree name="Retribution">
-        <talent index="0" name="Sanctified Seals" icon="HolySmite.png">
-            <rank index="1"><![CDATA[Increases the dispel resistance of your Seals by 25%.]]></rank>
-            <rank index="2"><![CDATA[Increases the dispel resistance of your Seals by 50%.]]></rank>
+        <talent index="0" name="Sanctified Insignia" icon="HolySmite.png">
+            <rank index="1"><![CDATA[Increases the dispel resistance of your Seals by 16% and Codes by 50%.]]></rank>
+            <rank index="2"><![CDATA[Increases the dispel resistance of your Seals by 33% and Codes by 100%.]]></rank>
         </talent>
         <talent index="1" name="Benediction" icon="WindWalkOn.png">
             <rank index="1"><![CDATA[Reduces the Mana cost of your instant cast spells by 5%.]]></rank>
@@ -306,10 +306,10 @@ Increases your maximum Mana by 20% of your total Armor.]]></rank>
             <rank index="3"><![CDATA[Increases your Intellect by 15% of your total Strength while you have a two-handed melee weapon equipped.]]></rank>
         </talent>
         <talent index="3" name="Pursuit of Justice" icon="PersuitofJustice.png">
-            <rank index="1"><![CDATA[Increases your movement speed by 4%.
+            <rank index="1"><![CDATA[Increases your movement speed by 4%.  This does not stack with other movement speed increasing effects.
 
 Ranged attacks against you, from more than 20 yds away, have a 15% chance to increase your movement speed by 30% for 3 secs.]]></rank>
-            <rank index="2"><![CDATA[Increases your movement speed by 8%.
+            <rank index="2"><![CDATA[Increases your movement speed by 8%.  This does not stack with other movement speed increasing effects.
 
 Ranged attacks against you, from more than 20 yds away, have a 30% chance to increase your movement speed by 30% for 3 secs.]]></rank>
         </talent>
@@ -344,24 +344,7 @@ Reduces damage taken from periodic effects by 15%.]]></rank>
 
 Reduces damage taken from periodic effects by 15%.]]></rank>
         </talent>
-        <talent index="10" name="Improved Retribution Aura" icon="AuraOfLight.png">
-            <rank index="1"><![CDATA[Your Retribution Aura increases chance to hit with Holy spells by 1% and restores Mana equal to 5% of the Holy damage done with single target attacks and spells.]]></rank>
-            <rank index="2"><![CDATA[Your Retribution Aura increases chance to hit with Holy spells by 2% and restores Mana equal to 10% of the Holy damage done with single target attacks and spells.]]></rank>
-            <rank index="3"><![CDATA[Your Retribution Aura increases chance to hit with Holy spells by 3% and restores Mana equal to 15% of the Holy damage done with single target attacks and spells.]]></rank>
-        </talent>
-        <talent index="11" name="Codification" icon="Codification.jpg">
-            <rank index="1"><![CDATA[Adopts a sacred Code from the currently active Seal spell.  Only one Code can be active on the Paladin at any one time and the effect does not stack with the Seal spell it was derived from.  Lasts 10 minutes.
-
-24% base Mana.  1 minute cooldown.]]></rank>
-        </talent>
-        <talent index="12" name="Reckoning" icon="BlessingOfStrength.png">
-            <rank index="1"><![CDATA[Gives you a 20% chance after being the victim of a critical strike, or a 10% chance after an enemy attempts to dispel a beneficial effect from you, to gain an extra attack.]]></rank>
-            <rank index="2"><![CDATA[Gives you a 40% chance after being the victim of a critical strike, or a 16% chance after an enemy attempts to dispel a beneficial effect from you, to gain an extra attack.]]></rank>
-            <rank index="3"><![CDATA[Gives you a 60% chance after being the victim of a critical strike, or a 22% chance after an enemy attempts to dispel a beneficial effect from you, to gain an extra attack.]]></rank>
-            <rank index="4"><![CDATA[Gives you a 80% chance after being the victim of a critical strike, or a 28% chance after an enemy attempts to dispel a beneficial effect from you, to gain an extra attack.]]></rank>
-            <rank index="5"><![CDATA[Gives you a 100% chance after being the victim of a critical strike, or a 35% chance after an enemy attempts to dispel a beneficial effect from you, to gain an extra attack.]]></rank>
-        </talent>
-        <talent index="14" name="Improved Judgement" icon="RighteousFury.png">
+        <talent index="10" name="Improved Judgement" icon="RighteousFury.png">
             <rank index="1"><![CDATA[Your Judgement spell restores Mana equal 30% of your Mana per 5 stat.
 
 Increases the duration of your Judgements by 2 secs.]]></rank>
@@ -378,6 +361,23 @@ Increases the duration of your Judgements by 8 secs.]]></rank>
 
 Increases the duration of your Judgements by 10 secs.]]></rank>
         </talent>
+        <talent index="11" name="Codes of Virtue" icon="Codification.jpg">
+            <rank index="1"><![CDATA[Adopts a sacred Code from the currently active Seal spell, imbuing the Paladin with its power for 10 minutes.  Only one Code can be active on the Paladin at any one time and the effect does not stack with the Seal spell it was derived from.  Lasts 10 minutes.
+
+24% base Mana.  1 minute cooldown.]]></rank>
+        </talent>
+        <talent index="12" name="Reckoning" icon="BlessingOfStrength.png">
+            <rank index="1"><![CDATA[Gives you a 20% chance after being the victim of a critical strike, or a 10% chance after an enemy attempts to dispel a beneficial effect from you, to gain an extra attack.]]></rank>
+            <rank index="2"><![CDATA[Gives you a 40% chance after being the victim of a critical strike, or a 16% chance after an enemy attempts to dispel a beneficial effect from you, to gain an extra attack.]]></rank>
+            <rank index="3"><![CDATA[Gives you a 60% chance after being the victim of a critical strike, or a 22% chance after an enemy attempts to dispel a beneficial effect from you, to gain an extra attack.]]></rank>
+            <rank index="4"><![CDATA[Gives you a 80% chance after being the victim of a critical strike, or a 28% chance after an enemy attempts to dispel a beneficial effect from you, to gain an extra attack.]]></rank>
+            <rank index="5"><![CDATA[Gives you a 100% chance after being the victim of a critical strike, or a 35% chance after an enemy attempts to dispel a beneficial effect from you, to gain an extra attack.]]></rank>
+        </talent>
+        <talent index="15" name="Improved Retribution Aura" icon="AuraOfLight.png">
+            <rank index="1"><![CDATA[Your Retribution Aura increases chance to hit with Holy spells by 1% and gives Holy damaging attacks a 5% chance to increase all damage taken by the target by 10% for 10 secs.]]></rank>
+            <rank index="2"><![CDATA[Your Retribution Aura increases chance to hit with Holy spells by 2% and gives Holy damaging attacks a 10% chance to increase all damage taken by the target by 10% for 10 secs.]]></rank>
+            <rank index="3"><![CDATA[Your Retribution Aura increases chance to hit with Holy spells by 3% and gives Holy damaging attacks a 15% chance to increase all damage taken by the target by 10% for 10 secs.]]></rank>
+        </talent>
         <talent index="16" name="Fanaticism" icon="Avatar.png" requires="17">
             <rank index="1"><![CDATA[Gives you a 1% bonus to Physical and Holy damage you deal for 15 sec after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to 5 times.]]></rank>
             <rank index="2"><![CDATA[Gives you a 2% bonus to Physical and Holy damage you deal for 15 sec after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to 5 times.]]></rank>
@@ -387,8 +387,8 @@ Increases the duration of your Judgements by 10 secs.]]></rank>
             <rank index="1"><![CDATA[Increases the critical strike chance of your Judgement and Hammer of Wrath spells by 10% and an additional 15% against enemies that are stunned or incapacitated.]]></rank>
             <rank index="2"><![CDATA[Increases the critical strike chance of your Judgement and Hammer of Wrath spells by 20% and an additional 30% against enemies that are stunned or incapacitated.]]></rank>
         </talent>
-        <talent index="18" name="Adjudicator" icon="EnlightenedJudgements.png" requires="14">
-            <rank index="1"><![CDATA[Your Judgement spell refreshes all Judgements on the target and increases the target's chance to be hit and critically hit with any attack by an additional 3%.
+        <talent index="18" name="Adjudicator" icon="EnlightenedJudgements.png" requires="10">
+            <rank index="1"><![CDATA[Your Judgement spell refreshes all Judgements on the target.
 
 Your Judgement spell restores 5 Rage, 10 Energy and 3% base Mana to all party members when it critically hits.]]></rank>
         </talent>
@@ -440,16 +440,16 @@ Hammer of Wrath - Now a Retribution skill.
 Holy Wrath - Target restrictions removed.  Critically strikes and stuns Undead and Demons
 
 Turn Undead - Now can also target Demons.  Renamed to Turn Evil.]]></note>
-        <note index="1" name="Clarifications" icon="Spy.png"><![CDATA[Paladin base stats at level 60:
+        <note index="1" name="Miscellaneous" icon="Spy.png"><![CDATA[Paladin base stats at level 60:
 
-Health 1381
-Mana 1512
+Health 	1381
+Mana 	1512
 
-STR 106
-AGI 63
-STAM 102
-INT 80
-SPI 76
+STR 		106
+AGI		63
+STAM 	102
+INT 		80
+SPI 		76
 
 ---
 

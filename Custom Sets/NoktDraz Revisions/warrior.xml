@@ -34,13 +34,13 @@
             <rank index="3"><![CDATA[Your Heroic Strike hits increase the critical strike chance of your next damaging ability by 25%.]]></rank>
         </talent>
         <talent index="7" name="Tactical Mastery" icon="EnchantArmor.png">
-            <rank index="1"><![CDATA[You retain up to 10 of your rage points when you change stances.
+            <rank index="1"><![CDATA[You retain up to 5 of your rage points when you change stances.
 
 Increases the range of your Charge, Intervene and Intercept abilities by 2 yards.]]></rank>
-            <rank index="2"><![CDATA[You retain up to 20 of your rage points when you change stances.
+            <rank index="2"><![CDATA[You retain up to 10 of your rage points when you change stances.
 
 Increases the range of your Charge, Intervene and Intercept abilities by 4 yards.]]></rank>
-            <rank index="3"><![CDATA[You retain up to 30 of your rage points when you change stances.
+            <rank index="3"><![CDATA[You retain up to 15 of your rage points when you change stances.
 
 Increases the range of your Charge, Intervene and Intercept abilities by 6 yards.]]></rank>
         </talent>
@@ -65,8 +65,8 @@ Increases your critical strike chance with melee attacks by 50% of your Parry ch
             <rank index="2"><![CDATA[Gives you the ability to parry direct damage spells, if cast from more than 15 yds away, reducing the damage by up to 300% of your total Strength.]]></rank>
         </talent>
         <talent index="13" name="Impale" icon="SearingArrow.png" requires="5">
-            <rank index="1"><![CDATA[Increases the critical strike damage bonus of your abilities by 5%.]]></rank>
-            <rank index="2"><![CDATA[Increases the critical strike damage bonus of your abilities by 10%.]]></rank>
+            <rank index="1"><![CDATA[Increases the critical strike damage bonus of your Heroic Strike, Mortal Strike, Overpower, Slam, Execute and Bloodthirst by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike damage bonus of your Heroic Strike, Mortal Strike, Overpower, Slam, Execute and Bloodthirst by 20%.]]></rank>
         </talent>
         <talent index="14" name="Focused Assault" icon="UnrelentingAssault.png" requires="10">
             <rank index="1"><![CDATA[Gives your melee attacks a chance to increase your attack speed by 1%, up to a maximum of 5%.  Lasts 6 secs. but expires if you lose focus on the target.]]></rank>
@@ -139,19 +139,19 @@ Weapons with an attack speed slower than 3.0 increase Rage generation from deali
     </tree>
     <tree name="Fury">
         <talent index="1" name="Intimidating Presence" icon="ShamanRage.png">
-            <rank index="1"><![CDATA[Reduces the target's chance to resist your Taunt and Challenging Shout abilities by 1%.
+            <rank index="1"><![CDATA[Reduces the chance your Taunt and Challenging Shout abilities are resisted by 1%.
 
 Reduces the cooldown of your Intimidating Shout ability by 12 seconds.]]></rank>
-            <rank index="2"><![CDATA[Reduces the target's chance to resist your Taunt and Challenging Shout abilities by 2%.
+            <rank index="2"><![CDATA[Reduces the chance your Taunt and Challenging Shout abilities are resisted by 2%.
 
 Reduces the cooldown of your Intimidating Shout ability by 24 seconds.]]></rank>
-            <rank index="3"><![CDATA[Reduces the target's chance to resist your Taunt and Challenging Shout abilities by 3%.
+            <rank index="3"><![CDATA[Reduces the chance your Taunt and Challenging Shout abilities are resisted by 3%.
 
 Reduces the cooldown of your Intimidating Shout ability by 36 seconds.]]></rank>
-            <rank index="4"><![CDATA[Reduces the target's chance to resist your Taunt and Challenging Shout abilities by 4%.
+            <rank index="4"><![CDATA[Reduces the chance your Taunt and Challenging Shout abilities are resisted by 4%.
 
 Reduces the cooldown of your Intimidating Shout ability by 48 seconds.]]></rank>
-            <rank index="5"><![CDATA[Reduces the target's chance to resist your Taunt and Challenging Shout abilities by 5%.
+            <rank index="5"><![CDATA[Reduces the chance your Taunt and Challenging Shout abilities are resisted by 5%.
 
 Reduces the cooldown of your Intimidating Shout ability by 60 seconds.]]></rank>
         </talent>
@@ -173,15 +173,21 @@ Increases the melee attack power bonus of your Battle Shout by 20%.]]></rank>
 Increases the melee attack power bonus of your Battle Shout by 25%.]]></rank>
         </talent>
         <talent index="4" name="Blood Craze" icon="SummonImp.png">
-            <rank index="1"><![CDATA[Regenerates 2% of your total Health over 6 sec after being the victim of a critical strike.]]></rank>
-            <rank index="2"><![CDATA[Regenerates 4% of your total Health over 6 sec after being the victim of a critical strike.]]></rank>
-            <rank index="3"><![CDATA[Regenerates 6% of your total Health over 6 sec after being the victim of a critical strike.]]></rank>
+            <rank index="1"><![CDATA[Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike.
+
+Reduces the Rage cost of your Bloodthirst by 2.]]></rank>
+            <rank index="2"><![CDATA[Regenerates 2% of your total Health over 6 sec after being the victim of a critical strike.
+
+Reduces the Rage cost of your Bloodthirst by 4.]]></rank>
+            <rank index="3"><![CDATA[Regenerates 3% of your total Health over 6 sec after being the victim of a critical strike.
+
+Reduces the Rage cost of your Bloodthirst by 5.]]></rank>
         </talent>
         <talent index="5" name="Implacable" icon="FleetFooted.png">
-            <rank index="1"><![CDATA[Increases your movement speed by 4%.
+            <rank index="1"><![CDATA[Increases your movement speed by 4%.  This does not stack with other movement speed increasing effects.
 
 Gives you a 5% chance to reset the cooldown of your Intercept and Intervene abilities after being hit with a movement impairing effect.]]></rank>
-            <rank index="2"><![CDATA[Increases your movement speed by 8%.
+            <rank index="2"><![CDATA[Increases your movement speed by 8%.  This does not stack with other movement speed increasing effects.
 
 Gives you a 10% chance to reset the cooldown of your Intercept and Intervene abilities after being hit with a movement impairing effect.]]></rank>
         </talent>
@@ -235,11 +241,11 @@ Your Berserker Rage ability will generate 10 Rage when used.]]></rank>
             <rank index="2"><![CDATA[Restores 20 Rage and 10% of your total Health over 12 seconds after using Execute.  This effect cannot occur more than once every 30 secs.]]></rank>
         </talent>
         <talent index="15" name="Dual Wield Specialization" icon="DualWield.png">
-            <rank index="1"><![CDATA[Gives your Heroic Strike, Overpower, Slam, Execute, Whirlwind, Cleave and Bloodthirst hits a 10% chance to deal extra damage equal to the damage per second of your off-hand weapon.]]></rank>
-            <rank index="2"><![CDATA[Gives your Heroic Strike, Overpower, Slam, Execute, Whirlwind, Cleave and Bloodthirst hits a 20% chance to deal extra damage equal to the damage per second of your off-hand weapon.]]></rank>
-            <rank index="3"><![CDATA[Gives your Heroic Strike, Overpower, Slam, Execute, Whirlwind, Cleave and Bloodthirst hits a 30% chance to deal extra damage equal to the damage per second of your off-hand weapon.]]></rank>
-            <rank index="4"><![CDATA[Gives your Heroic Strike, Overpower, Slam, Execute, Whirlwind, Cleave and Bloodthirst hits a 40% chance to deal extra damage equal to the damage per second of your off-hand weapon.]]></rank>
-            <rank index="5"><![CDATA[Gives your Heroic Strike, Overpower, Slam, Execute, Whirlwind, Cleave and Bloodthirst hits a 50% chance to deal extra damage equal to the damage per second of your off-hand weapon.]]></rank>
+            <rank index="1"><![CDATA[Gives your Heroic Strike, Mortal Strike, Overpower, Slam, Execute, Whirlwind, Cleave and Bloodthirst hits a 10% chance to deal extra damage equal to the damage per second of your off-hand weapon.]]></rank>
+            <rank index="2"><![CDATA[Gives your Heroic Strike, Mortal Strike, Overpower, Slam, Execute, Whirlwind, Cleave and Bloodthirst hits a 20% chance to deal extra damage equal to the damage per second of your off-hand weapon.]]></rank>
+            <rank index="3"><![CDATA[Gives your Heroic Strike, Mortal Strike, Overpower, Slam, Execute, Whirlwind, Cleave and Bloodthirst hits a 30% chance to deal extra damage equal to the damage per second of your off-hand weapon.]]></rank>
+            <rank index="4"><![CDATA[Gives your Heroic Strike, Mortal Strike, Overpower, Slam, Execute, Whirlwind, Cleave and Bloodthirst hits a 40% chance to deal extra damage equal to the damage per second of your off-hand weapon.]]></rank>
+            <rank index="5"><![CDATA[Gives your Heroic Strike, Mortal Strike, Overpower, Slam, Execute, Whirlwind, Cleave and Bloodthirst hits a 50% chance to deal extra damage equal to the damage per second of your off-hand weapon.]]></rank>
         </talent>
         <talent index="16" name="Seethe" icon="IntensifyRage.png" requires="12">
             <rank index="1"><![CDATA[Gives you a passive effect that causes the next incoming attack to Enrage you and deal 50% of its damage over 6 seconds instead.  This effect is refreshed once you haven't been damaged for at least 60 secs.
@@ -261,9 +267,9 @@ Your Rend ability reduces the effectiveness of any healing on the target by 2% p
 Your Rend ability reduces the effectiveness of any healing on the target by 4% per application.]]></rank>
         </talent>
         <talent index="18" name="Improved Berserker Stance" icon="Avatar.png" requires="6">
-            <rank index="1"><![CDATA[While in Berserker Stance, your attack power is increased by 50% of your level, and your attack speed is increased by an additional 10% when your Health is below 35%.]]></rank>
-            <rank index="2"><![CDATA[While in Berserker Stance, your attack power is increased by 100% of your level, and your attack speed is increased by an additional 15% when your Health is below 35%.]]></rank>
-            <rank index="3"><![CDATA[While in Berserker Stance, your attack power is increased by 150% of your level, and your attack speed is increased by an additional 20% when your Health is below 35%.]]></rank>
+            <rank index="1"><![CDATA[While in Berserker Stance, your attack power is increased by 50% of your level, and the Rage cost of your abilities is reduced by 10% when your Health is below 35%.]]></rank>
+            <rank index="2"><![CDATA[While in Berserker Stance, your attack power is increased by 100% of your level, and the Rage cost of your abilities is reduced by 20% when your Health is below 35%.]]></rank>
+            <rank index="3"><![CDATA[While in Berserker Stance, your attack power is increased by 150% of your level, and the Rage cost of your abilities is reduced by 30% when your Health is below 35%.]]></rank>
         </talent>
         <talent index="19" name="Death Wish" icon="DeathPact.png" requires="18">
             <rank index="1"><![CDATA[When activated, increases your physical damage by 20% and makes you immune to Fear and Incapacitate effects, but increases the chance to be critically hit by 10%.  Lasts 20 sec.
@@ -273,19 +279,19 @@ Your Rend ability reduces the effectiveness of any healing on the target by 4% p
         <talent index="22" name="Reaper" icon="FlameBlades.png">
             <rank index="1"><![CDATA[Increases the bonus damage of your Cleave ability by 50%.
 
-Reduces the cooldown of your Whirlwind ability by 3 seconds.
+Reduces the cooldown of your Whirlwind ability by 2.5 seconds.
 
 Increases the critical strike chance of your Execute ability by 5%.]]></rank>
             <rank index="2"><![CDATA[Increases the bonus damage of your Cleave ability by 100%.
 
-Reduces the cooldown of your Whirlwind ability by 6 seconds.
+Reduces the cooldown of your Whirlwind ability by 5 seconds.
 
 Increases the critical strike chance of your Execute ability by 10%.]]></rank>
         </talent>
         <talent index="25" name="Bloodthirst (Rank 1)" icon="BloodLust.png" requires="17">
-            <rank index="1"><![CDATA[Instantly attack the target causing damage equal to 33% of your attack power plus 65, and restoring 50 Health if the target is bleeding.
+            <rank index="1"><![CDATA[Instantly attack the target, causing 270-320 damage and increasing your attack speed by 15% for your next 6 swings.  Also, restores 50 Health if the target is bleeding.
 
-25 Rage.  6 second cooldown.]]></rank>
+45 Rage.  10 second cooldown.]]></rank>
         </talent>
     </tree>
     <tree name="Protection">
@@ -350,16 +356,16 @@ Your Revenge hits reduce the remaining cooldown of your Protection abilities by 
 Your Revenge hits reduce the remaining cooldown of your Protection abilities by 2 sec.]]></rank>
         </talent>
         <talent index="8" name="Shield Slam (Rank 1)" icon="FireArmor.png" requires="9">
-            <rank index="1"><![CDATA[Slam the target with your shield, causing 130 to 140 damage, plus your total Strength.  Causes a high amount of threat.
+            <rank index="1"><![CDATA[Slam the target with your shield, causing 95 to 105 damage, plus your total Strength.  Causes a high amount of threat.
 
-20 Rage.  6 second cooldown.]]></rank>
+25 Rage.  6 second cooldown.]]></rank>
         </talent>
         <talent index="9" name="Improved Shield Block" icon="Defend.png" requires="1">
             <rank index="1"><![CDATA[Your Shield Block ability increases your block strength by 25% while active.]]></rank>
             <rank index="2"><![CDATA[Your Shield Block ability increases your block strength by 50% while active.]]></rank>
         </talent>
         <talent index="10" name="Disrupting Shout" icon="RallyingCry.png">
-            <rank index="1"><![CDATA[Interrupts the target for 3 seconds and dazing all enemies within 10 yards for 6 seconds.
+            <rank index="1"><![CDATA[Interrupts the target for 3 seconds and dazing all enemies within 10 yards for 4 seconds.
 
 30 Rage.  3 minute cooldown.]]></rank>
         </talent>
@@ -440,7 +446,19 @@ Sunder Armor - Armor reducing effect lowered.
 Challenging Shout - Cooldown lowered to 5 minutes, duration reduced to 3 seconds.
 
 Whirlwind - Cooldown increased to 15 secs.]]></note>
-        <note index="1" name="Miscellaneous" icon="Spy.png"><![CDATA[Rend only has 1 debuff slot (like Sunder Armor, one stack per mob)]]></note>
+        <note index="1" name="Miscellaneous" icon="Spy.png"><![CDATA[Warrior base stats at level 60:
+
+Health 	1523
+
+STR 		120
+AGI		80
+STAM	111
+INT 		29
+SPI 		47
+
+---
+
+Rend only has 1 debuff slot (like Sunder Armor, one stack per mob)]]></note>
         <note index="10" name="(NEW) Intervene" icon="VictoryRush.png"><![CDATA[Run at high speed towards a party member, intercepting the next melee or ranged attack made against them.
 
 10 Rage. 30 second cooldown.]]></note>

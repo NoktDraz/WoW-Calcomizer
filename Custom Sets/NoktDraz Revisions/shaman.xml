@@ -28,13 +28,13 @@ Reduces the chance of your helpful spells being dispelled by 40%.]]></rank>
         <talent index="4" name="Reverberation" icon="FrostWard.png">
             <rank index="1"><![CDATA[Increases the critical strike chance of your Shock spells by 2%.
 
-Your Cleansing Wave and Purge spells restore Mana equal to 20% of their base cost when failing to dispel an effect.]]></rank>
+Your Purge spell restores Mana equal to 20% of its base cost when failing to dispel an effect.]]></rank>
             <rank index="2"><![CDATA[Increases the critical strike chance of your Shock spells by 4%.
 
-Your Cleansing Wave and Purge spells restore Mana equal to 40% of their base cost when failing to dispel an effect.]]></rank>
+Your Purge spell restores Mana equal to 40% of its base cost when failing to dispel an effect.]]></rank>
             <rank index="3"><![CDATA[Increases the critical strike chance of your Shock spells by 6%.
 
-Your Cleansing Wave and Purge spells restore Mana equal to 60% of their base cost when failing to dispel an effect.]]></rank>
+Your Purge spells restores Mana equal to 60% of its base cost when failing to dispel an effect.]]></rank>
         </talent>
         <talent index="5" name="Elemental Devastation" icon="ELEMENTALDEVASTATION.png">
             <rank index="1"><![CDATA[Your offensive spell crits will increase your chance to get a critical strike with melee attacks by 5% for 6 sec.]]></rank>
@@ -90,19 +90,19 @@ Increases the range of your lightning spells by 6 yards.]]></rank>
             <rank index="2"><![CDATA[Gives you a 100% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike.  The Focused Casting effect prevents you from losing casting time when taking damage.]]></rank>
         </talent>
         <talent index="12" name="Concussion" icon="Fireball.png">
-            <rank index="1"><![CDATA[Increases the damage done by your Elemental spells and effects by 2%.
+            <rank index="1"><![CDATA[Increases the damage done by your Elemental spells and effects by 1%.
 
 Increases the critical strike damage bonus of your Shock spells by 20%]]></rank>
-            <rank index="2"><![CDATA[Increases the damage done by your Elemental spells and effects by 4%.
+            <rank index="2"><![CDATA[Increases the damage done by your Elemental spells and effects by 2%.
 
 Increases the critical strike damage bonus of your Shock spells by 40%]]></rank>
-            <rank index="3"><![CDATA[Increases the damage done by your Elemental spells and effects by 6%.
+            <rank index="3"><![CDATA[Increases the damage done by your Elemental spells and effects by 3%.
 
 Increases the critical strike damage bonus of your Shock spells by 60%]]></rank>
-            <rank index="4"><![CDATA[Increases the damage done by your Elemental spells and effects by 8%.
+            <rank index="4"><![CDATA[Increases the damage done by your Elemental spells and effects by 4%.
 
 Increases the critical strike damage bonus of your Shock spells by 80%]]></rank>
-            <rank index="5"><![CDATA[Increases the damage done by your Elemental spells and effects by 10%.
+            <rank index="5"><![CDATA[Increases the damage done by your Elemental spells and effects by 5%.
 
 Increases the critical strike damage bonus of your Shock spells by 100%]]></rank>
         </talent>
@@ -146,7 +146,7 @@ While channeling, Elemental Storm barrages the target with Fire, Frost and Natur
             <rank index="5"><![CDATA[Reduces the casting time of your Lightning Bolt and Chain Lightning spells by 1 sec.]]></rank>
         </talent>
         <talent index="25" name="Elemental Brand" icon="WispHeal.png" requires="17">
-            <rank index="1"><![CDATA[When activated, this spell grants you a copy of the Elemental Mastery effect and causes your next Fire, Frost, or Nature damage spell to reduce its target's chance to resist Fire, Frost, and Nature spells by 3% for 1 minute.
+            <rank index="1"><![CDATA[When activated, this spell grants you a copy of the Elemental Mastery effect and causes your next Fire, Frost, or Nature damage spell to increase the chance of Fire, Frost, and Nature spells critically striking the target by 3% for 1 minute.
 
 1 minute cooldown.]]></rank>
         </talent>
@@ -251,10 +251,10 @@ Static Charge causes your next Stormstrike, Shock or lightning spell to consume 
         <talent index="21" name="Shamanistic Might" icon="BlessingOfStamina.png">
             <rank index="1"><![CDATA[Increases your spell critical strike chance by 20% of your melee critical strike chance.
 
-Increases your Strength by 5% of your Intellect and Agility.]]></rank>
+Increases your Strength by 10% of your Intellect.]]></rank>
             <rank index="2"><![CDATA[Increases your spell critical strike chance by 33% of your melee critical strike chance.
 
-Increases your Strength by 10% of your Intellect and Agility.]]></rank>
+Increases your Strength by 20% of your Intellect.]]></rank>
         </talent>
         <talent index="22" name="Flurry" icon="GhoulFrenzy.png" requires="10">
             <rank index="1"><![CDATA[Increases your attack speed by 10% for your next 3 swings after dealing a critical strike.]]></rank>
@@ -269,23 +269,13 @@ Increases your Strength by 10% of your Intellect and Agility.]]></rank>
     </tree>
     <tree name="Restoration">
         <talent index="1" name="Tidal Focus" icon="ManaRecharge.png">
-            <rank index="1"><![CDATA[Increases Mana regenerated every 5 seconds by 10% of your level.
-
-Reduces the Mana cost of your healing and lightning spells by 2%.]]></rank>
-            <rank index="2"><![CDATA[Increases Mana regenerated every 5 seconds by 15% of your level.
-
-Reduces the Mana cost of your healing and lightning spells by 4%.]]></rank>
-            <rank index="3"><![CDATA[Increases Mana regenerated every 5 seconds by 20% of your level.
-
-Reduces the Mana cost of your healing and lightning spells by 6%.]]></rank>
-            <rank index="4"><![CDATA[Increases Mana regenerated every 5 seconds by 25% of your level.
-
-Reduces the Mana cost of your healing and lightning spells by 8%.]]></rank>
-            <rank index="5"><![CDATA[Increases Mana regenerated every 5 seconds by 30% of your level.
-
-Reduces the Mana cost of your healing and lightning spells by 10%.]]></rank>
+            <rank index="1"><![CDATA[Reduces the Mana cost of your healing and lightning spells by 2%.]]></rank>
+            <rank index="2"><![CDATA[Reduces the Mana cost of your healing and lightning spells by 4%.]]></rank>
+            <rank index="3"><![CDATA[Reduces the Mana cost of your healing and lightning spells by 6%.]]></rank>
+            <rank index="4"><![CDATA[Reduces the Mana cost of your healing and lightning spells by 8%.]]></rank>
+            <rank index="5"><![CDATA[Reduces the Mana cost of your healing and lightning spells by 10%.]]></rank>
         </talent>
-        <talent index="2" name="Shamanistic Visions" icon="BlessingOfTheEternals.png">
+        <talent index="2" name="Shamanistic Visions" icon="AstralShift.png">
             <rank index="1"><![CDATA[Reduces the cooldown of all your spells by 2%.]]></rank>
             <rank index="2"><![CDATA[Reduces the cooldown of all your spells by 4%.]]></rank>
             <rank index="3"><![CDATA[Reduces the cooldown of all your spells by 6%.]]></rank>
@@ -326,20 +316,20 @@ Reduces the chance of your Cleansing Wave spell consuming an active Water Totem 
 
 Reduces the chance of your Cleansing Wave spell consuming an active Water Totem by 25%.]]></rank>
         </talent>
-        <talent index="8" name="Ancestral Protection" icon="AstralShift.png">
+        <talent index="8" name="Ancestral Protection" icon="AncestralBlessing.png">
             <rank index="1"><![CDATA[Cross into the spirit realm for 2 seconds whenever your Health drops below 35%, reducing all damage taken by 33%.  This effect cannot occur more than once every 60 secs. and expires if you attack an enemy.]]></rank>
-            <rank index="2"><![CDATA[Cross into the spirit realm for 3.5 seconds whenever your Health drops below 35%, reducing all damage taken by 33%.  This effect cannot occur more than once every 60 secs. and expires if you attack an enemy.]]></rank>
-            <rank index="3"><![CDATA[Cross into the spirit realm for 5 seconds whenever your Health drops below 35%, reducing all damage taken by 33%.  This effect cannot occur more than once every 60 secs. and expires if you attack an enemy.]]></rank>
-            <rank index="4"><![CDATA[Cross into the spirit realm for 6.5 seconds whenever your Health drops below 35%, reducing all damage taken by 33%.  This effect cannot occur more than once every 60 secs. and expires if you attack an enemy.]]></rank>
-            <rank index="5"><![CDATA[Cross into the spirit realm for 8 seconds whenever your Health drops below 35%, reducing all damage taken by 33%.  This effect cannot occur more than once every 60 secs. and expires if you attack an enemy.]]></rank>
+            <rank index="2"><![CDATA[Cross into the spirit realm for 4 seconds whenever your Health drops below 35%, reducing all damage taken by 33%.  This effect cannot occur more than once every 60 secs. and expires if you attack an enemy.]]></rank>
+            <rank index="3"><![CDATA[Cross into the spirit realm for 6 seconds whenever your Health drops below 35%, reducing all damage taken by 33%.  This effect cannot occur more than once every 60 secs. and expires if you attack an enemy.]]></rank>
         </talent>
-        <talent index="9" name="Healing Overflow" icon="GiftoftheWaterSpirit.png" requires="5">
+        <talent index="9" name="Healing Overflow" icon="AbolishMagic.png" requires="5">
             <rank index="1"><![CDATA[Overhealing done by your Healing Wave and Lesser Healing Wave spells gets converted to a heal over time effect, lasting 12 seconds and healing for 30% of the overhealing done.]]></rank>
             <rank index="2"><![CDATA[Overhealing done by your Healing Wave and Lesser Healing Wave spells gets converted to a heal over time effect, lasting 12 seconds and healing for 60% of the overhealing done.]]></rank>
+            <rank index="3"><![CDATA[Overhealing done by your Healing Wave and Lesser Healing Wave spells gets converted to a heal over time effect, lasting 12 seconds and healing for 90% of the overhealing done.]]></rank>
         </talent>
-        <talent index="10" name="Ancestral Swiftness" icon="AncestralBlessing.png">
+        <talent index="10" name="Ancestral Swiftness" icon="EagleEye.png">
             <rank index="1"><![CDATA[Reduces the casting time of your next Nature spell by 0.25 secs. after being the victim of a critical strike.  This effect can stack up to 2 times.]]></rank>
             <rank index="2"><![CDATA[Reduces the casting time of your next Nature spell by 0.25 secs after being the victim of a critical strike.  This effect can stack up to 4 times.]]></rank>
+            <rank index="3"><![CDATA[Reduces the casting time of your next Nature spell by 0.25 secs. after being the victim of a critical strike.  This effect can stack up to 6 times.]]></rank>
         </talent>
         <talent index="11" name="Cleansing Wave (Rank 1)" icon="SpiritualCleansing.png">
             <rank index="1"><![CDATA[Call upon the waters of purification, removing 1 Curse, 1 Magic, 1 Poison and 1 Disease effect from the target.
@@ -404,7 +394,7 @@ Elemental Droplets stack up to 12 times and last 30 seconds, with each stack inc
 Elemental Droplets stack up to 12 times and last 30 seconds, with each stack increasing your healing power and Frost spell power by up to 20% of your level.]]></rank>
         </talent>
         <talent index="25" name="Mana Tide Totem (Rank 1)" icon="SummonWaterElemental.png" requires="13">
-            <rank index="1"><![CDATA[Summons a Mana Tide Totem with 5 health at the feet of the caster for 20 sec. that increases group members Mana regenerated every 5 seconds by 125, if they are within 30 yards of the totem.
+            <rank index="1"><![CDATA[Summons a Mana Tide Totem with 5 health at the feet of the caster for 20 sec. that increases the Mana regenerated every 5 seconds by 125 for all group members within 30 yards of the totem.
 
 5 minute cooldown.]]></rank>
         </talent>
@@ -425,14 +415,20 @@ Chain Heal - Now has a cooldown of 6 secs.
 Stoneskin Totem - Now increases armor instead of reducing physical damage taken.]]></note>
         <note index="1" name="Clarifications" icon="Spy.png"><![CDATA[Shaman base stats at level 60:
 
-Health 1280
-Mana 1520
+Health 	1280
+Mana 	1520
 
-STR 88
-AGI 53
-STAM 97
-INT 86
-SPI 102]]></note>
+STR 		88
+AGI		53
+STAM 	97
+INT 		86
+SPI 		102]]></note>
+        <note index="5" name="Invigorating Spring Totem (Final Rank)" icon="ManaRegenTotem.png"><![CDATA[Summons a Invigorating Spring Totem with 5 health at the feet of the caster for 1 min that heals group members within 30 yards for 14 every 2 seconds and increases their Mana regenerated every 5 seconds by 25.
+
+180 Mana.]]></note>
+        <note index="7" name="Cleansing Totem" icon="CleansingTotem.png"><![CDATA[Summons a Poison Cleansing Totem with 5 health at the feet of the caster that attempts to remove 1 poison  and 1 disease effect from party members within 30 yards every 5 seconds.  Lasts 2 min.
+
+20% base Mana.]]></note>
         <note index="9" name="Rockbiter Weapon (Final Rank)" icon="RockBiter.png"><![CDATA[Imbue the Shaman's weapon, increasing attack power by 376 and melee critical strike chance by 6%.  Lasts 5 minutes.]]></note>
         <note index="11" name="Flametongue Weapon (Final Rank)" icon="FlameTounge.png"><![CDATA[Imbue the Shaman's weapon with fire, increasing the damage done by your Fire, Frost, Nature spells and effects by 45.  Each hit causes 37 to 112 additional Fire damage, based on the speed of the weapon.  Lasts for 5 minutes.]]></note>
         <note index="12" name="(NEW) Totemic Recall" icon="TotemicRecall.png"><![CDATA[Returns your totems to the earth, giving you 25% of the mana required to cast each totem destroyed by Totemic Recall.
