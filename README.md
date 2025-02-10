@@ -6,15 +6,19 @@ Built on Java (temurin-20.0.2) and JavaFX (18.0.1).
 
 - [Windows](https://drive.google.com/drive/folders/109xU9TQkS8fR0R_uQzyACKujdgdFMw99?usp=drive_link)
 
-- Linux/macOS - Coming soon
+- MacOS (Coming some day, hopefully...)
 
-(You can skip the **'JRE'** folder if you already have an up to date installation of Java on your computer)
+(You can skip downloading the **'JRE'** folder if you already have an up to date installation of Java on your computer)
 
-### Tips
+### Features
 
-- Talents/notes can be moved around on the same tree/page. (Drag and drop)
+- Create custom talents and talent trees, add notes for other changes
 
-- Customization sets can be shared by adding to or uploading folders from the **'Custom Sets'** folder
+- Ideas can easily be shared by adding to or uploading folders from the **'Custom Sets'** directory
+
+- Explore possible builds with the Talent Calculator
+
+- Talents and Notes can be moved around on the same tree/container. (Drag and drop)
 
 ### Donate
 
