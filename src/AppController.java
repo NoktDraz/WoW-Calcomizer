@@ -184,7 +184,7 @@ public class AppController extends Application {
                         Files.createDirectory(newCustomSetFolder.toPath());
 
                         boolean isCurrentAsBaseSelected = (boolean) customEvent.getEventObjectOfClass(boolean.class);
-                        if (isCurrentAsBaseSelected) {
+                        if (isCurrentAsBaseSelected && this.customizerController.getActiveCustomizationSet().getIndex() != 0) {
                             for (File dataFile : this.customizerController.getActiveCustomizationSet().getDataFolder().listFiles()) {
                                 Files.copy(dataFile.toPath(), Path.of(newCustomSetFolder.getPath(), dataFile.getName()));
                             }
