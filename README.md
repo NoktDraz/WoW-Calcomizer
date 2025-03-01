@@ -1,3 +1,5 @@
+"WoW Calcomizer" (Talent Calculator + Customizer)
+
 ### Info
 
 Built on Java (temurin-20.0.2) and JavaFX (18.0.1).
