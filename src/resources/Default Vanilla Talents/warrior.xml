@@ -55,7 +55,7 @@
         </talent>
         <talent index="14" name="Impale" icon="SearingArrow.png" requires="10">
             <rank index="1"><![CDATA[Increases the critical strike damage bonus of your abilities in Battle, Defensive, and Berserker stance by 10%.]]></rank>
-            <rank index="2"><![CDATA[Increases the critical strike damage bonus of your abilities in Battle, Defensive, and Berserker stance by 10%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical strike damage bonus of your abilities in Battle, Defensive, and Berserker stance by 20%.]]></rank>
         </talent>
         <talent index="16" name="Axe Specialization" icon="Axe.png">
             <rank index="1"><![CDATA[Increases your chance to get a critical strike with Axes by 1%]]></rank>
