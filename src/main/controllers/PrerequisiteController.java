@@ -36,7 +36,6 @@ public class PrerequisiteController implements FXMLController {
             });
         });
 
-        this.close.setCursor(CustomCursor.INTERACT);
         this.close.setOnMouseEntered(event -> this.close.setEffect(CustomEffect.HIGHLIGHT));
         this.close.setOnMouseExited(event -> this.close.setEffect(null));
     }
@@ -111,7 +110,7 @@ public class PrerequisiteController implements FXMLController {
                 imageView.setEffect(CustomBorder.OPEN);
                 imageView.setOnMouseEntered(event -> imageView.setEffect(UtilityFunction.Effects.constructEffectChain(CustomBorder.OPEN, CustomEffect.VALID)));
                 imageView.setOnMouseExited(event -> imageView.setEffect(CustomBorder.OPEN));
-                imageView.setOnMouseClicked(customEvent -> Event.fireEvent(tree, new CustomEvent(CustomEvent.FINISH_PREREQUISITE, talent.getIndex())));
+                imageView.setOnMouseClicked(event -> Event.fireEvent(this.hBox, new CustomEvent(CustomEvent.FINISH_PREREQUISITE, talent.getIndex())));
             } else {
                 imageView.setEffect(CustomBorder.LOCKED);
                 imageView.setCursor(null);

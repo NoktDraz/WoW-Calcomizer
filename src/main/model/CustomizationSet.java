@@ -13,8 +13,8 @@ public class CustomizationSet {
     private int menuIndex;
 
     public CustomizationSet() {
-        this.dataFolderPath = Resource.Folder.VANILLA_DATASET.getPath();
-        this.name = "Default Vanilla Talents";
+        this.dataFolderPath = Resource.Folder.DEFAULT_DATASET.getPath();
+        this.name = Resource.Folder.VANILLA_DATASET_FOLDER.getName();
         this.classesData = new HashMap<>();
     }
 
@@ -27,19 +27,12 @@ public class CustomizationSet {
     public String getName() {
         return this.name;
     }
-
     public HashMap<CharacterClass, ClassData> getClassesData() {
         return this.classesData;
     }
-
     public void addClassData(ClassData classData) { this.classesData.put(CharacterClass.valueOf(classData.getName()), classData); }
-
     public File getDataFolder() { return new File(this.dataFolderPath); }
-
-    public int getIndex() {
-        return this.menuIndex;
-    }
-
+    public int getIndex() { return this.menuIndex; }
     public void setIndex(int menuIndex) {
         this.menuIndex = menuIndex;
     }

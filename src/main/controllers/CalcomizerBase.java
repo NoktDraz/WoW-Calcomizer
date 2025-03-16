@@ -112,7 +112,6 @@ public abstract class CalcomizerBase implements FXMLController {
         this.classButtons = new LinkedList<>(
                 (Arrays.asList(this.warrior, this.rogue, this.hunter, this.paladin, this.shaman, this.druid, this.priest, this.mage, this.warlock)));
         this.classButtons.forEach(button -> {
-            button.setCursor(CustomCursor.INTERACT);
             button.getGraphic().setEffect(CustomBorder.CLASS_BUTTON_UNSELECTED);
 
             button.setOnMouseEntered(event -> {
@@ -125,7 +124,6 @@ public abstract class CalcomizerBase implements FXMLController {
             });
         });
         this.initCustomizationSetMenu();
-        this.customizationSetMenu.setCursor(CustomCursor.INTERACT);
         this.customizationSetMenu.getSelectionModel().selectedItemProperty().addListener(
             (observableValue, oldValue, newValue) -> {
                 if (newValue != null)
@@ -180,10 +178,10 @@ public abstract class CalcomizerBase implements FXMLController {
         this.customizationSetMenu.getSelectionModel().select(activeCustomizationSet.getIndex());
     }
 
-    public static void initCustomizationSets(CustomizationSet baseDataSet) {
+    public static void initCustomizationSets(CustomizationSet defaultDataSet) {
         customizationSets.clear();
 
-        addCustomizationSet(baseDataSet);
+        addCustomizationSet(defaultDataSet);
     }
     public static void addCustomizationSet(CustomizationSet dataSet) {
         customizationSets.add(dataSet);
@@ -199,11 +197,10 @@ public abstract class CalcomizerBase implements FXMLController {
         classesData = activeCustomizationSet.getClassesData();
     }
 
-    public static boolean isBaseSetActive() {
+    public static boolean isDefaultSetActive() {
         return customizationSets.indexOf(activeCustomizationSet) == 0;
     }
     void initCustomizationSetMenu() {
-        this.customizationSetMenu.setCursor(CustomCursor.DEFAULT);
 
         customizationSets.forEach(customizationSet -> {
             customizationSet.setIndex(this.customizationSetMenu.getItems().size());

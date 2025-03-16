@@ -1,24 +1,20 @@
 package main.controllers;
 
 import javafx.fxml.FXMLLoader;
-import javafx.scene.ImageCursor;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
-import main.enums.Resource;
 import main.enums.Window;
+import main.model.CustomCursor;
 
 import java.io.IOException;
 import java.util.HashMap;
 
 public class WindowController {
-    private static final Image APP_ICON = UtilityFunction.Resources.getInterfaceAsset(Resource.InterfaceAsset.APPLICATION_ICON);
-
     private Stage mainStage;
-    private Stage modalStage;
-    private Stage modalStageTransparent;
+    private Stage modalPrimary;
+    private Stage modalSecondary;
     private HashMap<Window, Parent> fxmlObjects;
 
     public WindowController() {
@@ -30,49 +26,31 @@ public class WindowController {
     }
     public void setMainStage(Stage mainStage) {
         this.mainStage = mainStage;
-        this.mainStage.getIcons().add(this.APP_ICON);
         this.mainStage.setResizable(false);
     }
-    public Stage getMainStage() { return this.mainStage; }
-    public void showMainStage() { this.mainStage.show(); }
-    public void setModalWindow(Window window) {
-        if (this.modalStage.isShowing()) this.modalStage.close();
-        if (this.modalStageTransparent.isShowing()) this.modalStageTransparent.close();
+    public void setPrimaryModalWindow(Window window) {
+        if (this.modalPrimary.isShowing()) this.modalPrimary.close();
+        if (this.modalSecondary.isShowing()) this.modalSecondary.close();
 
-        this.modalStage.setScene(this.getScene(this.fxmlObjects.get(window)));
-        this.modalStage.setTitle(window.getTitle());
+        this.modalPrimary.setScene(this.getScene(this.fxmlObjects.get(window)));
+        this.modalPrimary.setTitle(window.getTitle());
     }
-    public void setTransparentModalWindow(Window window) {
-        if (this.modalStage.isShowing()) this.modalStage.close();
-        if (this.modalStageTransparent.isShowing()) this.modalStageTransparent.close();
+    public void setSecondaryModalWindow(Window window) {
+        if (this.modalPrimary.isShowing()) this.modalPrimary.close();
+        if (this.modalSecondary.isShowing()) this.modalSecondary.close();
 
-        this.modalStageTransparent.setScene(this.getScene(this.fxmlObjects.get(window)));
+        this.modalSecondary.setScene(this.getScene(this.fxmlObjects.get(window)));
     }
-    public void initModalStages(Stage modalStage, Stage modalStageTransparent) {
-        this.modalStage = modalStage;
-        this.modalStageTransparent = modalStageTransparent;
+    public void initModalStages(Stage primaryModalStage, Stage secondaryModalStage) {
+        this.modalPrimary = primaryModalStage;
+        this.modalSecondary = secondaryModalStage;
 
-        this.modalStage.initOwner(this.mainStage);
-        this.modalStageTransparent.initOwner(this.mainStage);
-        this.modalStage.initModality(Modality.APPLICATION_MODAL);
-        this.modalStageTransparent.initModality(Modality.APPLICATION_MODAL);
-        this.modalStage.setResizable(false);
-        this.modalStageTransparent.setResizable(false);
-    }
-    public Stage getModalStage() { return this.modalStage; }
-    public Stage getTransparentModalStage() { return this.modalStageTransparent; }
-    public void closeTransparentModal() {
-        this.modalStageTransparent.close();
-    }
-    public void closeModal() {
-        this.modalStage.close();
-    }
-
-    public void showModalWindow() {
-        this.modalStage.show();
-    }
-    public void showTransparentModalWindow() {
-        this.modalStageTransparent.show();
+        this.modalPrimary.initOwner(this.mainStage);
+        this.modalSecondary.initOwner(this.mainStage);
+        this.modalPrimary.initModality(Modality.APPLICATION_MODAL);
+        this.modalSecondary.initModality(Modality.APPLICATION_MODAL);
+        this.modalPrimary.setResizable(false);
+        this.modalSecondary.setResizable(false);
     }
 
     public void linkControllerToWindow(FXMLController fxmlController, Window window) throws IOException {
@@ -86,18 +64,33 @@ public class WindowController {
     private Scene getScene(Parent fxmlObject) {
         if (fxmlObject.getScene() == null) {
             Scene scene = new Scene(fxmlObject);
-            scene.setCursor(new ImageCursor(UtilityFunction.Resources.getInterfaceAsset(Resource.InterfaceAsset.CURSOR_DEFAULT)));
+            scene.setCursor(CustomCursor.DEFAULT);
 
             return scene;
         }
         else return fxmlObject.getScene();
     }
 
+    public Stage getMainStage() { return this.mainStage; }
+    public Stage getPrimaryModalStage() { return this.modalPrimary; }
+    public Stage getSecondaryModalStage() { return this.modalSecondary; }
+    public void closeSecondaryModal() {
+        this.modalSecondary.close();
+    }
+    public void closePrimaryModal() {
+        this.modalPrimary.close();
+    }
+    public void showMain() { this.mainStage.show(); }
+    public void showPrimaryModal() {
+        this.modalPrimary.show();
+    }
+    public void showSecondaryModal() {
+        this.modalSecondary.show();
+    }
     public Scene getScene(Window window) {
         return this.fxmlObjects.get(window).getScene();
     }
-
     public void setScene(Window window) {
-        this.modalStage.setScene(this.fxmlObjects.get(window).getScene());
+        this.modalPrimary.setScene(this.fxmlObjects.get(window).getScene());
     }
 }

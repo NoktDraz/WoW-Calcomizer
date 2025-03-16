@@ -9,14 +9,16 @@ public enum Resource {;
         BACKGROUNDS(INTERFACE.getPath() + "Backgrounds"),
         VIEW(RESOURCES.getPath() + "View"),
         FXML(VIEW.getPath() + "FXML"),
-        VANILLA_DATASET(RESOURCES.getPath() + "Default Vanilla Talents"),
+        VANILLA_DATASET_FOLDER("Default Vanilla Talents"),
+        DEFAULT_DATASET(RESOURCES.getPath() + VANILLA_DATASET_FOLDER.getName()),
 
         PUBLIC_DATASETS("Custom Sets"),
         PUBLIC_ICONS("Icons");
 
-        private String folderPath;
-        Folder(String identifier) { this.folderPath = identifier; }
-        public String getPath() { return this.folderPath + "/"; }
+        private String folderName;
+        Folder(String identifier) { this.folderName = identifier; }
+        public String getPath() { return this.folderName + "/"; }
+        public String getName() { return this.folderName; }
     }
     public enum InterfaceAsset {
         APPLICATION_ICON(Folder.INTERFACE.getPath() + "TC.png"),

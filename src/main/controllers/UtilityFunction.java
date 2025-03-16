@@ -110,24 +110,24 @@ public final class UtilityFunction {
             int currentPositionIndex = positionIndexes.poll();
 
             // Creates (and adds to the arrow) a capped part
-            arrow.new Part(currentPositionIndex, Arrow.CAP, resolveArrowPartDirection(previousPositionIndex, currentPositionIndex));
+            arrow.new Part(currentPositionIndex, Arrow.CAP, resolvePartDirection(previousPositionIndex, currentPositionIndex));
 
             while (positionIndexes.isEmpty() == false) {
                 Arrow.Part arrowPart = arrow.new Part(currentPositionIndex);
                 int nextPositionIndex = positionIndexes.peek();
 
-                arrowPart.setPartType(resolveArrowPartType(currentPositionIndex, nextPositionIndex));
+                arrowPart.setPartType(resolvePartType(currentPositionIndex, nextPositionIndex));
                 if (arrowPart.getPartType() == Arrow.CORNER_PART) currentPositionIndex = nextPositionIndex;
-                arrowPart.setDirection(resolveArrowPartDirection(previousPositionIndex, currentPositionIndex));
+                arrowPart.setDirection(resolvePartDirection(previousPositionIndex, currentPositionIndex));
 
                 previousPositionIndex = currentPositionIndex;
                 currentPositionIndex = positionIndexes.poll();
             }
 
-            assembleArrow(arrow);
+            assemble(arrow);
             return arrow;
         }
-        private static void assembleArrow(Arrow arrow) {
+        private static void assemble(Arrow arrow) {
             arrow.getParts().forEach(part -> {
                 if (part.getDirection() == ArrowPartDirection.RIGHT) {
                     if (part.getPartType() == Arrow.CORNER_PART) part.getNode().setScaleX(-1);
@@ -138,7 +138,7 @@ public final class UtilityFunction {
                 }
             });
         }
-        private static Image resolveArrowPartType(int currentIndex, int nextIndex) {
+        private static Image resolvePartType(int currentIndex, int nextIndex) {
             Image partType = Arrow.BAR_PART;
 
             if ((currentIndex - nextIndex) % Constant.TALENTGRID_ROW_STEP != 0) {
@@ -147,7 +147,7 @@ public final class UtilityFunction {
 
             return partType;
         }
-        private static ArrowPartDirection resolveArrowPartDirection(int previousIndex, int currentIndex) {
+        private static ArrowPartDirection resolvePartDirection(int previousIndex, int currentIndex) {
             ArrowPartDirection direction = ArrowPartDirection.DOWN;
             int difference = previousIndex - currentIndex;
 
@@ -185,11 +185,11 @@ public final class UtilityFunction {
         }
     }
     public static class Resources {
-        public static HashMap<CharacterClass, InputStream> getBaseDataStreams() throws IOException {
+        public static HashMap<CharacterClass, InputStream> getDefaultDataStreams() throws IOException {
             HashMap<CharacterClass, InputStream> dataFileStreams = new HashMap<>();
 
             for (CharacterClass cls : CharacterClass.values()) {
-                dataFileStreams.put(cls, loader.getResource(Resource.Folder.VANILLA_DATASET.getPath() + cls.name().toLowerCase() + ".xml").openStream());
+                dataFileStreams.put(cls, loader.getResource(Resource.Folder.DEFAULT_DATASET.getPath() + cls.name().toLowerCase() + ".xml").openStream());
             }
 
             return dataFileStreams;

@@ -53,17 +53,17 @@ public class XMLController {
         return customizationSet;
     }
     public CustomizationSet parse(HashMap<CharacterClass, InputStream> dataFileStreams) {
-        CustomizationSet baseDataSet = new CustomizationSet();
+        CustomizationSet defaultDataSet = new CustomizationSet();
 
         dataFileStreams.forEach((cls, dataStream) -> {
             try {
-                baseDataSet.addClassData(this.parse(cls, dataStream));
+                defaultDataSet.addClassData(this.parse(cls, dataStream));
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
         });
 
-        return baseDataSet;
+        return defaultDataSet;
     }
 
     private ClassData parse(CharacterClass cls, InputStream dataStream) throws Exception {
@@ -77,7 +77,6 @@ public class XMLController {
         int latestTalentIndex = -1;
 
         while (currentNode != null) {
-            // Is 'hasAttributes' necessary?
             if (currentNode.hasAttributes()) {
                 switch (currentNode.getNodeName()) {
                     case "tree" -> {
@@ -117,6 +116,7 @@ public class XMLController {
 
         return classData;
     }
+
     public void writeToXML(CustomizationSet customDataSet, ClassData classData) throws IOException, XMLStreamException, TransformerException {
         StringWriter writer = new StringWriter();
         XMLStreamWriter xmlWriter = XMLOutputFactory.newInstance().createXMLStreamWriter(writer);
