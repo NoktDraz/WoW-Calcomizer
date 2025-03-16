@@ -122,6 +122,7 @@ public class CalculatorController extends CalcomizerBase {
 
     private void applyCalculatorSettings(Note note) {
         note.setState(ItemState.LOCKED);
+        note.getImageView().setOnDragDetected(null);
     }
 
     private void applyTalentNodeEvents(TalentTree talentTree, Talent talent) {
@@ -139,6 +140,8 @@ public class CalculatorController extends CalcomizerBase {
                 this.attemptTalentRankOperation(talentTree, talent, operation);
             }
         });
+
+        talentNode.setOnDragDetected(null);
     }
 
     private void attemptTalentRankOperation(TalentTree talentTree, Talent talent, int operation) {
