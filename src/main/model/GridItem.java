@@ -14,6 +14,7 @@ public class GridItem {
     public static final Image ICON_DEFAULT = UtilityFunction.Resources.getInterfaceAsset(Resource.InterfaceAsset.ICON_DEFAULT);
     public static final Image ICON_EMPTY_SLOT = UtilityFunction.Resources.getInterfaceAsset(Resource.InterfaceAsset.ICON_EMPTY_SLOT);
     public static final Image ICON_CREATE_NEW = UtilityFunction.Resources.getInterfaceAsset(Resource.InterfaceAsset.ICON_CREATE_NEW);
+    public static final String EMPTY_SLOT_NAME = "Empty Slot";
 
     int index;
     int rowPosition, columnPosition;
@@ -56,7 +57,7 @@ public class GridItem {
         GridItem emptySlotItem = new GridItem();
 
         emptySlotItem.index = index;
-        emptySlotItem.itemName = "Empty Slot";
+        emptySlotItem.itemName = EMPTY_SLOT_NAME;
         emptySlotItem.tooltip = new ItemTooltip();
 
         return emptySlotItem;
@@ -109,7 +110,7 @@ public class GridItem {
             }
             case EMPTY -> {
                 this.setIconBorder(CustomBorder.OPEN);
-                this.itemName = "Empty Slot";
+                this.itemName = EMPTY_SLOT_NAME;
                 this.icon.setImage(ICON_EMPTY_SLOT);
                 this.icon.setOpacity(0.5);
 

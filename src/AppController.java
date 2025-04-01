@@ -47,8 +47,6 @@ public class AppController extends Application {
         this.initStages(mainStage);
         this.initViews();
 
-        this.customizerController.activate();
-
         Event.fireEvent(this.windowController.getMainStage(), new CustomEvent(CustomEvent.SET_MAIN_WINDOW, Window.CUSTOMIZER));
     }
 

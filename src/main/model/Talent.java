@@ -113,9 +113,6 @@ public class Talent extends GridItem {
         else
             super.updateTooltip(this.rankData.get(0));
     }
-    public void updateRankLabel() {
-        this.rankLabel.setCurrentRank(this.currentRank.intValue());
-    }
 
     public void setIndex(int index) {
         super.setIndex(index);
@@ -138,5 +135,8 @@ public class Talent extends GridItem {
     public void removeDependant(int dependantIndex) { this.dependantIndexes.remove(((Object) dependantIndex)); }
     public ArrayList<String> getRankData() { return this.rankData; }
     public RankLabel getRankLabel() { return this.rankLabel; }
+    public void updateRankLabel() {
+        this.rankLabel.setCurrentRank(this.currentRank.intValue());
+    }
     public static Talent getEmptySlot(int index) { return new Talent(GridItem.getEmptySlot(index)); }
 }

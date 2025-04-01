@@ -3,9 +3,7 @@ package main.controllers;
 import javafx.scene.effect.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundImage;
-import javafx.scene.layout.BackgroundSize;
+import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -216,7 +214,7 @@ public final class UtilityFunction {
                 return new Background(
                         new BackgroundImage(
                                 new Image(loader.getResourceAsStream(path)),
-                                null, null, null,
+                                BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT,
                                 new BackgroundSize(1,1,true,true,false,false)
                         )
                 );

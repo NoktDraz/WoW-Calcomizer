@@ -13,6 +13,10 @@ import main.enums.Resource;
 import main.model.*;
 
 abstract class ItemCustomizerBase implements FXMLController {
+    private static final String ITEM_NAME_EMPTY = "Item must have a name";
+    private static final String RANK_DESCRIPTION_EMPTY = "Talent must have a description for at least 1 rank";
+    private static final String NOTE_DESCRIPTION_EMPTY = "Note must have a description";
+
     ItemContainer currentItemContainer;
     GridItem currentItem;
     String errorMessage;
@@ -112,7 +116,7 @@ abstract class ItemCustomizerBase implements FXMLController {
 
     boolean validateFinish(TextArea... descriptions) {
         if (this.name.getText().isBlank()) {
-            this.errorMessage = "Item must have a name";
+            this.errorMessage = ITEM_NAME_EMPTY;
 
             return false;
         }
@@ -124,9 +128,9 @@ abstract class ItemCustomizerBase implements FXMLController {
         }
 
         if (descriptions.length > 1) {
-            this.errorMessage = "Talent must have a description for at least 1 rank";
+            this.errorMessage = RANK_DESCRIPTION_EMPTY;
         } else {
-            this.errorMessage = "Note must have a description";
+            this.errorMessage = NOTE_DESCRIPTION_EMPTY;
         }
 
         return false;

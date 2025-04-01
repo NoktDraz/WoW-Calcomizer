@@ -21,7 +21,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 public class TalentCustomizerController extends ItemCustomizerBase {
-    private Service<Void> errorAnimator;
     private Talent currentTalent;
     private SimpleIntegerProperty prerequisiteId;
     private Text prerequisiteText;
@@ -87,10 +86,6 @@ public class TalentCustomizerController extends ItemCustomizerBase {
             this.prerequisiteText.setStrokeWidth(0);
         });
         this.prerequisiteId = new SimpleIntegerProperty(-1);
-        this.prerequisiteId.addListener((observableValue, oldValue, newValue) -> {
-//            if (newValue.intValue() == -1) this.clear.setDisable(true);
-//            else this.clear.setDisable(false);
-        });
     }
     @FXML
     public void finish() {

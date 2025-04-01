@@ -16,16 +16,13 @@ public class Arrow {
 
     private int dependantIndex;
     private LinkedList<Part> arrowParts;
-    private ItemState state;
     
     public Arrow(int dependantIndex) {
         this.arrowParts = new LinkedList<>();
         this.dependantIndex = dependantIndex;
     }
-    public LinkedList<Part> getParts() { return this.arrowParts; }
 
     public class Part {
-
         private ImageView node;
         private Image partType;
         private int positionIndex;
@@ -59,11 +56,13 @@ public class Arrow {
         public Image getPartType() { return this.partType; }
     }
 
-    public int getIndex() { return this.dependantIndex; }
     public void setState(ItemState state) {
         switch (state) {
             case LOCKED -> this.arrowParts.forEach(part -> part.getNode().setEffect(CustomEffect.LOCKED));
             case OPEN -> this.arrowParts.forEach(part -> part.getNode().setEffect(null));
         }
     }
+
+    public int getIndex() { return this.dependantIndex; }
+    public LinkedList<Part> getParts() { return this.arrowParts; }
 }
