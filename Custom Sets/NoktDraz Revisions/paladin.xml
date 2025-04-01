@@ -44,13 +44,13 @@ Increases the effect of your Concentration Aura by an additional 25%.]]></rank>
 Increases the effect of your Concentration Aura by an additional 30%.]]></rank>
         </talent>
         <talent index="8" name="Consecration (Rank 1)" icon="InnerFire.png">
-            <rank index="1"><![CDATA[Consecrates the land beneath the Paladin, doing 80 Holy damage to enemies over 12 seconds and granting Fear and Charm immunity to any party members standing on the consecrated ground.
+            <rank index="1"><![CDATA[Consecrates the land beneath the Paladin, doing 96 Holy damage to enemies over 12 seconds and granting Fear and Charm immunity to any party members standing on the consecrated ground.
 
 135 Mana.  30 second cooldown.]]></rank>
         </talent>
         <talent index="9" name="Pursuit of Righteousness" icon="PursuitofRighteousness2.png" requires="5">
-            <rank index="1"><![CDATA[All spell damage you receive causes you to build up Righteousness, causing your next Crusader Strike or Judgement of Righteousness to deal additional Holy damage equal to 10% of your Intellect for each stack.  Lasts 20 seconds and stacks up to 5 times.]]></rank>
-            <rank index="2"><![CDATA[All spell damage you receive causes you to build up Righteousness, causing your next Crusader Strike or Judgement of Righteousness to deal additional Holy damage equal to 10% of your Intellect for each stack.  Lasts 20 seconds and stacks up to 10 times.]]></rank>
+            <rank index="1"><![CDATA[Causes you to build up Righteousness whenever you are hit by a hostile spell.  Righteousness causes your next Crusader Strike or Judgement of Righteousness to deal additional Holy damage equal to 15% of your Intellect for each stack.  Lasts 20 seconds and stacks up to 5 times.]]></rank>
+            <rank index="2"><![CDATA[Causes you to build up Righteousness whenever you are hit by a hostile spell.  Righteousness causes your next Crusader Strike or Judgement of Righteousness to deal additional Holy damage equal to 30% of your Intellect for each stack.  Lasts 20 seconds and stacks up to 5 times.]]></rank>
         </talent>
         <talent index="10" name="Sanctified Light" icon="HolyGuidance.png">
             <rank index="1"><![CDATA[Increases the critical effect chance of your Holy Light and Flash of Light spells by 1%.
@@ -87,18 +87,18 @@ Increases your spell power by 50% of your total Mana per 5 stat.]]></rank>
 Increases the radius of Consecration by 10%.]]></rank>
             <rank index="2"><![CDATA[After your spell casting gets interrupted, you are able to cast non-instant Holy spells with a 90% slower casting time during the lockout.
 
-Increases the radius of Consecration by 15%.]]></rank>
+Increases the radius of Consecration by 18%.]]></rank>
             <rank index="3"><![CDATA[After your spell casting gets interrupted, you are able to cast non-instant Holy spells with a 60% slower casting time during the lockout.
 
-Increases the radius of Consecration by 20%.]]></rank>
+Increases the radius of Consecration by 25%.]]></rank>
         </talent>
         <talent index="15" name="Purifying Power" icon="PureOfHeart.png">
             <rank index="1"><![CDATA[After casting Consecration, Divine Favor, Exorcism or Holy Wrath, gives your next Flash of Light, Holy Light or Holy Shock heal spell a 50% chance to remove 1 Curse, 1 Magic, 1 Disease and 1 Poison effect from its target.
 
-Reduces the cooldown of your Holy Wrath spell by 15 secs.]]></rank>
+Reduces the cooldown of your Holy Wrath spell by 10 secs.]]></rank>
             <rank index="2"><![CDATA[After casting Consecration, Divine Favor, Exorcism or Holy Wrath, gives your next Flash of Light, Holy Light or Holy Shock heal spell a 100% chance to remove 1 Curse, 1 Magic, 1 Disease and 1 Poison effect from its target.
 
-Reduces the cooldown of your Holy Wrath spell by 30 secs.]]></rank>
+Reduces the cooldown of your Holy Wrath spell by 20 secs.]]></rank>
         </talent>
         <talent index="16" name="Illumination" icon="GreaterHeal.png" requires="12">
             <rank index="1"><![CDATA[After getting a critical effect from your Flash of Light, Holy Light, or Holy Shock heal spell, restores Mana equal to 25% of the base Mana cost of the spell plus 50% of your Mana per 5 stat.
@@ -157,7 +157,7 @@ This spell has a 20% increased critical effect chance.
             <rank index="4"><![CDATA[Increases your total stats by 4%.]]></rank>
             <rank index="5"><![CDATA[Increases your total stats by 5%.]]></rank>
         </talent>
-        <talent index="2" name="Righteous Defender" icon="Guardian.png">
+        <talent index="2" name="Righteous Protector" icon="Guardian.png">
             <rank index="1"><![CDATA[Increases your Holy damage by 2%, and the armor bonus of your Devotion Aura by 5%, while you have a shield equipped.]]></rank>
             <rank index="2"><![CDATA[Increases your Holy damage by 4%, and the armor bonus of your Devotion Aura by 10%, while you have a shield equipped.]]></rank>
             <rank index="3"><![CDATA[Increases your Holy damage by 6%, and the armor bonus of your Devotion Aura by 15%, while you have a shield equipped.]]></rank>
@@ -247,17 +247,17 @@ Increases the dispel resistance of your Hand spells by 20%.]]></rank>
 Increases the dispel resistance of your Hand spells by 33%.]]></rank>
         </talent>
         <talent index="16" name="Justicar" icon="SealOfWrath.png" requires="8">
-            <rank index="1"><![CDATA[Your Judgement of Justice forces the target to attack you.
+            <rank index="1"><![CDATA[Your Judgement of Justice forces the target to attack you for 2 seconds.
 
 Your Judgement and Hammer of Justice spells interrupt spellcasting and prevent any spell in that school from being cast for 2 seconds, if the target is afflicted with Judgement of Justice.]]></rank>
         </talent>
         <talent index="17" name="Guardian's Favor" icon="GuardiansFavor.jpg">
             <rank index="1"><![CDATA[Restores Mana equal to 5% of the effective healing done when healed by friendly targets.
 
-Blocking and parrying attacks restores Mana equal to 10% and 50% of your Mana per 5 stat, respectively.]]></rank>
+Party members affected by your Auras receive 3% increased healing from all sources.]]></rank>
             <rank index="2"><![CDATA[Restores Mana equal to 10% of the effective healing done when healed by friendly targets.
 
-Blocking and parrying attacks restores Mana equal to 20% and 100% of your Mana per 5 stat, respectively.]]></rank>
+Party members affected by your Auras receive 6% increased healing from all sources.]]></rank>
         </talent>
         <talent index="18" name="Guardian's Fury" icon="BlessedResillience.png">
             <rank index="1"><![CDATA[Increases the damage done by your Holy spells and effects by up to 10% of your total Strength.
@@ -276,7 +276,7 @@ Causes your Crusader Strike to restore Mana equal to 40% of the damage dealt whi
 
 Causes your Crusader Strike to restore Mana equal to 50% of the damage dealt while Righteous Fury is active.]]></rank>
         </talent>
-        <talent index="21" name="Armor of Faith" icon="ImprovedResistanceAuras.png" requires="17">
+        <talent index="21" name="Armor of Faith" icon="ImprovedResistanceAuras.png">
             <rank index="1"><![CDATA[While above 35% Mana, up to 5% of all damage taken depletes Mana instead of Health.  While above 90% Mana, this effect diverts an additional 5% of damage.
 
 Increases your maximum Mana by 10% of your total Armor.]]></rank>
@@ -301,9 +301,9 @@ Increases your maximum Mana by 20% of your total Armor.]]></rank>
             <rank index="3"><![CDATA[Reduces the Mana cost of your instant cast spells by 15%.]]></rank>
         </talent>
         <talent index="2" name="Righteous Crusader" icon="2HandPaladin.png">
-            <rank index="1"><![CDATA[Increases your Intellect by 5% of your total Strength while you have a two-handed melee weapon equipped.]]></rank>
-            <rank index="2"><![CDATA[Increases your Intellect by 10% of your total Strength while you have a two-handed melee weapon equipped.]]></rank>
-            <rank index="3"><![CDATA[Increases your Intellect by 15% of your total Strength while you have a two-handed melee weapon equipped.]]></rank>
+            <rank index="1"><![CDATA[Increases your maximum Mana by 1 point for each point of Strength while you have a two-handed melee weapon equipped.]]></rank>
+            <rank index="2"><![CDATA[Increases your maximum Mana by 2 points for each point of Strength while you have a two-handed melee weapon equipped.]]></rank>
+            <rank index="3"><![CDATA[Increases your maximum Mana by 3 points for each point of Strength while you have a two-handed melee weapon equipped.]]></rank>
         </talent>
         <talent index="3" name="Pursuit of Justice" icon="PersuitofJustice.png">
             <rank index="1"><![CDATA[Increases your movement speed by 4%.  This does not stack with other movement speed increasing effects.
@@ -336,10 +336,10 @@ Ranged attacks against you, from more than 20 yds away, have a 30% chance to inc
         <talent index="8" name="Vindication" icon="Vindication.png">
             <rank index="1"><![CDATA[Gives the Paladin's damaging melee attacks a chance to reduce the damage of critical strikes dealt by the enemy target by 10% for 10 sec.
 
-Reduces damage taken from periodic effects by 8%.]]></rank>
+Reduces damage taken from periodic effects by 5%.]]></rank>
             <rank index="2"><![CDATA[Gives the Paladin's damaging melee attacks a chance to reduce the damage of critical strikes dealt by the enemy target by 15% for 10 sec.
 
-Reduces damage taken from periodic effects by 15%.]]></rank>
+Reduces damage taken from periodic effects by 10%.]]></rank>
             <rank index="3"><![CDATA[Gives the Paladin's damaging melee attacks a chance to reduce the damage of critical strikes dealt by the enemy target by 20% for 10 sec.
 
 Reduces damage taken from periodic effects by 15%.]]></rank>
@@ -374,14 +374,14 @@ Increases the duration of your Judgements by 10 secs.]]></rank>
             <rank index="5"><![CDATA[Gives you a 100% chance after being the victim of a critical strike, or a 35% chance after an enemy attempts to dispel a beneficial effect from you, to gain an extra attack.]]></rank>
         </talent>
         <talent index="15" name="Improved Retribution Aura" icon="AuraOfLight.png">
-            <rank index="1"><![CDATA[Your Retribution Aura increases chance to hit with Holy spells by 1% and gives Holy damaging attacks a 5% chance to increase all damage taken by the target by 10% for 10 secs.]]></rank>
-            <rank index="2"><![CDATA[Your Retribution Aura increases chance to hit with Holy spells by 2% and gives Holy damaging attacks a 10% chance to increase all damage taken by the target by 10% for 10 secs.]]></rank>
-            <rank index="3"><![CDATA[Your Retribution Aura increases chance to hit with Holy spells by 3% and gives Holy damaging attacks a 15% chance to increase all damage taken by the target by 10% for 10 secs.]]></rank>
+            <rank index="1"><![CDATA[Your Retribution Aura increases chance to hit with Holy spells by 1% and gives Holy damaging attacks a 7% chance to increase all damage taken by the target by 5% for 20 secs.]]></rank>
+            <rank index="2"><![CDATA[Your Retribution Aura increases chance to hit with Holy spells by 2% and gives Holy damaging attacks a 13% chance to increase all damage taken by the target by 5% for 20 secs.]]></rank>
+            <rank index="3"><![CDATA[Your Retribution Aura increases chance to hit with Holy spells by 3% and gives Holy damaging attacks a 20% chance to increase all damage taken by the target by 5% for 20 secs.]]></rank>
         </talent>
         <talent index="16" name="Fanaticism" icon="Avatar.png" requires="17">
-            <rank index="1"><![CDATA[Gives you a 1% bonus to Physical and Holy damage you deal for 15 sec after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to 5 times.]]></rank>
-            <rank index="2"><![CDATA[Gives you a 2% bonus to Physical and Holy damage you deal for 15 sec after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to 5 times.]]></rank>
-            <rank index="3"><![CDATA[Gives you a 3% bonus to Physical and Holy damage you deal for 15 sec after dealing a critical strike from a weapon swing, spell, or ability.  This effect stacks up to 5 times.]]></rank>
+            <rank index="1"><![CDATA[Critical strikes from weapon swings and offensive spell crits have a 33% chance to give you a 3% bonus to Physical and Holy damage for 15 sec.  This effect stacks up to 5 times.]]></rank>
+            <rank index="2"><![CDATA[Critical strikes from weapon swings and offensive spell crits have a 66% chance to give you a 3% bonus to Physical and Holy damage for 15 sec.  This effect stacks up to 5 times.]]></rank>
+            <rank index="3"><![CDATA[Critical strikes from weapon swings and offensive spell crits have a 100% chance to give you a 3% bonus to Physical and Holy damage for 15 sec.  This effect stacks up to 5 times.]]></rank>
         </talent>
         <talent index="17" name="Castigation" icon="Persecution.png" requires="5">
             <rank index="1"><![CDATA[Increases the critical strike chance of your Judgement and Hammer of Wrath spells by 10% and an additional 15% against enemies that are stunned or incapacitated.]]></rank>
@@ -455,7 +455,9 @@ SPI 		76
 
 Seal of Command - Proc rate lowered.
 
-Reckoning stores a single extra attack.]]></note>
+Reckoning stores a single extra attack.
+
+Imp. Retribution Aura's damage increasing effect limited to 1 per entity. (Can't be stacked)]]></note>
         <note index="10" name="(NEW) Righteous Defense" icon="RighteousDefense.jpg"><![CDATA[Come to the defense of a friendly target, commanding up to 3 enemies attacking the target to attack the Paladin instead.
 
 4% base Mana.  15 second cooldown.]]></note>

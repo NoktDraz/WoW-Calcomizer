@@ -29,9 +29,8 @@
             <rank index="3"><![CDATA[While in Battle Stance, your chance to hit is increased by 3% and your Heroic Strike, Mortal Strike, Slam and Cleave hits have a 33% chance to generate 5 Rage.]]></rank>
         </talent>
         <talent index="5" name="Improved Heroic Strike" icon="Ambush.png" requires="1">
-            <rank index="1"><![CDATA[Your Heroic Strike hits increase the critical strike chance of your next damaging ability by 10%.]]></rank>
-            <rank index="2"><![CDATA[Your Heroic Strike hits increase the critical strike chance of your next damaging ability by 17%.]]></rank>
-            <rank index="3"><![CDATA[Your Heroic Strike hits increase the critical strike chance of your next damaging ability by 25%.]]></rank>
+            <rank index="1"><![CDATA[Your Heroic Strike hits increase the critical strike chance of your next damaging ability by 15%.]]></rank>
+            <rank index="2"><![CDATA[Your Heroic Strike hits increase the critical strike chance of your next damaging ability by 30%.]]></rank>
         </talent>
         <talent index="7" name="Tactical Mastery" icon="EnchantArmor.png">
             <rank index="1"><![CDATA[You retain up to 5 of your rage points when you change stances.
@@ -44,10 +43,8 @@ Increases the range of your Charge, Intervene and Intercept abilities by 4 yards
 
 Increases the range of your Charge, Intervene and Intercept abilities by 6 yards.]]></rank>
         </talent>
-        <talent index="8" name="Weapon Master" icon="ArmsWeapon.png">
-            <rank index="1"><![CDATA[Gives you immunity to Disarm effects and increases the rate at which you learn Weapon Skill by 100%.
-
-Increases your critical strike chance with melee attacks by 50% of your Parry chance.]]></rank>
+        <talent index="8" name="Iron Grip" icon="ArmsWeapon.png">
+            <rank index="1"><![CDATA[Gives you immunity to Disarm effects.]]></rank>
         </talent>
         <talent index="10" name="Momentum" icon="DevastatingBlows.png" requires="2">
             <rank index="1"><![CDATA[Gives your melee attacks a chance to build up Momentum, reducing the cast time of your next Slam by 0.1 secs. per stack of Momentum.  Stacks up to 15 times and lasts 20 seconds.]]></rank>
@@ -60,45 +57,49 @@ Increases your critical strike chance with melee attacks by 50% of your Parry ch
             <rank index="1"><![CDATA[Gives your Charge and Intercept abilities a 50% chance to make your next Hamstring immobilize its target for 3 sec.]]></rank>
             <rank index="2"><![CDATA[Gives your Charge and Intercept abilities a 100% chance to make your next Hamstring immobilize its target for 3 sec.]]></rank>
         </talent>
-        <talent index="12" name="Spell Parry" icon="Spellparry.jpg">
-            <rank index="1"><![CDATA[Gives you the ability to parry direct damage spells, if cast from more than 15 yds away, reducing the damage by up to 150% of your total Strength.]]></rank>
-            <rank index="2"><![CDATA[Gives you the ability to parry direct damage spells, if cast from more than 15 yds away, reducing the damage by up to 300% of your total Strength.]]></rank>
+        <talent index="12" name="Martial Expertise" icon="Spellparry.jpg">
+            <rank index="1"><![CDATA[Direct damage spells cast from more than 15 yds away can be parried, reducing the damage by up to 100% of your total Strength.
+
+Increases your critical strike chance with melee attacks by 25% of your Parry chance.]]></rank>
+            <rank index="2"><![CDATA[Direct damage spells cast from more than 15 yds away can be parried, reducing the damage by up to 200% of your total Strength.
+
+Increases your critical strike chance with melee attacks by 50% of your Parry chance.]]></rank>
         </talent>
         <talent index="13" name="Impale" icon="SearingArrow.png" requires="5">
             <rank index="1"><![CDATA[Increases the critical strike damage bonus of your Heroic Strike, Mortal Strike, Overpower, Slam, Execute and Bloodthirst by 10%.]]></rank>
             <rank index="2"><![CDATA[Increases the critical strike damage bonus of your Heroic Strike, Mortal Strike, Overpower, Slam, Execute and Bloodthirst by 20%.]]></rank>
         </talent>
         <talent index="14" name="Focused Assault" icon="UnrelentingAssault.png" requires="10">
-            <rank index="1"><![CDATA[Gives your melee attacks a chance to increase your attack speed by 1%, up to a maximum of 5%.  Lasts 6 secs. but expires if you lose focus on the target.]]></rank>
-            <rank index="2"><![CDATA[Gives your melee attacks a chance to increase your attack speed by 1%, up to a maximum of 10%.  Lasts 6 secs. but expires if you lose focus on the target.]]></rank>
-            <rank index="3"><![CDATA[Gives your melee attacks a chance to increase your attack speed by 1%, up to a maximum of 15%.  Lasts 6 secs. but expires if you lose focus on the target.]]></rank>
+            <rank index="1"><![CDATA[Gives your melee attacks a chance to increase your attack speed by 1%, up to a maximum of 5%.  Lasts 10 secs. but expires if you lose focus on the target.]]></rank>
+            <rank index="2"><![CDATA[Gives your melee attacks a chance to increase your attack speed by 1%, up to a maximum of 10%.  Lasts 10 secs. but expires if you lose focus on the target.]]></rank>
+            <rank index="3"><![CDATA[Gives your melee attacks a chance to increase your attack speed by 1%, up to a maximum of 15%.  Lasts 10 secs. but expires if you lose focus on the target.]]></rank>
         </talent>
         <talent index="15" name="Two-Handed Weapon Specialization" icon="2Hand.png">
             <rank index="1"><![CDATA[Grants you a passive effect depending on the base attack speed of your equipped two-handed weapon.
 
-Weapons with an attack speed of 3.0 and faster give your damaging ability hits a 3% chance to grant you an extra attack.
+Weapons with a base attack speed of 3.0 and faster give your damaging ability hits a 3% chance to grant you an extra attack.
 
-Weapons with an attack speed slower than 3.0 increase Rage generation from dealing damage by 5%.]]></rank>
+Weapons with a base attack speed slower than 3.0 increase Rage generation from dealing damage by 5%.]]></rank>
             <rank index="2"><![CDATA[Grants you a passive effect depending on the base attack speed of your equipped two-handed weapon.
 
-Weapons with an attack speed of 3.0 and faster give your damaging ability hits a 6% chance to grant you an extra attack.
+Weapons with a base attack speed of 3.0 and faster give your damaging ability hits a 6% chance to grant you an extra attack.
 
-Weapons with an attack speed slower than 3.0 increase Rage generation from dealing damage by 10%.]]></rank>
+Weapons with a base attack speed slower than 3.0 increase Rage generation from dealing damage by 10%.]]></rank>
             <rank index="3"><![CDATA[Grants you a passive effect depending on the base attack speed of your equipped two-handed weapon.
 
-Weapons with an attack speed of 3.0 and faster give your damaging ability hits a 9% chance to grant you an extra attack.
+Weapons with a base attack speed of 3.0 and faster give your damaging ability hits a 9% chance to grant you an extra attack.
 
-Weapons with an attack speed slower than 3.0 increase Rage generation from dealing damage by 15%.]]></rank>
+Weapons with a base attack speed slower than 3.0 increase Rage generation from dealing damage by 15%.]]></rank>
             <rank index="4"><![CDATA[Grants you a passive effect depending on the base attack speed of your equipped two-handed weapon.
 
-Weapons with an attack speed of 3.0 and faster give your damaging ability hits a 12% chance to grant you an extra attack.
+Weapons with a base attack speed of 3.0 and faster give your damaging ability hits a 12% chance to grant you an extra attack.
 
-Weapons with an attack speed slower than 3.0 increase Rage generation from dealing damage by 20%.]]></rank>
+Weapons with a base attack speed slower than 3.0 increase Rage generation from dealing damage by 20%.]]></rank>
             <rank index="5"><![CDATA[Grants you a passive effect depending on the base attack speed of your equipped two-handed weapon.
 
-Weapons with an attack speed of 3.0 and faster give your damaging ability hits a 15% chance to grant you an extra attack.
+Weapons with a base attack speed of 3.0 and faster give your damaging ability hits a 15% chance to grant you an extra attack.
 
-Weapons with an attack speed slower than 3.0 increase Rage generation from dealing damage by 25%.]]></rank>
+Weapons with a base attack speed slower than 3.0 increase Rage generation from dealing damage by 25%.]]></rank>
         </talent>
         <talent index="16" name="Poleaxe Specialization" icon="Polearm.png">
             <rank index="1"><![CDATA[Increases your chance to get a critical strike with Axes and Polearms by 1%.]]></rank>
@@ -113,11 +114,11 @@ Weapons with an attack speed slower than 3.0 increase Rage generation from deali
 30 Rage.  30 second cooldown.]]></rank>
         </talent>
         <talent index="18" name="Mace Specialization" icon="Mace.png">
-            <rank index="1"><![CDATA[Your melee attacks with a Mace ignore 4% of the target's armor.]]></rank>
-            <rank index="2"><![CDATA[Your melee attacks with a Mace ignore 8% of the target's armor.]]></rank>
-            <rank index="3"><![CDATA[Your melee attacks with a Mace ignore 12% of the target's armor.]]></rank>
-            <rank index="4"><![CDATA[Your melee attacks with a Mace ignore 16% of the target's armor.]]></rank>
-            <rank index="5"><![CDATA[Your melee attacks with a Mace ignore 20% of the target's armor.]]></rank>
+            <rank index="1"><![CDATA[Your melee attacks with a Mace ignore 4% the target's armor and cause 4% increased damage against Physical damage absorbing effects.]]></rank>
+            <rank index="2"><![CDATA[Your melee attacks with a Mace ignore 8% of the target's armor and cause 8% increased damage against Physical damage absorbing effects.]]></rank>
+            <rank index="3"><![CDATA[Your melee attacks with a Mace ignore 12% of the target's armor and cause 12% increased damage against Physical damage absorbing effects.]]></rank>
+            <rank index="4"><![CDATA[Your melee attacks with a Mace ignore 16% of the target's armor and cause 16% increased damage against Physical damage absorbing effects.]]></rank>
+            <rank index="5"><![CDATA[Your melee attacks with a Mace ignore 20% of the target's armor and cause 20% increased damage against Physical damage absorbing effects.]]></rank>
         </talent>
         <talent index="19" name="Sword Specialization" icon="Sword.png">
             <rank index="1"><![CDATA[Increases your attack speed and chance to parry with Swords by 1%.]]></rank>
@@ -126,7 +127,7 @@ Weapons with an attack speed slower than 3.0 increase Rage generation from deali
             <rank index="4"><![CDATA[Increases your attack speed and chance to parry with Swords by 4%.]]></rank>
             <rank index="5"><![CDATA[Increases your attack speed and chance to parry with Swords by 5%.]]></rank>
         </talent>
-        <talent index="21" name="Weapon Expertise" icon="WeaponMaster.png">
+        <talent index="21" name="Weapon Master" icon="WeaponMaster.png">
             <rank index="1"><![CDATA[Increases your Weapon Skill with all weapons by 2.]]></rank>
             <rank index="2"><![CDATA[Increases your Weapon Skill with all weapons by 4.]]></rank>
             <rank index="3"><![CDATA[Increases your Weapon Skill with all weapons by 6.]]></rank>
@@ -289,7 +290,7 @@ Reduces the cooldown of your Whirlwind ability by 5 seconds.
 Increases the critical strike chance of your Execute ability by 10%.]]></rank>
         </talent>
         <talent index="25" name="Bloodthirst (Rank 1)" icon="BloodLust.png" requires="17">
-            <rank index="1"><![CDATA[Instantly attack the target, causing 270-320 damage and increasing your attack speed by 15% for your next 6 swings.  Also, restores 50 Health if the target is bleeding.
+            <rank index="1"><![CDATA[Instantly attack the target, causing 270-320 damage and increasing your attack speed by 15% for your next 4 swings.  Also, restores 50 Health if the target is bleeding.
 
 45 Rage.  10 second cooldown.]]></rank>
         </talent>
@@ -365,18 +366,18 @@ Your Revenge hits reduce the remaining cooldown of your Protection abilities by 
             <rank index="2"><![CDATA[Your Shield Block ability increases your block strength by 50% while active.]]></rank>
         </talent>
         <talent index="10" name="Disrupting Shout" icon="RallyingCry.png">
-            <rank index="1"><![CDATA[Interrupts the target for 3 seconds and dazing all enemies within 10 yards for 4 seconds.
+            <rank index="1"><![CDATA[Interrupts the target for 3 seconds and dazes all enemies within 10 yards of you for 5 seconds.
 
 30 Rage.  3 minute cooldown.]]></rank>
         </talent>
-        <talent index="11" name="Devastator" icon="Devastate.png">
-            <rank index="1"><![CDATA[Generates 1 Rage when you attack targets with Physical damage absorbing shields.  This effect cannot occur more than once every 6 seconds.
+        <talent index="11" name="Juggernaut" icon="Devastate.png">
+            <rank index="1"><![CDATA[Generates 1 Rage when you attack targets with Physical damage absorbing shields.  This effect cannot occur more than once every 5 seconds.
 
 Your Shield Bash and Disrupting Shout abilities silence their targets for 1 sec.]]></rank>
-            <rank index="2"><![CDATA[Generates 2 Rage when you attack targets with Physical damage absorbing shields.  This effect cannot occur more than once every 6 seconds.
+            <rank index="2"><![CDATA[Generates 2 Rage when you attack targets with Physical damage absorbing shields.  This effect cannot occur more than once every 5 seconds.
 
 Your Shield Bash and Disrupting Shout abilities silence their targets for 1.5 sec.]]></rank>
-            <rank index="3"><![CDATA[Generates 3 Rage when you attack targets with Physical damage absorbing shields.  This effect cannot occur more than once every 6 seconds.
+            <rank index="3"><![CDATA[Generates 3 Rage when you attack targets with Physical damage absorbing shields.  This effect cannot occur more than once every 5 seconds.
 
 Your Shield Bash and Disrupting Shout abilities silence their targets for 2 sec.]]></rank>
         </talent>
@@ -395,16 +396,31 @@ Your Shield Bash and Disrupting Shout abilities silence their targets for 2 sec.
             <rank index="5"><![CDATA[Increases your total Stamina by 5% and your Strength by 10% of your Stamina.]]></rank>
         </talent>
         <talent index="16" name="Vanguard" icon="InnerRage.png">
-            <rank index="1"><![CDATA[Generates 2 Rage when you parry, dodge or resist an attack or ability.
+            <rank index="1"><![CDATA[Generates 1 Rage when you parry, dodge or resist an attack or ability.
 
-Increases your damage done by 2% for each enemy within 10 yds of you.  Stacks up to 5 times.
+Increases your damage done by 2% for each enemy within 10 yds of you.  Stacks up to 2 times.
 
-Reduces the cooldown of your Challenging Shout ability by 2 minutes.]]></rank>
-            <rank index="2"><![CDATA[Generates 5 Rage when you parry, dodge or resist an attack or ability.
+Reduces the cooldown of your Challenging Shout ability by 15%.]]></rank>
+            <rank index="2"><![CDATA[Generates 2 Rage when you parry, dodge or resist an attack or ability.
+
+Increases your damage done by 2% for each enemy within 10 yds of you.  Stacks up to 4 times.
+
+Reduces the cooldown of your Challenging Shout ability by 30%.]]></rank>
+            <rank index="3"><![CDATA[Generates 3 Rage when you parry, dodge or resist an attack or ability.
+
+Increases your damage done by 2% for each enemy within 10 yds of you.  Stacks up to 6 times.
+
+Reduces the cooldown of your Challenging Shout ability by 45%.]]></rank>
+            <rank index="4"><![CDATA[Generates 4 Rage when you parry, dodge or resist an attack or ability.
+
+Increases your damage done by 2% for each enemy within 10 yds of you.  Stacks up to 8 times.
+
+Reduces the cooldown of your Challenging Shout ability by 60%.]]></rank>
+            <rank index="5"><![CDATA[Generates 5 Rage when you parry, dodge or resist an attack or ability.
 
 Increases your damage done by 2% for each enemy within 10 yds of you.  Stacks up to 10 times.
 
-Reduces the cooldown of your Challenging Shout ability by 4 minutes.]]></rank>
+Reduces the cooldown of your Challenging Shout ability by 75%.]]></rank>
         </talent>
         <talent index="17" name="Shield Mastery" icon="ShieldMastery.png" requires="9">
             <rank index="1"><![CDATA[Gives your Shield Bash, Shield Slam and Intervene abilities a 50% chance to give you charge of Shield Block.
@@ -420,11 +436,8 @@ Increases the amount of damage absorbed by your shield by 30%.]]></rank>
 50 Rage.  1 minute cooldown.]]></rank>
         </talent>
         <talent index="21" name="Hold the Line" icon="Vigilance.png" requires="17">
-            <rank index="1"><![CDATA[Reduces all damage taken by 10% for 6 secs. when your Health drops below 20%.  This effect cannot occur more than once every 5 minutes.]]></rank>
-            <rank index="2"><![CDATA[Reduces all damage taken by 15% for 6 secs. when your Health drops below 20%.  This effect cannot occur more than once every 5 minutes.]]></rank>
-            <rank index="3"><![CDATA[Reduces all damage taken by 20% for 6 secs. when your Health drops below 20%.  This effect cannot occur more than once every 5 minutes.]]></rank>
-            <rank index="4"><![CDATA[Reduces all damage taken by 25% for 6 secs. when your Health drops below 20%.  This effect cannot occur more than once every 5 minutes.]]></rank>
-            <rank index="5"><![CDATA[Reduces all damage taken by 30% for 6 secs. when your Health drops below 20%.  This effect cannot occur more than once every 5 minutes.]]></rank>
+            <rank index="1"><![CDATA[Reduces all damage taken by 15% for 6 secs. when your Health drops below 20%.  This effect cannot occur more than once every 5 minutes.]]></rank>
+            <rank index="2"><![CDATA[Reduces all damage taken by 30% for 6 secs. when your Health drops below 20%.  This effect cannot occur more than once every 5 minutes.]]></rank>
         </talent>
         <talent index="25" name="Shield Wall" icon="ShieldWall.png" requires="21">
             <rank index="1"><![CDATA[Reduces all non-periodic damage taken by 30% for 6 sec.
@@ -458,7 +471,9 @@ SPI 		47
 
 ---
 
-Rend only has 1 debuff slot (like Sunder Armor, one stack per mob)]]></note>
+Rend only has 1 debuff slot. (like Sunder Armor, one stack per mob)
+
+Momentum and Focused Assault are PPM-based. (i.e. faster weapons are less likely to proc them)]]></note>
         <note index="10" name="(NEW) Intervene" icon="VictoryRush.png"><![CDATA[Run at high speed towards a party member, intercepting the next melee or ranged attack made against them.
 
 10 Rage. 30 second cooldown.]]></note>

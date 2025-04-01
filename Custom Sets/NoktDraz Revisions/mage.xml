@@ -373,29 +373,29 @@ Reduces damage taken from periodic effects by 15%.]]></rank>
         <talent index="15" name="Shatter" icon="FrostShock.png">
             <rank index="1"><![CDATA[Increases the critical strike chance of all your spells against frozen targets by 5%.
 
-Gives your Mana Shield a 5% chance to stun the attacker for 2 secs. when broken,
-
-Gives your Ice Barrier a 5% chance to freeze the attacker in place for 4 secs. when broken,]]></rank>
-            <rank index="2"><![CDATA[Increases the critical strike chance of all your spells against frozen targets by 10%.
-
 Gives your Mana Shield a 10% chance to stun the attacker for 2 secs. when broken,
 
 Gives your Ice Barrier a 10% chance to freeze the attacker in place for 4 secs. when broken,]]></rank>
-            <rank index="3"><![CDATA[Increases the critical strike chance of all your spells against frozen targets by 15%.
-
-Gives your Mana Shield a 15% chance to stun the attacker for 2 secs. when broken,
-
-Gives your Ice Barrier a 15% chance to freeze the attacker in place for 4 secs. when broken,]]></rank>
-            <rank index="4"><![CDATA[Increases the critical strike chance of all your spells against frozen targets by 20%.
+            <rank index="2"><![CDATA[Increases the critical strike chance of all your spells against frozen targets by 10%.
 
 Gives your Mana Shield a 20% chance to stun the attacker for 2 secs. when broken,
 
 Gives your Ice Barrier a 20% chance to freeze the attacker in place for 4 secs. when broken,]]></rank>
+            <rank index="3"><![CDATA[Increases the critical strike chance of all your spells against frozen targets by 15%.
+
+Gives your Mana Shield a 30% chance to stun the attacker for 2 secs. when broken,
+
+Gives your Ice Barrier a 30% chance to freeze the attacker in place for 4 secs. when broken,]]></rank>
+            <rank index="4"><![CDATA[Increases the critical strike chance of all your spells against frozen targets by 20%.
+
+Gives your Mana Shield a 40% chance to stun the attacker for 2 secs. when broken,
+
+Gives your Ice Barrier a 40% chance to freeze the attacker in place for 4 secs. when broken,]]></rank>
             <rank index="5"><![CDATA[Increases the critical strike chance of all your spells against frozen targets by 25%.
 
-Gives your Mana Shield a 25% chance to stun the attacker for 2 secs. when broken,
+Gives your Mana Shield a 50% chance to stun the attacker for 2 secs. when broken,
 
-Gives your Ice Barrier a 25% chance to freeze the attacker in place for 4 secs. when broken,]]></rank>
+Gives your Ice Barrier a 50% chance to freeze the attacker in place for 4 secs. when broken,]]></rank>
         </talent>
         <talent index="16" name="Frostburn" icon="FrostBurn.png" requires="17">
             <rank index="1"><![CDATA[Gives your Permafrost's freezing effect a 50% chance to apply Frostburn to the target for 20 secs.
@@ -440,7 +440,7 @@ Shares a cooldown with Fire Blast.
 
 Blink - Cooldown increased to 25 secs.
 
-Mana Shield - Mana drained per point of damage reduced to 1.  Now has a cooldown of 10 secs. and the cooldown starts when the Mana Shield effect expires.
+Mana Shield - Mana drained per point of damage reduced to 1.  Now has a cooldown of 10 secs. and the cooldown starts once the Mana Shield effect expires.
 
 Evocation - Mana regeneration rate reduced to 1000%.  Cooldown lowered to 5 minutes.
 

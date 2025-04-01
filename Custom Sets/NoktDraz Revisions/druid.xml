@@ -89,16 +89,16 @@ Gives your Moonfire spell a 20% chance to increase the target's Arcane damage ta
         <talent index="12" name="Synergy" icon="Synergy.png">
             <rank index="1"><![CDATA[You are granted bonuses, depending on the amount of talent points allocated in each specialization tree.
 
-Balance - Your maximum Mana is increased by 3% of your total Strength and Spirit per allocated point.
+Balance - Your maximum Mana is increased by 5% of your total Strength and Spirit per allocated point.
 
-Feral Combat - Your critical effect chance with spells is increased by 0.25% of your melee critical strike chance per allocated point.
+Feral Combat - Your critical effect chance with spells is increased by 0.4% of your melee critical strike chance per allocated point.
 
 Restoration - Your critical effect chance with Nature spells is increased by 0.05% per allocated point.]]></rank>
             <rank index="2"><![CDATA[You are granted bonuses, depending on the amount of talent points allocated in each specialization tree.
 
-Balance - Your maximum Mana is increased by 6% of your total Strength and Spirit per allocated point.
+Balance - Your maximum Mana is increased by 10% of your total Strength and Spirit per allocated point.
 
-Feral Combat - Your critical effect chance with spells is increased by 0.5% of your melee critical strike chance per allocated point.
+Feral Combat - Your critical effect chance with spells is increased by 0.8% of your melee critical strike chance per allocated point.
 
 Restoration - Your critical effect chance with Nature spells is increased by 0.1% per allocated point.]]></rank>
         </talent>
@@ -118,10 +118,12 @@ Reduces the spell casting and melee attack speed penalties of your Barkskin spel
             <rank index="1"><![CDATA[Gives you a 50% chance to gain Owlkin Frenzy for 15 secs. after being Sleeped, Silenced or interrupted while in Moonkin Form.  Owlkin Frenzy prevents you from losing casting time when taking damage and reduces the global cooldown of your Balance spells by 0.5 secs.]]></rank>
             <rank index="2"><![CDATA[Gives you a 100% chance to gain Owlkin Frenzy for 15 secs. after being Sleeped, Silenced or interrupted while in Moonkin Form.  Owlkin Frenzy prevents you from losing casting time when taking damage and reduces the global cooldown of your Balance spells by 0.5 secs.]]></rank>
         </talent>
-        <talent index="17" name="Moonkin Form (Rank 1)" icon="MoonkinForm.png">
-            <rank index="1"><![CDATA[Transforms the Druid into Moonkin Form.  While in this form the armor contribution from items is increased by 200% and you regenerate 40 Mana every 5 seconds.  The Moonkin can only cast Balance spells while shapeshifted.
+        <talent index="17" name="Moonkin Form" icon="MoonkinForm.png">
+            <rank index="1"><![CDATA[Transforms the Druid into Moonkin Form.  While in this form the armor contribution from items is increased by 200% and you regenerate Mana equal to 75% of your level every 5 seconds.  The Moonkin can only cast Balance spells while shapeshifted.
 
-The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.]]></rank>
+The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
+
+55% base Mana.]]></rank>
         </talent>
         <talent index="18" name="Improved Starfire" icon="StarFire.png" requires="14">
             <rank index="1"><![CDATA[Reduces your Startfire spell's cast time by 0.25 sec. and threat caused by 10%.]]></rank>
@@ -389,21 +391,21 @@ This spell has a 25% increased critical effect chance.
 20% base Mana.  15 second cooldown.]]></rank>
         </talent>
         <talent index="11" name="Improved Regrowth" icon="ResistNature.png">
-            <rank index="1"><![CDATA[Increases the critical effect chance of your Regrowth spell by 10% and its dispel resistance by 6%.
+            <rank index="1"><![CDATA[Increases the critical effect chance of your Regrowth spell by 5% and its dispel resistance by 10%.
+
+Your Regrowth increases the critical effect chance of Healing Touch on the target by 1%.]]></rank>
+            <rank index="2"><![CDATA[Increases the critical effect chance of your Regrowth spell by 10% and its dispel resistance by 20%.
 
 Your Regrowth increases the critical effect chance of Healing Touch on the target by 2%.]]></rank>
-            <rank index="2"><![CDATA[Increases the critical effect chance of your Regrowth spell by 20% and its dispel resistance by 12%.
+            <rank index="3"><![CDATA[Increases the critical effect chance of your Regrowth spell by 15% and its dispel resistance by 30%.
+
+Your Regrowth increases the critical effect chance of Healing Touch on the target by 3%.]]></rank>
+            <rank index="4"><![CDATA[Increases the critical effect chance of your Regrowth spell by 20% and its dispel resistance by 40%.
 
 Your Regrowth increases the critical effect chance of Healing Touch on the target by 4%.]]></rank>
-            <rank index="3"><![CDATA[Increases the critical effect chance of your Regrowth spell by 30% and its dispel resistance by 18%.
+            <rank index="5"><![CDATA[Increases the critical effect chance of your Regrowth spell by 25% and its dispel resistance by 50%.
 
-Your Regrowth increases the critical effect chance of Healing Touch on the target by 6%.]]></rank>
-            <rank index="4"><![CDATA[Increases the critical effect chance of your Regrowth spell by 40% and its dispel resistance by 24%.
-
-Your Regrowth increases the critical effect chance of Healing Touch on the target by 8%.]]></rank>
-            <rank index="5"><![CDATA[Increases the critical effect chance of your Regrowth spell by 50% and its dispel resistance by 30%.
-
-Your Regrowth increases the critical effect chance of Healing Touch on the target by 10%.]]></rank>
+Your Regrowth increases the critical effect chance of Healing Touch on the target by 5%.]]></rank>
         </talent>
         <talent index="12" name="Gift of Nature" icon="ProtectionformNature.png" requires="1">
             <rank index="1"><![CDATA[Increases your base stats by 2%.
@@ -476,7 +478,9 @@ Entangling Roots - Outdoor restriction removed.
 
 Rejuvenation - Now stacks up to 3 times.  Mana cost and healing reduced.
 
-Innervate - Now has a 3 second cast time.  Cooldown lowered to 5 minutes.]]></note>
+Innervate - Now has a 3 second cast time.  Cooldown lowered to 5 minutes.
+
+Swipe - Now scales with Attack Power.]]></note>
         <note index="1" name="Miscellaneous" icon="Spy.png"><![CDATA[Druid base stats at level 60:
 
 Health 	1483
@@ -486,7 +490,11 @@ STR 		66
 AGI		60
 STAM 	71
 INT 		97
-SPI 		111]]></note>
+SPI 		111
+
+---
+
+MCP needs to be altered.]]></note>
         <note index="7" name="Ravage (Final Rank)" icon="Ravage.png"><![CDATA[Ravage the target, causing 400% damage instantly and 270 damage over 12 seconds.  Must be prowling and behind the target.  Awards 1 combo point.
 
 60 Energy]]></note>
