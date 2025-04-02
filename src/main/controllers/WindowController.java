@@ -5,6 +5,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import main.enums.Resource;
 import main.enums.Window;
 import main.model.CustomCursor;
 
@@ -27,6 +28,7 @@ public class WindowController {
     public void setMainStage(Stage mainStage) {
         this.mainStage = mainStage;
         this.mainStage.setResizable(false);
+        this.mainStage.getIcons().add(UtilityFunction.Resources.getInterfaceAsset(Resource.InterfaceAsset.APPLICATION_ICON));
     }
     public void setPrimaryModalWindow(Window window) {
         if (this.modalPrimary.isShowing()) this.modalPrimary.close();
