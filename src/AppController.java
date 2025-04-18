@@ -235,12 +235,17 @@ public class AppController extends Application {
             }
         );
 
+        secondaryModalStage.setOnHidden(windowEvent -> {
+            this.windowController.setPrimaryModalWindow(Window.TALENT_CUSTOMIZER);
+            this.windowController.showPrimaryModal();
+        });
+
         secondaryModalStage.addEventFilter(CustomEvent.FINISH_PREREQUISITE,
                 customEvent -> {
                     this.talentCustomizerController.setPrerequisite(
                             (int) customEvent.getMainObjectOfEvent());
-                    this.windowController.setPrimaryModalWindow(Window.TALENT_CUSTOMIZER);
-                    this.windowController.showPrimaryModal();
+
+                    secondaryModalStage.hide();
                 }
         );
     }
