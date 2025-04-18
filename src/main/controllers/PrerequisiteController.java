@@ -9,13 +9,13 @@ import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import main.model.*;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 public class PrerequisiteController implements FXMLController {
     private Talent currentTalent;
     private TalentTree currentTalentTree;
     private ImageView currentIcon;
-    private ArrayList<Integer> validPrerequisiteIndexes;
+    private HashSet<Integer> occupiedGridSlots; // Contains the grid position indexes of talent and arrow nodes
 
     public PrerequisiteController() {}
     @FXML
@@ -49,54 +49,92 @@ public class PrerequisiteController implements FXMLController {
         this.currentTalent = talent;
         this.currentTalentTree = talentTree;
         this.currentIcon = currentIcon;
-        this.validPrerequisiteIndexes = new ArrayList<>();
+        this.occupiedGridSlots = new HashSet<>();
         this.tree.setFont(CustomFont.ITEM_NAME);
         this.hBox.setBackground(talentTree.getBackground());
+        this.close.setCursor(CustomCursor.DEFAULT);
 
         this.grid.getChildren().clear();
 
-        this.findValidPrerequisiteIndexes();
         this.populateTalentTreeGrid();
+        this.findValidPrerequisiteOptions();
     }
 
-    private void findValidPrerequisiteIndexes() {
-        int talentIndex = currentTalent.getIndex();
-        boolean isUpBlocked = false, isLeftBlocked = false, isRightBlocked = false;
+    private void findValidPrerequisiteOptions() {
+        int talentIndex = this.currentTalent.getIndex();
+        boolean isUpLocked = false, isLeftLocked = false, isLeftBlocked = false, isRightLocked = false, isRightBlocked = false;
 
         // Is talent in the first row
         if (talentIndex < 4) {
-            isUpBlocked = true;
+            isUpLocked = true;
         }
         // Is talent on the left edge
         if (talentIndex % 4 == 0) {
             isLeftBlocked = true;
-        } // Is talent on the right edge
+            isLeftLocked = true;
+        }
+        // Is talent on the right edge
         else if ((talentIndex + 1) % 4 == 0) {
             isRightBlocked = true;
+            isRightLocked = true;
         }
 
-        int descendingTalentIndex = talentIndex;
+        // Check if the slot to the left and/or right of the slot at the descendingSlotIndex is occupied
+        // Is the slot occupied by a talent?  Skip it, if it is a dependant of the current talent
+        // Adjust the slot to be a valid selection option
+        // Lock the slot direction (avoids unreachable talents being tagged as valid options)
+        // Shift a row upward.  Check the slot at the descendingSlotIndex
+        // If the current slot is not occupied, unlock slot directions to both sides (unless blocked by an edge)
+        // Repeat until all sides are locked
+        int descendingSlotIndex = talentIndex;
         do {
-            if (isLeftBlocked) {
-                this.validPrerequisiteIndexes.add(descendingTalentIndex + 1);
-            } else if (isRightBlocked) {
-                this.validPrerequisiteIndexes.add(descendingTalentIndex - 1);
-            } else {
-                this.validPrerequisiteIndexes.add(descendingTalentIndex + 1);
-                this.validPrerequisiteIndexes.add(descendingTalentIndex - 1);
+            if (isLeftLocked != true) {
+                if (this.occupiedGridSlots.contains(descendingSlotIndex - 1)) {
+                    if (this.currentTalentTree.getTalentByIndex(descendingSlotIndex - 1) != null) {
+                        if (this.currentTalent.hasDependants() != true ||
+                                this.currentTalent.getDependantIndexes().contains(descendingSlotIndex - 1) != true) {
+                                    this.setAsValidPrerequisiteOption(this.currentTalentTree.getTalentByIndex(descendingSlotIndex - 1));
+                        }
+                    }
+
+                    isLeftLocked = true;
+                }
+            }
+            if (isRightLocked != true) {
+                if (this.occupiedGridSlots.contains(descendingSlotIndex + 1)) {
+                    if (this.currentTalentTree.getTalentByIndex(descendingSlotIndex + 1) != null) {
+                        if (this.currentTalent.hasDependants() != true ||
+                                this.currentTalent.getDependantIndexes().contains(descendingSlotIndex + 1) != true) {
+                                    this.setAsValidPrerequisiteOption(this.currentTalentTree.getTalentByIndex(descendingSlotIndex + 1));
+                        }
+                    }
+
+                    isRightLocked = true;
+                }
             }
 
-            descendingTalentIndex -= 4;
-            if (descendingTalentIndex < 0) {
-                isUpBlocked = true;
+            descendingSlotIndex -= Constant.TALENTGRID_ROW_STEP;
+            if (descendingSlotIndex < 0) {
+                isUpLocked = true;
+                isLeftLocked = true;
+                isRightLocked = true;
             }
-            if (this.currentTalentTree.getTalentByIndex(descendingTalentIndex) != null) {
-                this.validPrerequisiteIndexes.add(descendingTalentIndex);
 
-                isUpBlocked = true;
+            if (isUpLocked != true) {
+                if (this.occupiedGridSlots.contains(descendingSlotIndex)) {
+                    if (this.currentTalentTree.getTalentByIndex(descendingSlotIndex) != null)
+                        this.setAsValidPrerequisiteOption(this.currentTalentTree.getTalentByIndex(descendingSlotIndex));
+
+                    isUpLocked = true;
+                }
+
+                if (isLeftBlocked != true && isUpLocked != true)
+                    isLeftLocked = false;
+                if (isRightBlocked != true && isUpLocked != true)
+                    isRightLocked = false;
             }
         }
-        while (isUpBlocked == false);
+        while ((isUpLocked && isLeftLocked && isRightLocked) == false);
     }
 
     private void populateTalentTreeGrid() {
@@ -104,19 +142,12 @@ public class PrerequisiteController implements FXMLController {
             if (talent.getColumnPosition() == this.currentTalent.getColumnPosition() &&
                     talent.getRowPosition() == this.currentTalent.getRowPosition()) return;
 
-            ImageView imageView = UtilityFunction.clone.ImageView(talent.getImageView());
+            ImageView talentNode = UtilityFunction.clone.ImageView(talent.getImageView());
+            talentNode.setEffect(CustomBorder.LOCKED);
+            talentNode.setCursor(null);
 
-            if (this.validPrerequisiteIndexes.contains(talent.getIndex())) {
-                imageView.setEffect(CustomBorder.OPEN);
-                imageView.setOnMouseEntered(event -> imageView.setEffect(UtilityFunction.Effects.constructEffectChain(CustomBorder.OPEN, CustomEffect.VALID)));
-                imageView.setOnMouseExited(event -> imageView.setEffect(CustomBorder.OPEN));
-                imageView.setOnMouseClicked(event -> Event.fireEvent(this.hBox, new CustomEvent(CustomEvent.FINISH_PREREQUISITE, talent.getIndex())));
-            } else {
-                imageView.setEffect(CustomBorder.LOCKED);
-                imageView.setCursor(null);
-            }
-
-            this.grid.add(imageView, talent.getColumnPosition(), talent.getRowPosition());
+            this.grid.add(talentNode, talent.getColumnPosition(), talent.getRowPosition());
+            this.occupiedGridSlots.add(talent.getIndex());
         });
         this.currentTalentTree.getArrows().forEach(arrow ->
                 arrow.getParts().forEach(part -> {
@@ -124,19 +155,32 @@ public class PrerequisiteController implements FXMLController {
 
                     if (arrow.getIndex() != currentTalent.getIndex()) {
                         arrowNode.setEffect(CustomEffect.DESATURATE_FULL);
+                        // Arrows for the current prerequisite aren't counted as occupying a slot
+                        this.occupiedGridSlots.add(part.getPositionIndex());
                     }
 
                     this.grid.add(arrowNode, part.getColumnPosition(), part.getRowPosition());
                 })
         );
 
-        ImageView imageView = UtilityFunction.clone.ImageView(this.currentIcon);
-        imageView.setScaleX(1.2);
-        imageView.setScaleY(1.2);
-        imageView.setEffect(CustomBorder.MAXED);
-        imageView.setCursor(null);
+        // Emphasize the current talent being customized
+        ImageView talentNode = UtilityFunction.clone.ImageView(this.currentIcon);
+        talentNode.setScaleX(1.2);
+        talentNode.setScaleY(1.2);
+        talentNode.setEffect(CustomBorder.MAXED);
+        talentNode.setCursor(null);
 
-        this.grid.add(imageView, this.currentTalent.getColumnPosition(), this.currentTalent.getRowPosition());
+        this.grid.add(talentNode, this.currentTalent.getColumnPosition(), this.currentTalent.getRowPosition());
     }
 
+    public void setAsValidPrerequisiteOption(Talent talent) {
+        ImageView talentNode = UtilityFunction.clone.ImageView(talent.getImageView());
+
+        talentNode.setEffect(CustomBorder.OPEN);
+        talentNode.setOnMouseEntered(event -> talentNode.setEffect(UtilityFunction.Effects.constructEffectChain(CustomBorder.OPEN, CustomEffect.VALID)));
+        talentNode.setOnMouseExited(event -> talentNode.setEffect(CustomBorder.OPEN));
+        talentNode.setOnMouseClicked(event -> Event.fireEvent(this.hBox, new CustomEvent(CustomEvent.FINISH_PREREQUISITE, talent.getIndex())));
+
+        this.grid.add(talentNode, talent.getColumnPosition(), talent.getRowPosition());
+    }
 }
