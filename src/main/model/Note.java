@@ -12,7 +12,7 @@ public class Note extends GridItem {
         this.setState(ItemState.EMPTY);
     }
     public Note(int id, String title, String iconName, String description) {
-        super(id, title, iconName, (id / 2), (id % 2));
+        super(id, title, iconName, (id / Constant.NOTEGRID_ROW_STEP), (id % Constant.NOTEGRID_ROW_STEP));
 
         this.description = description;
 
@@ -64,7 +64,7 @@ public class Note extends GridItem {
 
     public void setIndex(int index) {
         super.setIndex(index);
-        super.setPosition(index / 2, index % 2);
+        super.setPosition(index / Constant.NOTEGRID_ROW_STEP, index % Constant.NOTEGRID_ROW_STEP);
     }
 
     public void updateTooltip() {
