@@ -3,7 +3,7 @@ package main.model;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import main.controllers.UtilityFunction;
-import main.enums.ArrowPartDirection;
+import main.enums.ArrowPartOrientation;
 import main.enums.ItemState;
 import main.enums.Resource;
 
@@ -26,7 +26,7 @@ public class Arrow {
         private ImageView node;
         private Image partType;
         private int positionIndex;
-        private ArrowPartDirection direction;
+        private ArrowPartOrientation direction;
 
         public Part(int positionIndex) {   // Constructor for uncapped arrow parts
             this.positionIndex = positionIndex;
@@ -35,7 +35,7 @@ public class Arrow {
             arrowParts.add(this);
         }
 
-        public Part(int positionIndex, Image partType, ArrowPartDirection direction) {   // Constructor exclusively for capped arrow parts
+        public Part(int positionIndex, Image partType, ArrowPartOrientation direction) {   // Constructor exclusively for capped arrow parts
             this.positionIndex = positionIndex;
             this.partType = partType;
             this.direction = direction;
@@ -51,8 +51,8 @@ public class Arrow {
             this.partType = partType;
             this.node.setImage(partType);
         }
-        public void setDirection(ArrowPartDirection direction) { this.direction = direction; }
-        public ArrowPartDirection getDirection() { return this.direction; }
+        public void setDirection(ArrowPartOrientation direction) { this.direction = direction; }
+        public ArrowPartOrientation getDirection() { return this.direction; }
         public Image getPartType() { return this.partType; }
     }
 

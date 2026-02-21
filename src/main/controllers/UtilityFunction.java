@@ -7,13 +7,10 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
-import main.enums.ArrowPartDirection;
+import main.enums.ArrowPartOrientation;
 import main.enums.CharacterClass;
 import main.enums.Resource;
-import main.model.Arrow;
-import main.model.Constant;
-import main.model.EffectInputChain;
-import main.model.GridItem;
+import main.model.*;
 
 import java.io.File;
 import java.io.IOException;
@@ -38,6 +35,8 @@ public final class UtilityFunction {
             imageViewClone.viewOrderProperty().set(imageView.getViewOrder());
             imageViewClone.rotateProperty().set(imageView.getRotate());
             imageViewClone.scaleXProperty().set(imageView.getScaleX());
+            imageViewClone.translateXProperty().set(imageView.getTranslateX());
+            imageViewClone.translateYProperty().set(imageView.getTranslateY());
 
             return imageViewClone;
         }
@@ -100,23 +99,22 @@ public final class UtilityFunction {
         }
     }
     public static class Arrows {
-        public static Arrow constructArrowFromGridIndexes(int prerequisiteIndex, int dependantIndex) {
+        public static Arrow constructArrowFromGridIndexes(int prerequisiteIndex, int dependantIndex, TalentTree talentTree) {
             Arrow arrow = new Arrow(dependantIndex);
-            LinkedList<Integer> positionIndexes = resolvePositionIndexes(dependantIndex, prerequisiteIndex);
+            LinkedList<Integer> positionIndexes = resolvePositionIndexes(dependantIndex, prerequisiteIndex, talentTree);
 
             int previousPositionIndex = positionIndexes.poll();
             int currentPositionIndex = positionIndexes.poll();
 
             // Creates (and adds to the arrow) a capped part
-            arrow.new Part(currentPositionIndex, Arrow.CAP, resolvePartDirection(previousPositionIndex, currentPositionIndex));
+            arrow.new Part(currentPositionIndex, Arrow.CAP, resolvePartOrientation(Arrow.CAP, previousPositionIndex, currentPositionIndex, 0));
 
             while (positionIndexes.isEmpty() == false) {
                 Arrow.Part arrowPart = arrow.new Part(currentPositionIndex);
                 int nextPositionIndex = positionIndexes.peek();
 
-                arrowPart.setPartType(resolvePartType(currentPositionIndex, nextPositionIndex));
-                if (arrowPart.getPartType() == Arrow.CORNER_PART) currentPositionIndex = nextPositionIndex;
-                arrowPart.setDirection(resolvePartDirection(previousPositionIndex, currentPositionIndex));
+                arrowPart.setPartType(resolvePartType(previousPositionIndex, nextPositionIndex));
+                arrowPart.setDirection(resolvePartOrientation(arrowPart.getPartType(), previousPositionIndex, currentPositionIndex, nextPositionIndex));
 
                 previousPositionIndex = currentPositionIndex;
                 currentPositionIndex = positionIndexes.poll();
@@ -126,57 +124,98 @@ public final class UtilityFunction {
             return arrow;
         }
         private static void assemble(Arrow arrow) {
+            // Orients the image nodes of the arrow's parts
             arrow.getParts().forEach(part -> {
-                if (part.getDirection() == ArrowPartDirection.RIGHT) {
-                    if (part.getPartType() == Arrow.CORNER_PART) part.getNode().setScaleX(-1);
-                    else part.getNode().setRotate(-90);
-                }
-                if (part.getDirection() == ArrowPartDirection.LEFT && part.getPartType() != Arrow.CORNER_PART) {
-                    part.getNode().setRotate(90);
+                if (part.getPartType() == Arrow.CORNER_PART) {
+                    switch (part.getDirection()) {
+                        case LEFT_DOWN -> part.getNode().setScaleX(-1);
+                        case DOWN_LEFT -> {
+                            part.getNode().setRotate(90);
+                            part.getNode().setTranslateX(-1);   // Slight nudge to fix visual offset
+                        }
+                        case DOWN_RIGHT -> {
+                            part.getNode().setScaleX(-1);
+                            part.getNode().setRotate(270);
+                            part.getNode().setTranslateX(1);    // Slight nudge to fix visual offset
+                        }
+                    }
+                } else {
+                    switch (part.getDirection()) {
+                        case RIGHT -> part.getNode().setRotate(-90);
+                        case LEFT -> part.getNode().setRotate(90);
+                    }
                 }
             });
         }
-        private static Image resolvePartType(int currentIndex, int nextIndex) {
+        private static Image resolvePartType(int previousIndex, int nextIndex) {
             Image partType = Arrow.BAR_PART;
 
-            if ((currentIndex - nextIndex) % Constant.TALENTGRID_ROW_STEP != 0) {
+            if (previousIndex % Constant.TALENTGRID_ROW_STEP != nextIndex % Constant.TALENTGRID_ROW_STEP) {
                 partType = Arrow.CORNER_PART;
             }
 
             return partType;
         }
-        private static ArrowPartDirection resolvePartDirection(int previousIndex, int currentIndex) {
-            ArrowPartDirection direction = ArrowPartDirection.DOWN;
-            int difference = previousIndex - currentIndex;
+        private static ArrowPartOrientation resolvePartOrientation(Image partType, int previousIndex, int currentIndex, int nextIndex) {
+            ArrowPartOrientation direction = ArrowPartOrientation.DOWN;
 
-            if (difference == Constant.COLUMN_STEP || difference == 3) {
-                direction = ArrowPartDirection.RIGHT;
-            } else if (difference == -Constant.COLUMN_STEP || difference == 5) {
-                direction = ArrowPartDirection.LEFT;
+            if (partType == Arrow.CORNER_PART) {
+                switch (currentIndex - nextIndex) {
+                    case Constant.COLUMN_STEP -> direction = ArrowPartOrientation.RIGHT_DOWN;
+                    case -Constant.COLUMN_STEP -> direction = ArrowPartOrientation.LEFT_DOWN;
+                    case Constant.TALENTGRID_ROW_STEP -> {
+                        if (previousIndex - currentIndex == Constant.COLUMN_STEP) {
+                            direction = ArrowPartOrientation.DOWN_RIGHT;
+                        } else {
+                            direction = ArrowPartOrientation.DOWN_LEFT;
+                        }
+                    }
+                }
+            } else {
+                switch (previousIndex - currentIndex) {
+                    case Constant.COLUMN_STEP -> direction = ArrowPartOrientation.RIGHT;
+                    case -Constant.COLUMN_STEP -> direction = ArrowPartOrientation.LEFT;
+                }
             }
 
             return direction;
         }
-        private static LinkedList<Integer> resolvePositionIndexes(int startIndex, int endIndex) {
+        private static LinkedList<Integer> resolvePositionIndexes(int startIndex, int endIndex, TalentTree talentTree) {
             LinkedList<Integer> positionIndexes = new LinkedList<>();
             int currentIndex = startIndex;
             positionIndexes.add(currentIndex);
 
             while (currentIndex - endIndex != 0) {
-                if (currentIndex / Constant.TALENTGRID_COLUMN_COUNT != endIndex / Constant.TALENTGRID_COLUMN_COUNT) { // Not in the same row
-                    currentIndex -= Constant.TALENTGRID_ROW_STEP;
-                    positionIndexes.add(currentIndex);
-                    continue;
+                switch (currentIndex % Constant.TALENTGRID_COLUMN_COUNT - endIndex % Constant.TALENTGRID_COLUMN_COUNT) {
+                    // Prerequisite is offset to the right
+                    case -Constant.COLUMN_STEP:
+                        // Is there a talent blocking the slot to the left of the prerequisite
+                        if (talentTree.getTalentByIndex(endIndex - Constant.COLUMN_STEP) != null || currentIndex - endIndex == -1) {
+                            currentIndex += Constant.COLUMN_STEP;
+                        } else {
+                            currentIndex -= Constant.TALENTGRID_ROW_STEP;
+                        }
+
+                        break;
+
+                    // Straight below the prerequisite
+                    case 0:
+                        currentIndex -= Constant.TALENTGRID_ROW_STEP;
+                        break;
+
+                    // Prerequisite is offset to the left
+                    case Constant.COLUMN_STEP:
+                        // Is there a talent blocking the slot to the right of the prerequisite
+                        if (talentTree.getTalentByIndex(endIndex + Constant.COLUMN_STEP) != null || currentIndex - endIndex == 1) {
+                            currentIndex -= Constant.COLUMN_STEP;
+                        } else {
+                            currentIndex -= Constant.TALENTGRID_ROW_STEP;
+                        }
+
+                        break;
                 }
-                if (currentIndex % Constant.TALENTGRID_COLUMN_COUNT < endIndex % Constant.TALENTGRID_COLUMN_COUNT) { // Prerequisite is offset to the right
-                    currentIndex += Constant.COLUMN_STEP;
-                    positionIndexes.add(currentIndex);
-                    continue;
-                }
-                if (currentIndex % Constant.TALENTGRID_COLUMN_COUNT > endIndex % Constant.TALENTGRID_COLUMN_COUNT) { // Prerequisite is offset to the left
-                    currentIndex -= Constant.COLUMN_STEP;
-                    positionIndexes.add(currentIndex);
-                }
+
+                positionIndexes.add(currentIndex);
             }
 
             return positionIndexes;
