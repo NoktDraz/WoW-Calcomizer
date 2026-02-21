@@ -9,5 +9,6 @@ public enum CharacterClass {
         DRUID,
         PRIEST,
         MAGE,
-        WARLOCK
+        WARLOCK,
+        SECRET
 }

@@ -25,9 +25,12 @@ public class CalculatorController extends CalcomizerBase {
 
     @FXML
     Label talentPoints;
+    @FXML
+    Label talentPointsLabel;
 
     public void initialize() {
         super.initialize();
+        this.talentPointsLabel.setFont(CustomFont.ITEM_TEXT);
 
         this.focusedClassButton = this.warrior;
 
@@ -148,7 +151,7 @@ public class CalculatorController extends CalcomizerBase {
         if (isTalentRankOperationValid(talentTree, talent, operation)) {
             talent.setCurrentRank(talent.getCurrentRank() + operation);
 
-            this.adjustPointsInRow(this.pointsInRows.get(talentTree.getId()), talent.getIndex() / 4, operation);
+            this.adjustPointsInRow(this.pointsInRows.get(talentTree.getId()), talent.getIndex() / Constant.TALENTGRID_ROW_STEP, operation);
 
             this.updateRowLocks(talentTree.getId());
             this.updateTalentStates(talentTree);
@@ -173,7 +176,7 @@ public class CalculatorController extends CalcomizerBase {
     }
 
     private boolean isTalentRowLocked(TalentTree talentTree, Talent talent) {
-        return this.rowLocks.get(talentTree.getId()).get(talent.getIndex() / 4);
+        return this.rowLocks.get(talentTree.getId()).get(talent.getIndex() / Constant.TALENTGRID_ROW_STEP);
     }
 
     private boolean isTalentRankOperationValid(TalentTree tree, Talent talent, int operation) {

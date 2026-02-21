@@ -61,6 +61,8 @@ public abstract class CalcomizerBase implements FXMLController {
     @FXML
     Button druid;
     @FXML
+    Button secret;
+    @FXML
     TitledPane tree1;
     @FXML
     Label pointsInTree1;
@@ -91,6 +93,8 @@ public abstract class CalcomizerBase implements FXMLController {
     @FXML
     GridPane noteGrid;
     @FXML
+    Label customizationSetLabel;
+    @FXML
     ChoiceBox<String> customizationSetMenu;
     //endregion
 
@@ -110,7 +114,7 @@ public abstract class CalcomizerBase implements FXMLController {
                 new BackgroundSize(1,1,true,true,false,false)
         )));
         this.classButtons = new LinkedList<>(
-                (Arrays.asList(this.warrior, this.rogue, this.hunter, this.paladin, this.shaman, this.druid, this.priest, this.mage, this.warlock)));
+                (Arrays.asList(this.warrior, this.rogue, this.hunter, this.paladin, this.shaman, this.druid, this.priest, this.mage, this.warlock, this.secret)));
         this.classButtons.forEach(button -> {
             button.getGraphic().setEffect(CustomBorder.CLASS_BUTTON_UNSELECTED);
 
@@ -123,6 +127,8 @@ public abstract class CalcomizerBase implements FXMLController {
                     button.getGraphic().setEffect(CustomBorder.CLASS_BUTTON_UNSELECTED);
             });
         });
+
+        this.customizationSetLabel.setFont(CustomFont.ITEM_TEXT);
         this.initCustomizationSetMenu();
         this.customizationSetMenu.getSelectionModel().selectedItemProperty().addListener(
             (observableValue, oldValue, newValue) -> {
@@ -166,6 +172,10 @@ public abstract class CalcomizerBase implements FXMLController {
         this.warlock.setOnAction(customEvent -> {
             this.toggleClassButtonFocus(this.classButtons.indexOf(this.warlock));
             setActiveClass(CharacterClass.WARLOCK);
+        });
+        this.secret.setOnAction(customEvent -> {
+            this.toggleClassButtonFocus(this.classButtons.indexOf(this.secret));
+            setActiveClass(CharacterClass.SECRET);
         });
         //endregion
     }
@@ -241,7 +251,7 @@ public abstract class CalcomizerBase implements FXMLController {
 
         talentTree.getTalents().forEach((index, talent) -> {
             if (talent.hasPrerequisite()) {
-                Arrow arrow = UtilityFunction.Arrows.constructArrowFromGridIndexes(talent.getPrerequisiteIndex(), talent.getIndex());
+                Arrow arrow = UtilityFunction.Arrows.constructArrowFromGridIndexes(talent.getPrerequisiteIndex(), talent.getIndex(), talentTree);
 
                 talentTree.addArrow(arrow);
             }

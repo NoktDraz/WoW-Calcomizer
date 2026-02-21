@@ -166,6 +166,18 @@
                   </ImageView>
                </graphic>
             </Button>
+            <Button fx:id="secret" styleClass="secret-btn" layoutX="603.0" layoutY="495.0" prefHeight="50.0" prefWidth="50.0" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/resources/Interface/Class_Icons/secret.png" />
+                     </image>
+                     <effect>
+                        <DropShadow spread="0.55" />
+                     </effect>
+                  </ImageView>
+               </graphic>
+            </Button>
             <Label fx:id="pointsInTree1" styleClass="tree-points" alignment="CENTER_RIGHT" layoutX="246.0" layoutY="22.0" text="0"/>
             <TitledPane fx:id="tree1" styleClass="calculator" alignment="CENTER" animated="false" collapsible="false" layoutX="14.0" layoutY="14.0" prefHeight="451.0" prefWidth="258.0" text="Tree 1">
                <content>
@@ -271,9 +283,9 @@
                </content>
             </TitledPane>
             <Separator layoutY="476.0" prefHeight="6.0" prefWidth="974.0" />
-            <Pane styleClass="points-pane" layoutX="640.0" layoutY="495.0" prefHeight="50.0" prefWidth="105.0" >
+            <Pane styleClass="points-pane" layoutX="674.0" layoutY="495.0" prefHeight="50.0" prefWidth="105.0" >
                <children>
-                  <Label layoutX="18.0" layoutY="-8.0" styleClass="pane-title-label" text="Talent Points" />
+                  <Label fx:id="talentPointsLabel" layoutX="13.0" layoutY="-8.0" styleClass="pane-title-label" text="Talent Points" />
                   <Label fx:id="talentPoints" alignment="CENTER" layoutX="35.0" layoutY="13.0" prefWidth="35" text="00" textAlignment="CENTER">
                      <font>
                         <Font name="System Bold" size="16.0" />
@@ -283,7 +295,7 @@
             </Pane>
             <Pane layoutX="794.0" layoutY="495.0" prefHeight="50.0" prefWidth="166.0" styleClass="custom-set-pane">
                <children>
-                  <Label layoutX="35.0" layoutY="-8.0" styleClass="pane-title-label" text="Customization Set" />
+                  <Label fx:id="customizationSetLabel" layoutX="26.0" layoutY="-8.0" styleClass="pane-title-label" text="Customizati on Set" />
                   <ChoiceBox fx:id="customizationSetMenu" layoutX="8.0" layoutY="10.0" prefWidth="150.0" />
                </children>
             </Pane>
