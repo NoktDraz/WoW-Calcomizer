@@ -182,37 +182,34 @@ public final class UtilityFunction {
         }
         private static LinkedList<Integer> resolvePositionIndexes(int startIndex, int endIndex, TalentTree talentTree) {
             LinkedList<Integer> positionIndexes = new LinkedList<>();
+            boolean isUpPathBlocked = false;
             int currentIndex = startIndex;
             positionIndexes.add(currentIndex);
 
+            int offset = currentIndex % Constant.TALENTGRID_COLUMN_COUNT - endIndex % Constant.TALENTGRID_COLUMN_COUNT;
+            // Check if the path to the locked talent is possibly blocked from above when the talent is offset to either side
+            if (offset != 0) {
+                int index = currentIndex - offset;
+                while (index - endIndex >= 0) {
+                    if (index != endIndex) {
+                        if (talentTree.getTalentByIndex(index + offset - Constant.TALENTGRID_ROW_STEP) != null) {
+                            isUpPathBlocked = true;
+                            break;
+                        }
+                    }
+                    index -= Constant.TALENTGRID_ROW_STEP;
+                }
+            }
             while (currentIndex - endIndex != 0) {
-                switch (currentIndex % Constant.TALENTGRID_COLUMN_COUNT - endIndex % Constant.TALENTGRID_COLUMN_COUNT) {
-                    // Prerequisite is offset to the right
-                    case -Constant.COLUMN_STEP:
-                        // Is there a talent blocking the slot to the left of the prerequisite
-                        if (talentTree.getTalentByIndex(endIndex - Constant.COLUMN_STEP) != null || currentIndex - endIndex == -1) {
-                            currentIndex += Constant.COLUMN_STEP;
-                        } else {
-                            currentIndex -= Constant.TALENTGRID_ROW_STEP;
-                        }
-
-                        break;
-
-                    // Straight below the prerequisite
-                    case 0:
+                if (offset != 0) {
+                    if (isUpPathBlocked != true && currentIndex - endIndex != offset) {
                         currentIndex -= Constant.TALENTGRID_ROW_STEP;
-                        break;
-
-                    // Prerequisite is offset to the left
-                    case Constant.COLUMN_STEP:
-                        // Is there a talent blocking the slot to the right of the prerequisite
-                        if (talentTree.getTalentByIndex(endIndex + Constant.COLUMN_STEP) != null || currentIndex - endIndex == 1) {
-                            currentIndex -= Constant.COLUMN_STEP;
-                        } else {
-                            currentIndex -= Constant.TALENTGRID_ROW_STEP;
-                        }
-
-                        break;
+                    } else {
+                        currentIndex -= offset;
+                        offset = 0;
+                    }
+                } else {
+                    currentIndex -= Constant.TALENTGRID_ROW_STEP;
                 }
 
                 positionIndexes.add(currentIndex);
