@@ -10,8 +10,6 @@ Built on Java (temurin-20.0.2) and JavaFX (18.0.1).
 
 - [Windows](https://drive.google.com/drive/folders/109xU9TQkS8fR0R_uQzyACKujdgdFMw99?usp=drive_link) (updated on 22.02.2026)
 
-- MacOS (Coming some day, hopefully...)
-
 #### How to make it work/run
 a) Download **every folder** and **Calcomizer.exe** if you don't have the application on your system. Make sure the .exe is in the same directory as the folders.
 
