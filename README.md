@@ -10,7 +10,12 @@ Built on Java (temurin-20.0.2) and JavaFX (18.0.1).
 
 - MacOS (Coming some day, hopefully...)
 
-(You can skip downloading the **'JRE'** folder if you already have an up to date installation of Java on your computer)
+#### How to make it work/run
+a) Download **every folder** and **Calcomizer.exe** if you don't have the application on your system. Make sure the .exe is in the same directory as the folders. (Like they are in the Google Drive)
+
+b) If you have already downloaded a previous version of the application you can skip downloading the **JRE**, **Custom Sets** and **Icons** folders and just download the .exe to get the latest version.
+
+c) You can skip downloading the **JRE** folder if you already have an up to date installation of Java on your computer.
 
 ### Features
 
