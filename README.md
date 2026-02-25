@@ -6,7 +6,7 @@
 
 Built on Java (temurin-20.0.2) and JavaFX (18.0.1).
 
-### Files and Folders
+### Executable
 
 - [Windows](https://drive.google.com/drive/folders/109xU9TQkS8fR0R_uQzyACKujdgdFMw99?usp=drive_link) (updated on 25.02.2026)
 
