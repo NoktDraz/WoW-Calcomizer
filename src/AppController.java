@@ -56,7 +56,9 @@ public class AppController extends Application {
         CalcomizerBase.initCustomizationSets(this.xmlController.parse(UtilityFunction.Resources.getDefaultDataStreams()));
 
         for (File dataSetFolder : UtilityFunction.Resources.getCustomDataSetsFolder().listFiles()) {
-            CalcomizerBase.addCustomizationSet(this.xmlController.parse(dataSetFolder));
+            try {
+                CalcomizerBase.addCustomizationSet(this.xmlController.parse(dataSetFolder));
+            } catch (Exception e) {}
         }
     }
 
