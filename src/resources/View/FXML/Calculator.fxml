@@ -42,9 +42,9 @@
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
-        <Menu text="Program">
+        <Menu text="Functions">
           <items>
-             <MenuItem fx:id="exit" text="Exit" onAction="#exit">
+             <MenuItem fx:id="exit" text="Exit application" onAction="#exit">
              </MenuItem>
           </items>
         </Menu>

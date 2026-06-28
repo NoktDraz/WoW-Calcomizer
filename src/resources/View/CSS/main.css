@@ -1,5 +1,3 @@
--fx-color: #ececec;
-
 .button {
 	-fx-focus-color: transparent;
 }
@@ -57,11 +55,45 @@
 }
 
 .class-btn {
-	-fx-border-radius: 4;
+	-fx-border-radius: 2;
 	-fx-border-style: solid;
-	-fx-border-color: #32CD32;
-	-fx-border-width: 1.5
+	-fx-border-width: 3;
+	-fx-border-insets: -1
 }
+
+.focused {
+	-fx-border-insets: 2 0 -2 -1;
+	-fx-background-insets: 2 0 -2 -1
+}
+
+#warrior {
+	-fx-border-color: #C69B6D;
+}
+#rogue {
+	-fx-border-color: #FFF468;
+}
+#hunter {
+	-fx-border-color: #AAD372;
+}
+#paladin {
+	-fx-border-color: #F48CBA;
+}
+#shaman {
+	-fx-border-color: #0070DD;
+}
+#mage {
+	-fx-border-color: #3FC7EB;
+}
+#warlock {
+	-fx-border-color: 	#8788EE;
+}
+#priest {
+	-fx-border-color: #FFFFFF;
+}
+#druid {
+	-fx-border-color: #FF7C0A;
+}
+
 
 .secret-btn {
     -fx-opacity: 0;

@@ -41,14 +41,15 @@
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
-        <Menu text="Program">
+        <Menu text="Functions">
           <items>
-             <MenuItem fx:id="createNew" onAction="#newCustomSet" text="New Customization Set">
+             <MenuItem fx:id="createNew" onAction="#newCustomSet" text="Create new Customization Set">
              </MenuItem>
-             <MenuItem fx:id="saveAll" onAction="#saveAll" text="Save All">
+             <MenuItem fx:id="saveAll" onAction="#saveAll" text="Save all changes in current Set">
              </MenuItem>
-            <SeparatorMenuItem />
-             <MenuItem fx:id="exit" onAction="#exit" text="Exit">
+             <MenuItem fx:id="separator" disable="true" text="       - - - - - - - - - - - - - - -">
+             </MenuItem>
+             <MenuItem fx:id="exit" onAction="#exit" text="Exit application">
              </MenuItem>
           </items>
         </Menu>
@@ -285,6 +286,14 @@
             </TitledPane>
 
             <Button fx:id="saveClass" layoutX="674.0" layoutY="495.0" onAction="#saveClass" prefHeight="50.0" prefWidth="105.0" text="SAVE CURRENT CLASS" wrapText="true" textAlignment="CENTER" />
+            <ImageView fx:id="saveClassGlyph" layoutX="667.0" layoutY="489.0" fitHeight="62.0" fitWidth="118.0" mouseTransparent="true">
+            </ImageView>
+            <Button fx:id="altCreateNew" layoutX="674.0" layoutY="495.0" onAction="#newCustomSet" prefHeight="50.0" prefWidth="105.0" text="CREATE NEW SET" wrapText="true" textAlignment="CENTER" contentDisplay="RIGHT">
+               <graphic>
+                  <ImageView fx:id="altCreateNewGlyph" fitHeight="32.0" fitWidth="36.0" pickOnBounds="true" opacity="0.5">
+                  </ImageView>
+               </graphic>
+            </Button>
 
             <Separator layoutY="476.0" prefHeight="6.0" prefWidth="974.0" />
          </children>

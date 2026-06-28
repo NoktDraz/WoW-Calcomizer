@@ -4,11 +4,9 @@ import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.TextArea;
+import javafx.scene.control.TextField;
 import main.enums.Window;
-import main.model.CustomEvent;
-import main.model.CustomFont;
-import main.model.Note;
-import main.model.NoteCollection;
+import main.model.*;
 
 public class NoteCustomizerController extends ItemCustomizerBase {
     private Note currentNote;
@@ -16,13 +14,17 @@ public class NoteCustomizerController extends ItemCustomizerBase {
     public NoteCustomizerController() {}
     //region FXML Injection
     @FXML
+    private TextField name;
+    @FXML
     private TextArea description;
     //endregion
     @FXML
     void initialize() {
         super.initialize();
 
+        this.name.setEffect(CustomEffect.SHADOW_ITEM_CUSTOMIZATION_NAME);
         this.description.setFont(CustomFont.ITEM_TEXT);
+        this.description.setEffect(CustomEffect.SHADOW_ITEM_CUSTOMIZATION_DESCRIPTION);
     }
     @FXML
     public void finish() {

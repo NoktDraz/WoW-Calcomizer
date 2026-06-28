@@ -5,10 +5,9 @@ import javafx.scene.effect.DropShadow;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import main.controllers.UtilityFunction;
+import main.enums.AnimationSet;
 import main.enums.ItemState;
 import main.enums.Resource;
-
-import java.util.Random;
 
 public class GridItem {
     public static final Image ICON_DEFAULT = UtilityFunction.Resources.getInterfaceAsset(Resource.InterfaceAsset.ICON_DEFAULT);
@@ -114,28 +113,16 @@ public class GridItem {
                 this.icon.setImage(ICON_EMPTY_SLOT);
                 this.icon.setOpacity(0.5);
 
-                this.icon.setOnMouseEntered(event -> {
-                    this.icon.setScaleX(1.4);
-                    this.icon.setScaleY(1.4);
-                    this.icon.setImage(ICON_CREATE_NEW);
-                    this.icon.setRotate(new Random().nextInt(0, 360));
-                    this.icon.setOpacity(1);
-                    this.icon.setEffect(CustomEffect.HIGHLIGHT);
-                });
-                this.icon.setOnMouseExited(event -> {
-                    this.icon.setScaleX(1.0);
-                    this.icon.setScaleY(1.0);
-                    this.icon.setImage(ICON_EMPTY_SLOT);
-                    this.icon.setRotate(0);
-                    this.icon.setOpacity(0.5);
-                    this.setIconBorder(CustomBorder.OPEN);
-                });
+                this.initEmptySlotAnimations();
             }
         }
     }
     void initMouseOverEffects() {
         this.icon.setPickOnBounds(true);
         this.icon.setCursor(CustomCursor.INTERACT);
+    }
+    void initEmptySlotAnimations() {
+        UtilityFunction.Animations.apply(AnimationSet.EMPTY_GRID_SLOT, this);
     }
     public void initTooltip() {
         this.tooltip.initialize();

@@ -1,5 +1,6 @@
 package main.controllers;
 
+import javafx.animation.*;
 import javafx.scene.effect.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -7,6 +8,8 @@ import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
+import javafx.util.Duration;
+import main.enums.AnimationSet;
 import main.enums.ArrowPartOrientation;
 import main.enums.CharacterClass;
 import main.enums.Resource;
@@ -19,6 +22,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.concurrent.atomic.AtomicBoolean;
+
 
 public final class UtilityFunction {
     private static final ClassLoader loader = Thread.currentThread().getContextClassLoader();
@@ -70,6 +75,70 @@ public final class UtilityFunction {
             dropShadowClone.setHeight(effect.getHeight());
             dropShadowClone.setWidth(effect.getWidth());
             return dropShadowClone;
+        }
+    }
+    public static class Animations {
+        public static void apply(AnimationSet animationSet, GridItem gridItem) {
+            switch (animationSet) {
+                case EMPTY_GRID_SLOT -> {
+                    ImageView slotGraphics = gridItem.getImageView();
+                    AtomicBoolean isHovered = new AtomicBoolean(false);
+
+                    Timeline timeline = new Timeline();
+                    timeline.setCycleCount(Animation.INDEFINITE);
+                    timeline.getKeyFrames().add(new KeyFrame(Duration.seconds(Constant.CREATE_NEW_ITEM_LOOP_TIME_SECONDS),
+                            new KeyValue(slotGraphics.rotateProperty(), 360)
+                    ));
+                    ScaleTransition emerge = new ScaleTransition(Duration.millis(Constant.CREATE_NEW_ITEM_EMERGE_TIME_MILLIS), slotGraphics);
+                    emerge.setInterpolator(Interpolator.EASE_OUT);
+                    ScaleTransition diminish = new ScaleTransition(Duration.millis(Constant.CREATE_NEW_ITEM_DIMINISH_TIME_MILLIS), slotGraphics);
+                    diminish.setInterpolator(Interpolator.EASE_IN);
+
+                    emerge.setFromX(0.8);
+                    emerge.setFromY(0.8);
+                    emerge.setToX(1.4);
+                    emerge.setToY(1.4);
+
+                    diminish.setFromX(1.4);
+                    diminish.setFromY(1.4);
+                    diminish.setToX(0.8);
+                    diminish.setToY(0.8);
+
+                    slotGraphics.setOnMouseExited(mouseEvent -> {
+                        isHovered.set(false);
+
+                        if (emerge.getStatus() == Animation.Status.STOPPED) {
+                            diminish.play();
+                        }
+                    });
+
+                    slotGraphics.setOnMouseEntered(e -> {
+                        isHovered.set(true);
+                        diminish.stop();
+                        emerge.play();
+                        timeline.play();
+                        slotGraphics.setImage(GridItem.ICON_CREATE_NEW);
+                        slotGraphics.setOpacity(1);
+                        gridItem.setIconBorder(null);
+                    });
+                    emerge.setOnFinished(event -> {
+                        if (isHovered.get() == false) {
+                            diminish.play();
+                        }
+                    });
+                    diminish.setOnFinished(event -> {
+                        if (isHovered.get() == false) {
+                            timeline.stop();
+                            slotGraphics.setImage(GridItem.ICON_EMPTY_SLOT);
+                            slotGraphics.setRotate(0);
+                            slotGraphics.setOpacity(0.5);
+                            slotGraphics.setScaleX(1);
+                            slotGraphics.setScaleY(1);
+                            gridItem.setIconBorder(CustomBorder.OPEN);
+                        }
+                    });
+                }
+            }
         }
     }
     public static class Effects {

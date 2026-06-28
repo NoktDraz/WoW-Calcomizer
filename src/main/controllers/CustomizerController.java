@@ -6,6 +6,7 @@ import javafx.scene.Node;
 import javafx.scene.SnapshotParameters;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
+import javafx.scene.image.ImageView;
 import javafx.scene.image.WritableImage;
 import javafx.scene.input.ClipboardContent;
 import javafx.scene.input.DataFormat;
@@ -15,6 +16,7 @@ import javafx.scene.transform.Transform;
 import javafx.util.Pair;
 import main.enums.CharacterClass;
 import main.enums.ItemState;
+import main.enums.Resource;
 import main.enums.Window;
 import main.model.*;
 
@@ -29,6 +31,12 @@ public class CustomizerController extends CalcomizerBase {
     MenuItem saveAll;
     @FXML
     Button saveClass;
+    @FXML
+    Button altCreateNew;
+    @FXML
+    ImageView altCreateNewGlyph;
+    @FXML
+    ImageView saveClassGlyph;
 
     public CustomizerController() {}
 
@@ -36,8 +44,31 @@ public class CustomizerController extends CalcomizerBase {
         super.initialize();
 
         this.saveClass.setCursor(CustomCursor.INTERACT);
+        this.saveClassGlyph.setImage(UtilityFunction.Resources.getInterfaceAsset(Resource.InterfaceAsset.GLYPH_SAVE_CLASS));
+        this.saveClassGlyph.setOpacity(0.75);
+        this.altCreateNew.setCursor(CustomCursor.INTERACT);
+        this.altCreateNewGlyph.setImage(UtilityFunction.Resources.getInterfaceAsset(Resource.InterfaceAsset.GLYPH_CREATE_NEW_SET));
+
         this.focusedClassButton = this.warrior;
         this.toggleClassButtonFocus(0);
+
+        this.saveClass.setOnMouseEntered(event -> {
+            this.saveClassGlyph.setOpacity(1);
+        });
+        this.saveClass.setOnMouseClicked(event -> {
+            this.saveClassGlyph.setImage(UtilityFunction.Resources.getInterfaceAsset(Resource.InterfaceAsset.GLYPH_SAVE_CLASS_PRESSED));
+        });
+        this.saveClass.setOnMouseExited(event -> {
+            this.saveClassGlyph.setOpacity(0.75);
+            this.saveClassGlyph.setImage(UtilityFunction.Resources.getInterfaceAsset(Resource.InterfaceAsset.GLYPH_SAVE_CLASS));
+        });
+        this.altCreateNew.setOnMouseEntered(event -> {
+            this.altCreateNewGlyph.setOpacity(1);
+        });
+        this.altCreateNew.setOnMouseExited(event -> {
+            this.altCreateNewGlyph.setOpacity(0.5);
+        });
+
         activeClass = CharacterClass.WARRIOR;
 
         this.customizationSetMenu.getSelectionModel().selectFirst();
@@ -85,7 +116,9 @@ public class CustomizerController extends CalcomizerBase {
         super.setActiveCustomizationSet(index);
 
         this.saveAll.setDisable(index == 0);
-        this.saveClass.setDisable(index == 0);
+        this.saveClass.setVisible(index != 0);
+        this.saveClassGlyph.setVisible(index != 0);
+        this.altCreateNew.setVisible(index == 0);
     }
 
     void loadActiveSetData() {
@@ -121,14 +154,14 @@ public class CustomizerController extends CalcomizerBase {
         talent.setCurrentRank(talent.getRankData().size());
         talent.updateTooltip();
 
-        this.applyItemNodeEvents(talentTree, talent);
+        if(isDefaultSetActive() != true) this.applyItemNodeEvents(talentTree, talent);
         this.adjustRankLabel(talent);
     }
 
     private void applyCustomizerSettings(Note note) {
         note.setState(ItemState.OPEN);
 
-        this.applyItemNodeEvents(activeNoteCollection, note);
+        if(isDefaultSetActive() != true) this.applyItemNodeEvents(activeNoteCollection, note);
     }
 
     void updateView() {
@@ -166,15 +199,17 @@ public class CustomizerController extends CalcomizerBase {
             });
         });
 
-        // Populate the rest of the talent grid with empty slot items
-        for (int i = 0; i < talentGridSlotOccupancy.length; i++) {
-            if (talentGridSlotOccupancy[i] == false) {
-                Talent emptyTalentSlot = new Talent(Talent.getEmptySlot(i));
+        if (isDefaultSetActive() != true) {
+            // Populate the rest of the talent grid with empty slot items
+            for (int i = 0; i < talentGridSlotOccupancy.length; i++) {
+                if (talentGridSlotOccupancy[i] == false) {
+                    Talent emptyTalentSlot = new Talent(Talent.getEmptySlot(i));
 
-                this.applyItemNodeEvents(talentTree, emptyTalentSlot);
-                this.adjustRankLabel(emptyTalentSlot);
+                    this.applyItemNodeEvents(talentTree, emptyTalentSlot);
+                    this.adjustRankLabel(emptyTalentSlot);
 
-                super.addToGrid(talentTree, emptyTalentSlot);
+                    super.addToGrid(talentTree, emptyTalentSlot);
+                }
             }
         }
     }
@@ -186,6 +221,8 @@ public class CustomizerController extends CalcomizerBase {
             Note note = activeNoteCollection.get(i);
 
             if (note == null) {
+                if (isDefaultSetActive()) continue;
+
                 note = Note.getEmptySlot(i);
                 this.applyItemNodeEvents(activeNoteCollection, note);
             } else {
@@ -238,13 +275,17 @@ public class CustomizerController extends CalcomizerBase {
                     this.swapItems(itemContainer, draggedItem, item);
                     this.applyItemNodeEvents(itemContainer, item);
                 } else {
-                    this.changeItemIndex(itemContainer, draggedItem, item.getIndex());
+                    if (draggedItemData.getKey() != itemContainer.getId()) {
+                        this.changeTalentsTree((Talent) draggedItem, activeTalentTrees.get(draggedItemData.getKey()), (TalentTree) itemContainer, item.getIndex());
+                    } else {
+                        this.changeItemIndex(itemContainer, draggedItem, item.getIndex());
+                    }
                 }
 
                 event.setDropCompleted(true);
 
                 this.applyItemNodeEvents(itemContainer, draggedItem);
-                this.updateView(itemContainer);
+                this.updateView();
             }
         });
     }
@@ -258,9 +299,26 @@ public class CustomizerController extends CalcomizerBase {
     }
 
     private boolean isValidDragTarget(Pair<Integer, Integer> draggedItemData, ItemContainer targetContainer, GridItem targetItem) {
-        if (draggedItemData.getKey() == targetContainer.getId() &&
-                draggedItemData.getValue() != targetItem.getIndex()) return true;
-        else return false;
+        if (draggedItemData.getKey() == targetContainer.getId()) {
+            if (draggedItemData.getValue() != targetItem.getIndex()) {
+                return true;
+            }
+        } else {
+            if (targetContainer.getId() != activeNoteCollection.getId() && draggedItemData.getKey() != activeNoteCollection.getId()) {
+                if (targetItem.getState() == ItemState.EMPTY) {
+                    return true;
+                }
+            }
+        }
+
+        return false;
+    }
+
+    private void changeTalentsTree(Talent talent, TalentTree source, TalentTree target, int targetIndex) {
+        this.clearDependencyLinks(source, talent);
+        source.getTalents().remove(talent.getIndex());
+        talent.setIndex(targetIndex);
+        target.addItem(talent);
     }
 
     private void swapItems(ItemContainer itemContainer, GridItem sourceItem, GridItem targetItem) {
@@ -290,6 +348,7 @@ public class CustomizerController extends CalcomizerBase {
 
         item.setIndex(newIndex);
     }
+
 
     private void clearDependencyLinks(TalentTree talentTree, Talent talent) {
         if (talent.hasDependants()) {

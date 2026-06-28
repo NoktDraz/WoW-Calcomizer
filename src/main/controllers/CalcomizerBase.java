@@ -105,8 +105,12 @@ public abstract class CalcomizerBase implements FXMLController {
 
         this.pointsInTrees = new LinkedList<>(Arrays.asList(this.pointsInTree1, this.pointsInTree2, this.pointsInTree3));
 
-        this.talentTreeTitledPanes.forEach(pane -> pane.setFont(CustomFont.ITEM_NAME));
+        this.talentTreeTitledPanes.forEach(pane -> {
+            pane.setFont(CustomFont.ITEM_NAME);
+            pane.setEffect(CustomEffect.SHADOW_ITEM_CONTAINER_PANE);
+        });
         this.notes.setFont(CustomFont.ITEM_NAME);
+        this.notes.setEffect(CustomEffect.SHADOW_ITEM_CONTAINER_PANE);
 
         this.noteHBox.setBackground(new Background(new BackgroundImage(
                 UtilityFunction.Resources.getInterfaceAsset(Resource.InterfaceAsset.BACKGROUND_NOTES),
@@ -117,6 +121,7 @@ public abstract class CalcomizerBase implements FXMLController {
                 (Arrays.asList(this.warrior, this.rogue, this.hunter, this.paladin, this.shaman, this.druid, this.priest, this.mage, this.warlock, this.secret)));
         this.classButtons.forEach(button -> {
             button.getGraphic().setEffect(CustomBorder.CLASS_BUTTON_UNSELECTED);
+            button.setEffect(CustomEffect.SHADOW_CLASS_BUTTON_UP);
 
             button.setOnMouseEntered(event -> {
                 if (button.isDisabled() != true)
@@ -136,6 +141,7 @@ public abstract class CalcomizerBase implements FXMLController {
                     this.setActiveCustomizationSet(this.customizationSetMenu.getSelectionModel().getSelectedIndex());
             }
         );
+        this.customizationSetMenu.setEffect(CustomEffect.SHADOW_CUSTOMIZATION_SET);
         //region Class button action events
         this.warrior.setOnAction(customEvent -> {
             this.toggleClassButtonFocus(this.classButtons.indexOf(this.warrior));
@@ -223,10 +229,12 @@ public abstract class CalcomizerBase implements FXMLController {
 
         this.focusedClassButton.getStyleClass().remove("focused");
         this.focusedClassButton.getGraphic().setEffect(CustomBorder.CLASS_BUTTON_UNSELECTED);
+        this.focusedClassButton.setEffect(CustomEffect.SHADOW_CLASS_BUTTON_UP);
 
         this.focusedClassButton = this.classButtons.get(buttonIndex);
         this.focusedClassButton.getStyleClass().add("focused");
         this.focusedClassButton.getGraphic().setEffect(CustomBorder.CLASS_ICON);
+        this.focusedClassButton.setEffect(CustomEffect.SHADOW_CLASS_BUTTON_DOWN);
     }
 
     void setActiveClass(CharacterClass cls) {

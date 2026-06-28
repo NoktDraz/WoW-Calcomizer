@@ -51,17 +51,17 @@
                </children>
             </Pane>
             <Button fx:id="finish" alignment="CENTER" contentDisplay="RIGHT" layoutX="378.0" layoutY="27.0" mnemonicParsing="false" onAction="#finish" prefHeight="45.0" prefWidth="203.0" text="F I N I S H ">
-            <font>
-               <Font name="System Bold" size="16.0" />
-            </font>
-            <tooltip>
-               <Tooltip fx:id="finishTip" autoHide="true" opacity="0" style="-fx-font-size: 12px; -fx-font-family: system; -fx-text-fill: tomato; -fx-background-color: black; -fx-border-color: tomato;" />
-            </tooltip>
-            <graphic>
-               <ImageView fx:id="finishGlyph" fitHeight="32.0" fitWidth="32.0" translateX="15" pickOnBounds="true" preserveRatio="true" visible="false">
-               </ImageView>
-            </graphic>
-         </Button>
+                <font>
+                   <Font name="System Bold" size="16.0" />
+                </font>
+                <tooltip>
+                   <Tooltip fx:id="finishTip" autoHide="true" opacity="0" style="-fx-font-size: 12px; -fx-font-family: system; -fx-text-fill: tomato; -fx-background-color: black; -fx-border-color: tomato;" />
+                </tooltip>
+                <graphic>
+                   <ImageView fx:id="finishGlyph" fitHeight="32.0" fitWidth="32.0" translateX="15" pickOnBounds="true" preserveRatio="true" visible="false">
+                   </ImageView>
+                </graphic>
+            </Button>
             <Button fx:id="cancel" alignment="CENTER_RIGHT" cancelButton="true" contentDisplay="RIGHT" graphicTextGap="1" layoutX="378.0" layoutY="90.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="45.0" prefWidth="122.0" text="CANCEL">
                <graphic>
                   <ImageView fx:id="cancelGlyph" fitHeight="32.0" fitWidth="36.0" pickOnBounds="true" visible="false">
@@ -82,7 +82,8 @@
                   <ColorAdjust />
                </effect>
             </Separator>
-            <TabPane layoutX="13.0" layoutY="174.0" prefHeight="242.0" prefWidth="580.0" tabClosingPolicy="UNAVAILABLE">
+            <TabPane fx:id="ranksPane" layoutY="174.0" prefHeight="253.0" prefWidth="603.0" tabClosingPolicy="UNAVAILABLE">
+              <padding><Insets left="13" /></padding>
               <tabs>
                 <Tab text="Rank 1">
                   <content>

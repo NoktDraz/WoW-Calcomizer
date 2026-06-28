@@ -13,6 +13,9 @@ public final class Constant {
     public static final int TALENTGRID_ROW_STEP = 4;
     public static final int NOTEGRID_ROW_STEP = 2;
     public static final int COLUMN_STEP = 1;
+    public static final int CREATE_NEW_ITEM_LOOP_TIME_SECONDS = 3;
+    public static final int CREATE_NEW_ITEM_EMERGE_TIME_MILLIS = 200;
+    public static final int CREATE_NEW_ITEM_DIMINISH_TIME_MILLIS = 100;
     public static final List<Boolean> ROW_LOCKS_INITIAL_STATE = new ArrayList<>(Collections.nCopies(GRID_ROW_COUNT, Boolean.TRUE));
     public static final List<Integer> POINTS_IN_ROWS_INITIAL_STATE = new ArrayList<>(Collections.nCopies(GRID_ROW_COUNT, 0));
 

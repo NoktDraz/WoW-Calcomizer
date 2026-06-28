@@ -1,13 +1,9 @@
 package main.controllers;
 
-import javafx.beans.property.DoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
-import javafx.concurrent.Service;
 import javafx.event.Event;
 import javafx.fxml.FXML;
-import javafx.scene.control.Alert;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextArea;
+import javafx.scene.control.*;
 import javafx.scene.effect.ColorAdjust;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
@@ -25,13 +21,12 @@ public class TalentCustomizerController extends ItemCustomizerBase {
     private SimpleIntegerProperty prerequisiteId;
     private Text prerequisiteText;
     private TextArea[] rankTextAreas;
-    private DoubleProperty tooltipOffset;
-    private DoubleProperty tooltipX;
-    private DoubleProperty tooltipY;
 
     public TalentCustomizerController() {}
 
     //region FXML Injection
+    @FXML
+    private TextField name;
     @FXML
     private ImageView prerequisiteIcon;
     @FXML
@@ -40,6 +35,8 @@ public class TalentCustomizerController extends ItemCustomizerBase {
     private ImageView prerequisiteClear;
     @FXML
     private Label prerequisiteName;
+    @FXML
+    private TabPane ranksPane;
     @FXML
     private TextArea rank1;
     @FXML
@@ -56,6 +53,9 @@ public class TalentCustomizerController extends ItemCustomizerBase {
     public void initialize() {
         super.initialize();
 
+        this.name.setEffect(CustomEffect.SHADOW_ITEM_CUSTOMIZATION_NAME);
+
+        this.ranksPane.setEffect(CustomEffect.SHADOW_ITEM_CUSTOMIZATION_DESCRIPTION);
         this.rankTextAreas = new TextArea[]{ rank1, rank2, rank3, rank4, rank5 };
         for (TextArea rankText : this.rankTextAreas) {
             rankText.setFont(CustomFont.ITEM_TEXT);
@@ -69,6 +69,7 @@ public class TalentCustomizerController extends ItemCustomizerBase {
         this.prerequisiteText.setFill(Color.WHITE);
         this.prerequisiteText.setStroke(Color.RED);
         this.prerequisiteText.setStrokeWidth(0);
+        this.prerequisiteName.setEffect(CustomEffect.SHADOW_ITEM_CUSTOMIZATION_NAME);
         this.prerequisiteName.setGraphic(prerequisiteText);
         this.prerequisiteClear.setImage(UtilityFunction.Resources.getInterfaceAsset(Resource.InterfaceAsset.GLYPH_CLEAR));
         this.prerequisiteClear.setEffect(CustomEffect.DESATURATE);

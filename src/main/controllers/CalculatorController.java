@@ -31,6 +31,7 @@ public class CalculatorController extends CalcomizerBase {
     public void initialize() {
         super.initialize();
         this.talentPointsLabel.setFont(CustomFont.ITEM_TEXT);
+        this.talentPoints.setEffect(CustomEffect.SHADOW_TALENT_POINTS);
 
         this.focusedClassButton = this.warrior;
 

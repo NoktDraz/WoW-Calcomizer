@@ -38,7 +38,7 @@
 <?import javafx.scene.layout.*?>
 <VBox xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@/resources/View/CSS/modal.css">
   <children>
-      <TitledPane fx:id="tree" alignment="CENTER" animated="false" collapsible="false" prefHeight="451.0" prefWidth="258.0" text="Choose Prerequisite">
+      <TitledPane fx:id="tree" alignment="CENTER" animated="false" collapsible="false" prefHeight="451.0" prefWidth="258.0" text="Choose Prerequisite      ">
           <graphic>
               <ImageView fx:id="close" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" translateX="180.0" onMouseClicked="#closeWindow">
                   <image>
