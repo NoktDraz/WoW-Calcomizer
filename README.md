@@ -1,6 +1,6 @@
 "WoW Calcomizer" (Talent Calculator + Customizer)
 
-![Main View](https://github.com/NoktDraz/Media/blob/main/Customizer.png)
+![Main View](https://github.com/NoktDraz/Media/blob/main/Customizer_1.1.png)
 
 ### Info
 
