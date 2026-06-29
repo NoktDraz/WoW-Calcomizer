@@ -29,7 +29,7 @@ c) You can skip downloading the **JRE** folder if you already have an up to date
 
 - Explore possible builds with the Talent Calculator
 
-- Talents and Notes can be moved around on the same tree/container. (Drag and drop)
+- Talents and Notes can be moved around. (Drag and drop)
 
 ### Donate
 
