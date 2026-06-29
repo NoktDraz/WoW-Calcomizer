@@ -58,7 +58,7 @@ Reduces the chance your helpful spells will be dispelled by 50%.]]></rank>
             <rank index="2"><![CDATA[Gives you a 100% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike.  The Focused Casting effect prevents you from losing casting time when taking damage.]]></rank>
         </talent>
         <talent index="8" name="Inner Focus" icon="WindWalkOn.png" requires="4">
-            <rank index="1"><![CDATA[When activated, reduces the Mana cost of your next 4 spells by 50% and increases the spell's critical effect chance by 25% if the spell is capable of a critical effect.
+            <rank index="1"><![CDATA[Reduces the Mana cost of your next 4 spells by 50% and increases the spell's critical effect chance by 25% if the spell is capable of a critical effect.  Lasts 15 secs.
 
 2 minute cooldown.]]></rank>
         </talent>
@@ -70,12 +70,12 @@ Reduces the chance your helpful spells will be dispelled by 50%.]]></rank>
             <rank index="5"><![CDATA[Increases your Spirit by 15%.]]></rank>
         </talent>
         <talent index="10" name="Soul Quench (Rank 1)" icon="SoulQuench.png">
-            <rank index="1"><![CDATA[Heals a friendly target for 80-96.
+            <rank index="1"><![CDATA[Heals a friendly target for 60-116.
 
 This spell has a 50% increased critical effect chance on targets affected by the Weakened Soul effect.
 
 1.5 second cast.
-35 Mana.  15 second cooldown.]]></rank>
+35 Mana.  12 second cooldown.]]></rank>
         </talent>
         <talent index="11" name="Mental Preparation" icon="FocusedPower.png">
             <rank index="1"><![CDATA[Upon entering combat, causes the cooldowns of your next 2 spells to be reduced by 50% when triggered.]]></rank>
@@ -156,11 +156,11 @@ Increases your healing power by 80% of your level.]]></rank>
 Increases your healing power by 100% of your level.]]></rank>
         </talent>
         <talent index="2" name="Ward of Purity" icon="SpellWarding.png">
-            <rank index="1"><![CDATA[Gives you a passive effect that protects you against Poison, removing 1 charge when a Poison effect hits you.  3 charges.  This effect is refreshed every 90 seconds.]]></rank>
-            <rank index="2"><![CDATA[Gives you a passive effect that protects you against Poison, removing 1 charge when a Poison effect hits you.  3 charges.  This effect is refreshed every 75 seconds.]]></rank>
-            <rank index="3"><![CDATA[Gives you a passive effect that protects you against Poison, removing 1 charge when a Poison effect hits you.  3 charges.  This effect is refreshed every 60 seconds.]]></rank>
-            <rank index="4"><![CDATA[Gives you a passive effect that protects you against Poison, removing 1 charge when a Poison effect hits you.  3 charges.  This effect is refreshed every 45 seconds.]]></rank>
-            <rank index="5"><![CDATA[Gives you a passive effect that protects you against Poison, removing 1 charge when a Poison effect hits you.  3 charges.  This effect is refreshed every 30 seconds.]]></rank>
+            <rank index="1"><![CDATA[Gives you a passive effect that protects you against Poison, removing 1 charge when a Poison effect hits you.  3 charges.  This effect is refreshed every 150 seconds.]]></rank>
+            <rank index="2"><![CDATA[Gives you a passive effect that protects you against Poison, removing 1 charge when a Poison effect hits you.  3 charges.  This effect is refreshed every 135 seconds.]]></rank>
+            <rank index="3"><![CDATA[Gives you a passive effect that protects you against Poison, removing 1 charge when a Poison effect hits you.  3 charges.  This effect is refreshed every 120 seconds.]]></rank>
+            <rank index="4"><![CDATA[Gives you a passive effect that protects you against Poison, removing 1 charge when a Poison effect hits you.  3 charges.  This effect is refreshed every 105 seconds.]]></rank>
+            <rank index="5"><![CDATA[Gives you a passive effect that protects you against Poison, removing 1 charge when a Poison effect hits you.  3 charges.  This effect is refreshed every 90 seconds.]]></rank>
         </talent>
         <talent index="4" name="Blessed Recovery" icon="BlessedRecovery.png">
             <rank index="1"><![CDATA[After being struck by a melee or ranged critical hit, heal 8% of the damage taken over 10 sec.  Additional critical hits taken during the effect increase the healing received.
@@ -208,19 +208,19 @@ Increases the amount healed by your Renew spell and Mending Shield effect by 15%
         <talent index="13" name="Divine Fury" icon="SealOfWrath.png" requires="9">
             <rank index="1"><![CDATA[Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0.1 sec.
 
-Reduces the Mana cost of your Holy Nova and Holy Fire spells by 4%.]]></rank>
+Reduces the Mana cost of your Smite and Holy Fire spells by 4%.]]></rank>
             <rank index="2"><![CDATA[Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0.2 sec.
 
-Reduces the Mana cost of your Holy Nova and Holy Fire spells by 8%.]]></rank>
+Reduces the Mana cost of your Smite and Holy Fire spells by 8%.]]></rank>
             <rank index="3"><![CDATA[Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0.3 sec.
 
-Reduces the Mana cost of your Holy Nova and Holy Fire spells by 12%.]]></rank>
+Reduces the Mana cost of your Smite and Holy Fire spells by 12%.]]></rank>
             <rank index="4"><![CDATA[Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0.4 sec.
 
-Reduces the Mana cost of your Holy Nova and Holy Fire spells by 16%.]]></rank>
+Reduces the Mana cost of your Smite and Holy Fire spells by 16%.]]></rank>
             <rank index="5"><![CDATA[Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0.5 sec.
 
-Reduces the Mana cost of your Holy Nova and Holy Fire spells by 20%.]]></rank>
+Reduces the Mana cost of your Smite and Holy Fire spells by 20%.]]></rank>
         </talent>
         <talent index="14" name="Worship" icon="SealOfSalvation.png" requires="6">
             <rank index="1"><![CDATA[Reduces the casting time of your Smite, Prayer of Healing and Heal spells by 0.1 sec.
@@ -248,7 +248,7 @@ Increases the critical effect chance of your Flash Heal and Smite spells by 5%.]
             <rank index="1"><![CDATA[Gives your healing spells a 10% chance to grant you the Revelation effect.  This effect reduces the cast time of your next Smite spell by 100% or the Mana cost of your next Holy Nova spell by 100%, or causes your next Holy Fire spell to increase the base Spirit of all party members by 100% for 30 secs.]]></rank>
             <rank index="2"><![CDATA[Gives your healing spells a 20% chance to grant you the Revelation effect.  This effect reduces the cast time of your next Smite spell by 100% or the Mana cost of your next Holy Nova spell by 100%, or causes your next Holy Fire spell to increase the base Spirit of all party members by 100% for 30 secs.]]></rank>
         </talent>
-        <talent index="18" name="Desperate Prayer" icon="DesperatePrayer.png" requires="14">
+        <talent index="18" name="Desperate Prayer (Rank 1)" icon="DesperatePrayer.png" requires="14">
             <rank index="1"><![CDATA[Instantly heals you for 546 to 654.
 
 This spell has a 50% increased critical effect chance.
@@ -278,7 +278,7 @@ Reduces the cast time of your Greater Heal spell by 0.5]]></rank>
             <rank index="3"><![CDATA[Increases your spell power by up to 33% of your total Spirit.]]></rank>
         </talent>
         <talent index="25" name="Icon of Providence (Rank 1)" icon="HolyProtection.png">
-            <rank index="1"><![CDATA[Summons an Icon of Providence with 600 health in front of the caster.  Prevents a party member within 20 yds of the Icon of Providence from dying, healing for 872 to 1033 when they take lethal damage.  Lasts 1 minute.
+            <rank index="1"><![CDATA[Summons an Icon of Providence with 600 health in front of the caster.  Prevents a party member within 20 yds of the Icon of Providence from dying, healing for 872 to 1033 when they take lethal damage.  Lasts 2 minutes.
 
 5 second cast.
 650 Mana.  30 minute cooldown.]]></rank>
@@ -331,7 +331,7 @@ Your Fade spell reduces the chance to be hit with ranged attacks by 15%.]]></ran
 
 This spell has a 50% chance of inflicting a Blackout effect on the target.
 
-225 Mana.  60 second cooldown.]]></rank>
+30% base Mana.  60 second cooldown.]]></rank>
         </talent>
         <talent index="9" name="Psychic Aggression" icon="UnholyFrenzy.png">
             <rank index="1"><![CDATA[Reduces the cooldown of your Mind Blast spell by 1 sec.
@@ -371,16 +371,16 @@ Reduces the Mana cost and threat generated by your Shadow spells by 12%.]]></ran
 Reduces the Mana cost and threat generated by your Shadow spells by 15%.]]></rank>
         </talent>
         <talent index="14" name="Eldritch Covenant" icon="ConsumeMagic.png">
-            <rank index="1"><![CDATA[Reduces the Mana cost of your Shadow spells by 20%.
+            <rank index="1"><![CDATA[Reduces the Mana cost of your Shadow spells by 30%.
 
 Casting Shadow damage spells cause you to take non-lethal Shadow damage equal to 5% of your base Health, increasing by 5% with each subsequent cast.  This effect resets after exiting combat or killing a target that yields experience or honor.]]></rank>
             <rank index="2"><![CDATA[Reduces the Mana cost of your Shadow spells by 35%.
 
 Casting Shadow damage spells cause you to take non-lethal Shadow damage equal to 4% of your base Health, increasing by 4% with each subsequent cast.  This effect resets after exiting combat or killing a target that yields experience or honor.]]></rank>
-            <rank index="3"><![CDATA[Reduces the Mana cost of your Shadow spells by 45%.
+            <rank index="3"><![CDATA[Reduces the Mana cost of your Shadow spells by 40%.
 
 Casting Shadow damage spells cause you to take non-lethal Shadow damage equal to 3% of your base Health, increasing by 3% with each subsequent cast.  This effect resets after exiting combat or killing a target that yields experience or honor.]]></rank>
-            <rank index="4"><![CDATA[Reduces the Mana cost of your Shadow spells by 50%.
+            <rank index="4"><![CDATA[Reduces the Mana cost of your Shadow spells by 45%.
 
 Casting Shadow damage spells cause you to take non-lethal Shadow damage equal to 2% of your base Health, increasing by 2% with each subsequent cast.  This effect resets after exiting combat or killing a target that yields experience or honor.]]></rank>
             <rank index="5"><![CDATA[Reduces the Mana cost of your Shadow spells by 50%.
@@ -400,17 +400,17 @@ Increases the critical effect chance of your Vampiric Embrace's healing effect b
 
 6% base Mana.  10 second cooldown.]]></rank>
         </talent>
-        <talent index="18" name="Shadow Weaving" icon="BlackPlague.png">
-            <rank index="1"><![CDATA[Your Shadow damage spells have a 20% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by 3% and lasts 15 sec.  Stacks up to 5 times.]]></rank>
-            <rank index="2"><![CDATA[Your Shadow damage spells have a 40% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by 3% and lasts 15 sec.  Stacks up to 5 times.]]></rank>
-            <rank index="3"><![CDATA[Your Shadow damage spells have a 60% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by 3% and lasts 15 sec.  Stacks up to 5 times.]]></rank>
-        </talent>
-        <talent index="22" name="Dark Reflection" icon="Twilight (2).png">
+        <talent index="18" name="Dark Reflection" icon="Twilight (2).png">
             <rank index="1"><![CDATA[Increases your Shadow spell power by up to 8% of your total Spirit.]]></rank>
             <rank index="2"><![CDATA[Increases your Shadow spell power by up to 16% of your total Spirit.]]></rank>
             <rank index="3"><![CDATA[Increases your Shadow spell power by up to 24% of your total Spirit.]]></rank>
             <rank index="4"><![CDATA[Increases your Shadow spell power by up to 32% of your total Spirit.]]></rank>
             <rank index="5"><![CDATA[Increases your Shadow spell power by up to 40% of your total Spirit.]]></rank>
+        </talent>
+        <talent index="22" name="Shadow Weaving" icon="BlackPlague.png">
+            <rank index="1"><![CDATA[Your Shadow damage spells have a 20% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by 3% and lasts 15 sec.  Stacks up to 5 times.]]></rank>
+            <rank index="2"><![CDATA[Your Shadow damage spells have a 40% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by 3% and lasts 15 sec.  Stacks up to 5 times.]]></rank>
+            <rank index="3"><![CDATA[Your Shadow damage spells have a 60% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by 3% and lasts 15 sec.  Stacks up to 5 times.]]></rank>
         </talent>
         <talent index="25" name="Shadowform" icon="Shadowform.png" requires="17">
             <rank index="1"><![CDATA[Assume a Shadowform, increasing your Shadow damage by 15% and reducing Physical damage done to you by 15%.  However, you may not cast Holy spells while in this form.
@@ -437,13 +437,13 @@ SPI 		127]]></note>
         <note index="5" name="(Undead) Touch of the Grave (Final Rank)" icon="AnimateDead.png"><![CDATA[Reduces the target's Shadow Resistance by 30.  In addition, slows movement speed by 20% when the target is below 20% Health.  Lasts 45 seconds.
 
 320 Mana.  1 minute cooldown.]]></note>
-        <note index="6" name="(Human) Flames of Abolition" icon="FireStarter.png"><![CDATA[When activated, reduces the cast time of your next Holy Fire spell by 1 second and increases its initial damage by 25%.  In addition, the damage over time effect will dispel 1 beneficial Magic effect from the target with each tick.
+        <note index="6" name="(Human) Flames of Abolition" icon="FireStarter.png"><![CDATA[When activated, reduces the cast time of your next Holy Fire spell by 1 second and increases its initial damage by 25%.  In addition, the damage over time effect of Holy Fire will dispel 1 beneficial Magic effect with each tick.
 
-7% base Mana.  1 minute cooldown.]]></note>
-        <note index="7" name="(Human) Renewal of Faith (Final Rank)" icon="UnyieldingFaith.png"><![CDATA[Restores 400-1000 Mana plus your total Spirit.  Only usable when your Mana is below 20%.
+7% base Mana.  2 minute cooldown.]]></note>
+        <note index="7" name="(Human) Renewal of Faith (Final Rank)" icon="UnyieldingFaith.png"><![CDATA[Restores 300-1000 Mana plus 200% of your total Spirit.  Only usable when your Mana is below 20%.
 
 5 minute cooldown.]]></note>
-        <note index="8" name="(Dwarf) Runeword: Fury of the Forge (Final Rank)" icon="SummonLightwell.png"><![CDATA[Inscribes a runeword of power at the targeted location that lasts 10 seconds, causing 124 to 136 Fire damage every 2 seconds to enemy targets inside its radius.
+        <note index="8" name="(Dwarf) Runeword: Fury of the Forge (Final Rank)" icon="SummonLightwell.png"><![CDATA[Inscribes a runeword of power at the targeted location that lasts 10 seconds, causing 124 to 136 Fire damage to enemy targets inside its radius every 2 seconds, with the final pulse also causing a 2 sec. Stun effect.
 
 2 second cast.
 520 Mana.  30 second cooldown.]]></note>
@@ -457,7 +457,7 @@ SPI 		127]]></note>
         <note index="11" name="(Troll) Blessing of the Cobra" icon="GuardianWard.png"><![CDATA[While active, reduces the global cooldown of all your spells by 0.5 sec and all healing done by 25%.
 
 9% base Mana.  10 second cooldown.]]></note>
-        <note index="12" name="(Night Elf) Moon Glaive (Final Rank)" icon="UpgradeMoonGlaive.png"><![CDATA[Throws a glaive formed from moonlight, causing 335 to 380 Arcane damage to the target and bouncing to nearby enemy targets.  Bounces up to 2 times and deals 30% less damage each time.
+        <note index="12" name="(Night Elf) Moon Glaive (Final Rank)" icon="UpgradeMoonGlaive.png"><![CDATA[Throws a glaive formed from moonlight, causing 335 to 380 Spellshadow damage to the target and bouncing to nearby enemy targets.  Bounces up to 2 times and deals 30% less damage each time.
 
 390 Mana.  2 second cast.]]></note>
         <note index="13" name="(Night Elf) Elune's Grace" icon="ElunesGrace.png"><![CDATA[Negates incoming Movement Impairing effects and increases your movement speed by 20% for 12 secs.
